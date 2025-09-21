@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-vn">
+
+<head>
+    <!-- =================================================================== -->
+    <!-- PART 1: Head Section                                              -->
+    <!-- =================================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+        media="print" onload='this.media="all"'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous" media="print" onload='this.media="all"'>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEN4X51SZF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } function trackOutboundLink(e, t) { gtag("event", "click", { event_category: "outbound", event_label: e, transport_type: "beacon", event_callback: function () { t !== "_blank" && (document.location = e) } }), console.debug("Outbound link clicked: " + e) } function onClickCallback(e) { if (e.target.tagName !== "A" || e.target.host === window.location.host) return; trackOutboundLink(e.target, e.target.getAttribute("target")) } gtag("js", new Date), gtag("config", "G-XEN4X51SZF", {}), gtag("set", { cookie_flags: "SameSite=None;Secure" }), document.addEventListener("click", onClickCallback, !1)
+    </script>
+    <meta name="author" content="Nin">
+    <meta name="description" content="Student in HCMUS VNU-HCM">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32.png?text=Icon">
+    <link rel="apple-touch-icon" type="image/png" href="https://via.placeholder.com/180x180.png?text=Icon">
+    <meta name="theme-color" content="#1565c0">
+    <meta property="og:site_name" content="Academic">
+    <meta property="og:title" content="Nin Nichi | Academic">
+    <meta property="og:description" content="Student in ISE and Computing">
+    <meta property="og:locale" content="en-vn">
+    <meta property="og:updated_time" content="2023-01-27T00:00:00+00:00">
+    <title>Project: Secure UART Design | Nin Nichi</title>
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark-mode">
+
+    <!-- =================================================================== -->
+    <!-- PART 2: Header with Language Switcher                             -->
+    <!-- =================================================================== -->
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item"><a class="nav-link" href="../index.html#about"><span data-en="Home" data-vi="Trang chủ"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#experience"><span data-en="Experience" data-vi="Kinh nghiệm"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#accomplishments"><span data-en="Accomplishments" data-vi="Thành tựu"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#projects"><span data-en="Projects" data-vi="Dự án"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#activities"><span data-en="Other Activities" data-vi="Hoạt động khác"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#contact"><span data-en="Contact" data-vi="Liên hệ"></span></a></li>
+                        </ul>
+                    </div>
+                    <div id="language-switcher" class="nav-item d-flex align-items-center">
+                        <button id="lang-vi" class="lang-btn active">VIE</button>
+                        <span class="text-white mx-1">|</span>
+                        <button id="lang-en" class="lang-btn">ENG</button>
+                    </div>
+                    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                        <li class="nav-item">
+                            <a id="dark-mode-toggler" class="nav-link" href="#" title="Toggle Dark Mode"
+                                aria-label="Toggle Dark Mode">
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- =================================================================== -->
+    <!--                      Main Content (Translated)                      -->
+    <!-- =================================================================== -->
+    <div class="page-body">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article-container">
+                        <h1 style="text-align: center;" data-en="Design of a Standard UART with Integrated Trivium Security" data-vi="Thiết kế Mạch UART Tiêu chuẩn Tích hợp Bảo mật Trivium"></h1>
+                        <div class="article-style">
+                            <p data-en="<strong>Graduation Thesis – VLSI System Design</strong><br><strong>Tools:</strong> Verilog, SystemVerilog, ModelSim/QuestaSim"
+                               data-vi="<strong>Khóa Luận Tốt Nghiệp – Thiết kế Hệ thống VLSI</strong><br><strong>Công cụ:</strong> Verilog, SystemVerilog, ModelSim/QuestaSim"></p>
+                            
+                            <h3 data-en="Project Overview" data-vi="Tổng quan Dự án"></h3>
+                            <p data-en="This project focuses on the design and integration of a secure communication system, combining a standard 16550-compliant UART core with a custom-designed Trivium stream cipher engine. The primary innovation lies in the intelligent control logic that optimizes the system's performance and initialization sequence.
+                            (Because this project is quite large and long, I will only summarize and explain the main, basic parts. To learn more details, you can read more documents at the end of the project)"
+                               data-vi="Dự án này tập trung vào thiết kế và tích hợp một hệ thống truyền thông bảo mật, kết hợp một lõi UART tương thích chuẩn 16550 với một lõi mã hóa dòng Trivium được thiết kế riêng. Sự đổi mới chính nằm ở logic điều khiển thông minh giúp tối ưu hóa hiệu suất và chu trình khởi tạo của hệ thống. 
+                               (Vì dự án này khá là nhiều và dài, nên tôi sẽ chỉ tóm lại và giải thích những phần chính, cơ bản. Để tìm hiểu chi tiết hơn bạn có thể đọc thêm tài liệu ở phần cuối dự án)"></p>
+
+                            <hr>
+
+                            <h3 data-en="Component Design" data-vi="Thiết kế các Thành phần"></h3>
+                                <div class="image-wrapper">
+                                    <img src="../img/uart_triv10.png" alt="Directory tree of the Standard UART with Integrated Trivium Security" class="zoomable-image" style="width:30%;">
+                                    <p class="image-caption" data-en="Directory tree of the Standard UART with Integrated Trivium Security" data-vi="Sơ đồ cây thư mục thiết kế của mạch UART Tiêu chuẩn Tích hợp Bảo mật Trivium"></p>
+                                </div>                         
+                            
+                            <h4 data-en="1. Trivium Security Engine" data-vi="1. Lõi Bảo mật Trivium"></h4>
+                            <p data-en="A hardware-efficient implementation of the Trivium cipher was designed in Verilog. Its architecture features a core with three non-linear feedback shift registers (288 bits total) and a flexible interface layer. This layer supports a 32-bit bus for high-throughput Key/IV loading and an 8-bit bus for byte-oriented data processing, synchronized via a handshaking mechanism."
+                               data-vi="Một phiên bản triển khai hiệu quả về phần cứng của mật mã Trivium đã được thiết kế bằng Verilog. Kiến trúc của nó bao gồm một lõi với ba thanh ghi dịch hồi tiếp phi tuyến (tổng cộng 288 bit) và một lớp giao diện linh hoạt. Lớp này hỗ trợ một bus 32-bit để nạp Key/IV thông lượng cao và một bus 8-bit để xử lý dữ liệu theo byte, được đồng bộ hóa thông qua cơ chế bắt tay."></p>
+                             <div class="image-wrapper">
+                                <img src="../img/uart_triv1.png" alt="Architectural Block Diagram of the Trivium Engine" class="zoomable-image" style="width:60%;">
+                                <p class="image-caption" data-en="Architectural Block Diagram of the Trivium Engine" data-vi="Sơ đồ khối Kiến trúc của Lõi Trivium"></p>
+                            </div>
+
+                            <h4 data-en="2. 16550-Compliant UART Core" data-vi="2. Lõi UART Tương thích Chuẩn 16550"></h4>
+                            <p data-en="A standard UART core, compliant with the 16550 specification, was designed. It includes a configurable baud rate generator, parallel-to-serial/serial-to-parallel converters, and FIFO buffers for both transmission (TX) and reception (RX)."
+                               data-vi="Một lõi UART tiêu chuẩn, tương thích với đặc tả 16550, đã được thiết kế. Nó bao gồm một bộ tạo tốc độ baud có thể cấu hình, các bộ chuyển đổi song song-nối tiếp/nối tiếp-song song, và các bộ đệm FIFO cho cả việc truyền (TX) và nhận (RX)."></p>
+                                <div class="image-wrapper">
+                                    <img src="../img/uart_triv2.png" alt="Architectural Block Diagram of the UART IP core" class="zoomable-image" style="width:90%;">
+                                    <p class="image-caption" data-en="Architectural Block Diagram of the UART IP core" data-vi="Sơ đồ khối Kiến trúc của Lõi UART tiêu chuẩn với FIFO và các thanh ghi điều khiển"></p>
+                                </div>
+                            <hr>
+
+                            <h3 data-en="Top-Level System Integration" data-vi="Tích hợp Hệ thống Cấp cao"></h3>
+                            <p data-en="The UART and Trivium modules were integrated under the control of a central Master Finite State Machine (FSM). This FSM orchestrates all operations and solves key architectural challenges:"
+                               data-vi="Các module UART và Trivium được tích hợp dưới sự điều khiển của một Máy Trạng thái Hữu hạn Chủ (Master FSM) trung tâm. Master FSM này điều phối tất cả các hoạt động và giải quyết các thách thức kiến trúc chính:"></p>
+                            <div class="image-wrapper">
+                                <img src="../img/uart_triv3.png" alt="Top-Level Block Diagram of the Integrated Secure UART System" class="zoomable-image" style="width:85%;">
+                                <p class="image-caption" data-en="Top-Level Block Diagram of the Secure UART" data-vi="Sơ đồ khối Cấp cao của UART Bảo mật"></p>
+                            </div>
+
+                            <h4 data-en="Solution for Initialization Latency" data-vi="Giải pháp cho Độ trễ Khởi tạo"></h4>
+                            <p data-en="To mitigate the Trivium's 1152-cycle warm-up latency, the Master FSM implements <strong>parallel initialization</strong>. It triggers the Trivium's warm-up and simultaneously uses this 'dead time' to configure the UART's registers, effectively hiding the UART setup time and reducing the system's 'time-to-first-byte'."
+                               data-vi="Để giảm thiểu độ trễ 1152 chu kỳ khởi động của Trivium, Master FSM triển khai <strong>khởi tạo song song</strong>. Nó kích hoạt quá trình warm-up của Trivium và đồng thời sử dụng 'thời gian chết' này để cấu hình các thanh ghi của UART, 'che giấu' hiệu quả thời gian thiết lập UART và giảm 'thời gian đến byte đầu tiên' của hệ thống."></p>
+
+                            <h4 data-en="Solution for Architectural Placement" data-vi="Giải pháp về Vị trí Kiến trúc"></h4>
+                            <p data-en="The Trivium engine was strategically placed <strong>before</strong> the UART's TX FIFO (Host → Trivium → TX FIFO). This <strong>pre-FIFO encryption</strong> architecture enhances security (on-chip memory holds only ciphertext), simplifies control logic, and improves system throughput by enabling a pipelined data flow."
+                               data-vi="Lõi Trivium được đặt một cách chiến lược <strong>trước</strong> bộ đệm TX FIFO của UART (Host → Trivium → TX FIFO). Kiến trúc <strong>mã hóa trước FIFO</strong> này tăng cường bảo mật (bộ nhớ trên chip chỉ chứa bản mã), đơn giản hóa logic điều khiển, và cải thiện thông lượng hệ thống bằng cách cho phép luồng dữ liệu xử lý song song (pipeline)."></p>
+
+                            <h3 data-en="Simulation Results" data-vi="Kết quả Mô phỏng"></h3>
+                            <p data-en="The integrated system was thoroughly simulated in ModelSim/QuestaSim, verifying both the encryption/transmission and reception/decryption data paths."
+                               data-vi="Hệ thống tích hợp đã được mô phỏng kỹ lưỡng trong ModelSim/QuestaSim, xác minh cả đường đi dữ liệu mã hóa/truyền và nhận/giải mã."></p>
+                            <div class="image-wrapper">
+                                <img src="../img/uart_triv4.png" alt="Simulation waveform of encryption and transmission" class="zoomable-image" style="width:70%;">
+                                <img src="../img/uart_triv5.png" alt="Simulation waveform of encryption and transmission" class="zoomable-image" style="width:70%;">
+                                <img src="../img/uart_triv6.png" alt="Simulation waveform of encryption and transmission" class="zoomable-image" style="width:70%;">
+                                <p class="image-caption" data-en="Encryption & Transmission Waveform." data-vi="Dạng sóng Mã hóa & Truyền."></p>
+                             </div>   
+
+                            <div class="image-wrapper">
+                                <img src="../img/uart_triv7.png" alt="Simulation waveform of reception and decryption" class="zoomable-image" style="width:70%;">
+                                <img src="../img/uart_triv8.png" alt="Simulation waveform of reception and decryption" class="zoomable-image" style="width:70%;">
+                                <img src="../img/uart_triv9.png" alt="Simulation waveform of reception and decryption" class="zoomable-image" style="width:70%;">
+                                <p class="image-caption" data-en="Reception & Decryption Waveform." data-vi="Dạng sóng Nhận & Giải mã."></p>
+                            </div>
+                             <div class="project-resources mt-4 mb-4">
+                                <h4 data-en="Project Resources" data-vi="Tài nguyên Dự án"></h4>
+                                <a href="https://drive.google.com/file/d/1DVeNpHAVJdIvBpHSaIpWcjFYKQ8hsFE5/view?usp=sharing" target="_blank" class="btn btn-outline-primary mr-2"
+                                   data-en="<i class='far fa-file-pdf mr-1'></i> View Full Report (PDF)"
+                                   data-vi="<i class='far fa-file-pdf mr-1'></i> Xem Báo cáo Đầy đủ (PDF)"></a>
+                                <a href="https://drive.google.com/file/d/17iQ-MlUZ_cdOFRffHJL7Imyb0_IwJOF7/view?usp=sharing"
+                                 target="_blank" class="btn btn-outline-primary"
+                                   data-en="<i class='fas fa-file-powerpoint mr-1'></i> View Full Slide (PPT)"
+                                   data-vi="<i class='fas fa-file-powerpoint mr-1'></i> Xem Slide Đầy đủ (PPT)"></a>
+                            </div>
+                            
+                        </div>
+                        <a href="../index.html#projects" class="btn btn-primary mt-5" data-en="← Back to All Projects" data-vi="← Quay lại Tất cả Dự án"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- PART 4: Footer and Modal                                            -->
+    <!-- =================================================================== -->
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+                <p class="copyright-license-text" data-en="© 2025 Ninh Doan Nhat. All Rights Reserved." data-vi="© 2025 Ninh Doan Nhat. Bảo lưu mọi quyền."></p>
+                <p class="footer-social-icons">
+                    <a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nin_nichi_dnn/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/NinNichiCode" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </p>
+                <p class="powered-by" data-en="Design inspired by Wowchemy" data-vi="Thiết kế lấy cảm hứng từ Wowchemy"></p>
+            </footer>
+        </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close-modal">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- PART 5: Scripts                                                     -->
+    <!-- =================================================================== -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

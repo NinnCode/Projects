@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-vn"> 
+
+<head>
+    <!-- =================================================================== -->
+    <!-- PART 1                                                              -->
+    <!-- =================================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+        media="print" onload='this.media="all"'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous" media="print" onload='this.media="all"'>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEN4X51SZF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } function trackOutboundLink(e, t) { gtag("event", "click", { event_category: "outbound", event_label: e, transport_type: "beacon", event_callback: function () { t !== "_blank" && (document.location = e) } }), console.debug("Outbound link clicked: " + e) } function onClickCallback(e) { if (e.target.tagName !== "A" || e.target.host === window.location.host) return; trackOutboundLink(e.target, e.target.getAttribute("target")) } gtag("js", new Date), gtag("config", "G-XEN4X51SZF", {}), gtag("set", { cookie_flags: "SameSite=None;Secure" }), document.addEventListener("click", onClickCallback, !1)
+    </script>
+    <meta name="author" content="Nin">
+    <meta name="description" content="Student in HCMUS VNU-HCM">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32.png?text=Icon">
+    <link rel="apple-touch-icon" type="image/png" href="https://via.placeholder.com/180x180.png?text=Icon">
+    <meta name="theme-color" content="#1565c0">
+    <meta property="og:site_name" content="Academic">
+    <meta property="og:title" content="Nin Nichi | Academic">
+    <meta property="og:description" content="Student in ISE and Computing">
+    <meta property="og:locale" content="en-vn"> 
+    <meta property="og:updated_time" content="2023-01-27T00:00:00+00:00">
+    <title>Project: MOSFET Audio Amplifier | Nin Nichi</title> <!-- Thay đổi: Cập nhật Title -->
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark-mode">
+
+    <!-- =================================================================== -->
+    <!-- PART 2: Header with Language Switcher                             -->
+    <!-- =================================================================== -->
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item"><a class="nav-link" href="../index.html#about"><span data-en="Home" data-vi="Trang chủ"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#experience"><span data-en="Experience" data-vi="Kinh nghiệm"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#accomplishments"><span data-en="Accomplishments" data-vi="Thành tựu"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#projects"><span data-en="Projects" data-vi="Dự án"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#activities"><span data-en="Other Activities" data-vi="Hoạt động khác"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#contact"><span data-en="Contact" data-vi="Liên hệ"></span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- THÊM MỚI: Nút chuyển đổi ngôn ngữ -->
+                    <div id="language-switcher" class="nav-item d-flex align-items-center">
+                        <button id="lang-vi" class="lang-btn active">VIE</button>
+                        <span class="text-white mx-1">|</span>
+                        <button id="lang-en" class="lang-btn">ENG</button>
+                    </div>
+
+                    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                        <li class="nav-item">
+                            <a id="dark-mode-toggler" class="nav-link" href="#" title="Toggle Dark Mode"
+                                aria-label="Toggle Dark Mode">
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!-- =================================================================== -->
+    <!--                      Main Content (Translated)                      -->
+    <!-- =================================================================== -->
+    <div class="page-body">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article-container">
+                        <h1 style="text-align: center;" data-en="MOSFET Audio Amplifier and Power Supply Design" data-vi="Thiết kế Bộ khuếch đại Âm thanh MOSFET và Nguồn cấp"></h1>
+                        <div class="article-style">
+                            <p data-en="<strong>Final Course Project – Electronic Circuit Design</strong><br><strong>Team size:</strong> 2 <br><strong>My primary role:</strong> Audio Amplifier Circuit Designer"
+                               data-vi="<strong>Đồ án Cuối kỳ – Thiết kế Mạch Điện tử</strong><br><strong>Quy mô nhóm:</strong> 2 <br><strong>Vai trò chính:</strong> Người thiết kế Mạch Khuếch đại Âm thanh"></p>
+
+                            <h3 data-en="Project Objective" data-vi="Mục tiêu Dự án"></h3>
+                            <p data-en="This capstone project for the Electronic Circuit Design course required the practical application of MOSFET knowledge. The project was divided into two core parts: designing a stable dual power supply and designing a MOSFET-based audio amplifier to be powered by it."
+                               data-vi="Đồ án cuối kỳ cho môn Thiết kế Mạch Điện tử này yêu cầu ứng dụng thực tế kiến thức về MOSFET. Dự án được chia thành hai phần cốt lõi: thiết kế một bộ nguồn đôi ổn định và thiết kế một bộ khuếch đại âm thanh dựa trên MOSFET để được cấp nguồn từ nó."></p>
+
+                            <h3 data-en="Design & Implementation Process" data-vi="Quy trình Thiết kế & Triển khai"></h3>
+                            <p data-en="The project followed a standard hardware design workflow:"
+                               data-vi="Dự án tuân theo một quy trình thiết kế phần cứng tiêu chuẩn:"></p>
+                            <ol>
+                                <li data-en="<strong>Research and Simulation:</strong> Both the dual power supply and the amplifier circuits were first researched, designed, and simulated in <strong>Proteus</strong> to verify their theoretical performance."
+                                    data-vi="<strong>Nghiên cứu và Mô phỏng:</strong> Cả mạch nguồn đôi và mạch khuếch đại đều được nghiên cứu, thiết kế và mô phỏng trong <strong>Proteus</strong> trước tiên để xác minh hiệu suất lý thuyết của chúng."></li>
+                                <div class="image-wrapper">
+                                    <p data-en="A. Dual power supply" data-vi="A. Nguồn đôi"></p>
+                                    <img src="../img/Amplifier1.png" alt="Dual power supply circuit simulation in Proteus" class="zoomable-image" style="width:50%;">
+                                    <img src="../img/Amplifier2.png" alt="Dual power supply circuit simulation in Proteus" class="zoomable-image" style="width:40%;">
+                                    <img src="../img/Amplifier3.png" alt="Dual power supply circuit simulation in Proteus" class="zoomable-image" style="width:30%;">
+                                </div>
+                                <br>
+                                <div class="image-wrapper">
+                                    <p data-en="B. Audio Amplifier" data-vi="B. Bộ khuếch đại Âm thanh"></p>
+                                    <img src="../img/Amplifier8.png" alt="Audio amplifier circuit simulation in Proteus" class="zoomable-image" style="width:40%;">
+                                    <img src="../img/Amplifier9.png" alt="Audio amplifier circuit simulation in Proteus" class="zoomable-image" style="width:40%;">
+                                    <img src="../img/Amplifier10.png" alt="Audio amplifier circuit simulation in Proteus" class="zoomable-image" style="width:40%;">
+                                </div>
+
+                                <li data-en="<strong>Prototyping:</strong> The simulated circuits were then built on a breadboard for real-world testing and validation of the results."
+                                    data-vi="<strong>Tạo mẫu:</strong> Các mạch đã mô phỏng sau đó được lắp ráp trên breadboard để kiểm tra trong thực tế và xác thực kết quả."></li>
+                                <li data-en="<strong>PCB Design:</strong> Finally, custom PCBs were designed for both circuits to ensure stable operation, minimize noise, and create a robust final product."
+                                    data-vi="<strong>Thiết kế PCB:</strong> Cuối cùng, các mạch PCB tùy chỉnh đã được thiết kế cho cả hai mạch để đảm bảo hoạt động ổn định, giảm thiểu nhiễu và tạo ra một sản phẩm cuối cùng bền vững."></li>
+                            </ol>
+                            <div class="image-wrapper">
+                                <p data-en="A. Dual power supply" data-vi="A. Nguồn đôi"></p>
+                                <img src="../img/Amplifier4.png" alt="PCB Dual power supply circuit simulation in Proteus" class="zoomable-image" style="width:35%;">
+                                <img src="../img/Amplifier5.png" alt="PCB Dual power supply circuit simulation in Proteus" class="zoomable-image" style="width:35%;">
+                                <img src="../img/Amplifier6.png" alt="PCB Dual power supply circuit simulation in Proteus" class="zoomable-image" style="width:35%;">
+                                <img src="../img/Amplifier7.png" alt="PCB Dual power supply circuit simulation in Proteus" class="zoomable-image" style="width:35%;">
+                            </div>
+                            <div class="image-wrapper">
+                                <p data-en="B. Audio Amplifier" data-vi="B. Bộ khuếch đại Âm thanh"></p>
+                                <img src="../img/Amplifier11.png" alt="PCB Audio Amplifier circuit simulation in Proteus" class="zoomable-image" style="width:30%;">
+                                <img src="../img/Amplifier12.png" alt="PCB Audio Amplifier circuit simulation in Proteus" class="zoomable-image" style="width:35%;">
+                                <img src="../img/Amplifier13.png" alt="PCB Audio Amplifier circuit simulation in Proteus" class="zoomable-image" style="width:35%;">
+                                <img src="../img/Amplifier15.png" alt="PCB Audio Amplifier circuit simulation in Proteus" class="zoomable-image" style="width:35%;">
+                            </div>
+
+                            <h3 data-en="My Contributions & Technical Details" data-vi="Đóng góp & Chi tiết Kỹ thuật"></h3>
+                            <p data-en="My main responsibility was the design of the audio amplifier circuit. The process included:"
+                               data-vi="Trách nhiệm chính của tôi là thiết kế mạch khuếch đại âm thanh. Quá trình này bao gồm:"></p>
+                            <ul data-en="<li>Researching and simulating a <strong>50W MOSFET-based audio amplifier</strong> circuit in Proteus.</li><li>Designing the PCB layout for the amplifier, focusing on optimal component placement and trace routing to reduce signal interference.</li><li>Integrating the amplifier with the team's custom-designed dual power supply for testing.</li>"
+                                data-vi="<li>Nghiên cứu và mô phỏng mạch <strong>khuếch đại âm thanh 50W dựa trên MOSFET</strong> trong Proteus.</li><li>Thiết kế layout PCB cho bộ khuếch đại, tập trung vào việc bố trí linh kiện tối ưu và định tuyến đường mạch để giảm nhiễu tín hiệu.</li><li>Tích hợp bộ khuếch đại với bộ nguồn đôi do nhóm tự thiết kế để kiểm tra.</li>"></ul>
+
+                            <h3 data-en="Results & Technical Pivot" data-vi="Kết quả & Chuyển hướng Kỹ thuật"></h3>
+                            <p data-en="During testing, we discovered that the custom-built dual power supply was not stable enough to reliably drive the 50W amplifier to its full potential. Faced with this challenge, I adapted the approach."
+                               data-vi="Trong quá trình thử nghiệm, chúng tôi phát hiện ra rằng bộ nguồn đôi tự chế tạo không đủ ổn định để cấp nguồn đáng tin cậy cho bộ khuếch đại 50W hoạt động hết công suất. Đối mặt với thách thức này, tôi đã điều chỉnh phương pháp tiếp cận."></p>
+
+                            <blockquote class="blockquote">
+                                <p class="mb-0" data-en="'Instead of abandoning the core objective, I pivoted to a simpler, more achievable design: a <strong>Class-A audio amplifier</strong>. This linear design runs with continuous current through the MOSFET and does not require a dual power supply.'"
+                                             data-vi="'Thay vì từ bỏ mục tiêu cốt lõi, tôi đã chuyển hướng sang một thiết kế đơn giản và khả thi hơn: một <strong>bộ khuếch đại âm thanh Class-A</strong>. Thiết kế tuyến tính này hoạt động với dòng điện liên tục qua MOSFET và không yêu cầu nguồn đôi.'"></p>
+                            </blockquote>
+
+                            <p data-en="This revised circuit, while lower in power, successfully demonstrated the core principles of MOSFET amplification. It is a design commonly used in simpler, high-fidelity applications like headphone amplifiers or for demonstrating fundamental concepts."
+                               data-vi="Mạch được sửa đổi này, mặc dù có công suất thấp hơn, đã trình bày thành công các nguyên tắc cốt lõi của việc khuếch đại bằng MOSFET. Đây là một thiết kế thường được sử dụng trong các ứng dụng đơn giản, có độ trung thực cao như bộ khuếch đại tai nghe hoặc để minh họa các khái niệm cơ bản."></p>
+
+                            <div class="video-wrapper" style="text-align: center; margin: 20px 0;">
+                                <video controls style="width:15%; border-radius: 10px;">
+                                    <source src="../video/aplifier_vid1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div>
+                                <h4 class="alert-heading" data-en="<i class='fas fa-check-circle mr-2'></i>Project Outcome" data-vi="<i class='fas fa-check-circle mr-2'></i>Kết quả Dự án"></h4>
+                                <p data-en="Although the initial 50W amplifier was not fully realized due to power supply limitations, the project was highly praised by the instructor for the extensive research, the problem-solving process, and the successful implementation of the alternative Class-A amplifier. The project received a high grade, acknowledging the significant learning and technical exploration involved."
+                                   data-vi="Mặc dù bộ khuếch đại 50W ban đầu không được thực hiện đầy đủ do hạn chế về nguồn cấp, dự án đã được giảng viên đánh giá cao về phần nghiên cứu sâu rộng, quá trình giải quyết vấn đề và việc triển khai thành công bộ khuếch đại Class-A thay thế. Đồ án đã nhận được điểm cao, ghi nhận quá trình học hỏi và khám phá kỹ thuật đáng kể."></p>
+                            </div>
+
+                        </div>
+                        <a href="../index.html#projects" class="btn btn-primary mt-5" data-en="← Back to All Projects" data-vi="← Quay lại Tất cả Dự án"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =================================================================== -->
+    <!-- PART 4                                                              -->
+    <!-- =================================================================== -->
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+
+                <p class="copyright-license-text" data-en="© 2025 Ninh Doan Nhat. All Rights Reserved." data-vi="© 2025 Ninh Doan Nhat. Bảo lưu mọi quyền."></p>
+                <p class="footer-social-icons">
+                    <a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nin_nichi_dnn/" target="_blank" rel="noopener"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/NinNichiCode" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                </p>
+                <p class="powered-by" data-en="Design inspired by Wowchemy" data-vi="Thiết kế lấy cảm hứng từ Wowchemy"></p>
+            </footer>
+        </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close-modal">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

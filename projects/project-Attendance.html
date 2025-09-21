@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-vn">
+
+<head>
+    <!-- =================================================================== -->
+    <!-- PART 1                                                              -->
+    <!-- =================================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+        media="print" onload='this.media="all"'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous" media="print" onload='this.media="all"'>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEN4X51SZF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } function trackOutboundLink(e, t) { gtag("event", "click", { event_category: "outbound", event_label: e, transport_type: "beacon", event_callback: function () { t !== "_blank" && (document.location = e) } }), console.debug("Outbound link clicked: " + e) } function onClickCallback(e) { if (e.target.tagName !== "A" || e.target.host === window.location.host) return; trackOutboundLink(e.target, e.target.getAttribute("target")) } gtag("js", new Date), gtag("config", "G-XEN4X51SZF", {}), gtag("set", { cookie_flags: "SameSite=None;Secure" }), document.addEventListener("click", onClickCallback, !1)
+    </script>
+    <meta name="author" content="Nin">
+    <meta name="description" content="Student in HCMUS VNU-HCM">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32.png?text=Icon">
+    <link rel="apple-touch-icon" type="image/png" href="https://via.placeholder.com/180x180.png?text=Icon">
+    <meta name="theme-color" content="#1565c0">
+    <meta property="og:site_name" content="Academic">
+    <meta property="og:title" content="Nin Nichi | Academic">
+    <meta property="og:description" content="Student in ISE and Computing">
+    <meta property="og:locale" content="en-vn"> 
+    <meta property="og:updated_time" content="2023-01-27T00:00:00+00:00">
+    <title>Project: QR Code Attendance App | Nin Nichi</title> <!-- Thay đổi: Cập nhật Title -->
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark-mode">
+
+    <!-- =================================================================== -->
+    <!-- PART 2: Header with Language Switcher                             -->
+    <!-- =================================================================== -->
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item"><a class="nav-link" href="../index.html#about"><span data-en="Home" data-vi="Trang chủ"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#experience"><span data-en="Experience" data-vi="Kinh nghiệm"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#accomplishments"><span data-en="Accomplishments" data-vi="Thành tựu"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#projects"><span data-en="Projects" data-vi="Dự án"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#activities"><span data-en="Other Activities" data-vi="Hoạt động khác"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#contact"><span data-en="Contact" data-vi="Liên hệ"></span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- THÊM MỚI: Nút chuyển đổi ngôn ngữ -->
+                    <div id="language-switcher" class="nav-item d-flex align-items-center">
+                        <button id="lang-vi" class="lang-btn active">VIE</button>
+                        <span class="text-white mx-1">|</span>
+                        <button id="lang-en" class="lang-btn">ENG</button>
+                    </div>
+
+                    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                        <li class="nav-item">
+                            <a id="dark-mode-toggler" class="nav-link" href="#" title="Toggle Dark Mode"
+                                aria-label="Toggle Dark Mode">
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- =================================================================== -->
+    <!--                      Main Content (Translated)                      -->
+    <!-- =================================================================== -->
+    <div class="page-body">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article-container">
+                        <h1 style="text-align: center;" data-en="QR Code Attendance App" data-vi="Ứng dụng Điểm danh bằng Mã QR"></h1>
+                        <div class="article-style">
+                            <p data-en="<strong>Personal Project</strong> | Python-based Application for Education<br><strong>Role:</strong> Individual Developer"
+                               data-vi="<strong>Dự án Cá nhân</strong> | Ứng dụng Giáo dục dựa trên Python<br><strong></p>
+
+                            <p data-en="This project introduces a QR code-based solution for student attendance, designed to assist lecturers in quickly recording attendance without manual roll calls or additional scanning hardware."
+                               data-vi="Dự án này giới thiệu một giải pháp điểm danh sinh viên dựa trên mã QR, được thiết kế để hỗ trợ giảng viên ghi nhận điểm danh nhanh chóng mà không cần điểm danh thủ công hay các thiết bị quét bổ sung."></p>
+                            
+                            <h3 data-en="Features and Workflow" data-vi="Tính năng và Quy trình hoạt động"></h3>
+
+                            <h4 data-en="Step 1: Generate Student QR Code" data-vi="Bước 1: Tạo Mã QR cho Sinh viên"></h4>
+                            <ul data-en="<li>Open the app and navigate to <strong>“Generate QR Code”</strong>.
+                                    <div class='image-wrapper'><img src='../img/Attendance1.png' alt='QR Code Generation Interface' class='zoomable-image' style='width:35%;'></div>
+                                </li>
+                                <li>Input <strong>Student ID</strong> and <strong>Full Name</strong> following the required format.</li>
+                                <li>Click the button to generate a unique QR code.
+                                    <div class='image-wrapper'><img src='../img/Attendance2.png' alt='Generated QR Code Example' class='zoomable-image' style='width:30%;'></div>
+                                </li>
+                                <li>Students can save the QR image (e.g., by taking a photo) for future use.</li>"
+                                data-vi="<li>Mở ứng dụng và chọn mục <strong>“Tạo Mã QR”</strong>.
+                                    <div class='image-wrapper'><img src='../img/Attendance1.png' alt='QR Code Generation Interface' class='zoomable-image' style='width:35%;'></div>
+                                </li>
+                                <li>Nhập <strong>Mã số Sinh viên</strong> và <strong>Họ và Tên</strong> theo định dạng yêu cầu.</li>
+                                <li>Nhấn nút để tạo một mã QR duy nhất.
+                                    <div class='image-wrapper'><img src='../img/Attendance2.png' alt='Generated QR Code Example' class='zoomable-image' style='width:30%;'></div>
+                                </li>
+                                <li>Sinh viên có thể lưu lại hình ảnh mã QR (ví dụ: chụp ảnh màn hình) để sử dụng cho các lần sau.</li>"></ul>
+
+                            <h4 data-en="Step 2: Scan QR Code for Attendance" data-vi="Bước 2: Quét Mã QR để Điểm danh"></h4>
+                            <ul data-en="<li>During class, the lecturer clicks on <strong>“Scan QR Code”</strong> to start the camera.
+                                    <div class='image-wrapper'><img src='../img/Attendance3.png' alt='QR Code Scanning Interface' class='zoomable-image' style='width:45%;'></div>
+                                </li>
+                                <li>Students present their QR code to the webcam.
+                                    <div class='image-wrapper'><img src='../img/Attendance4.png' alt='Scanning a QR Code' class='zoomable-image' style='width:40%;'><img src='../img/Attendance5.png' alt='Successful Scan' class='zoomable-image' style='width:40%;'></div>
+                                    <div class='image-wrapper'><img src='../img/Attendance6.png' alt='Attendance Confirmation' class='zoomable-image' style='width:47%;'></div>
+                                </li>
+                                <li>The application detects and decodes the QR code in real-time.</li>"
+                                data-vi="<li>Trong giờ học, giảng viên nhấn vào <strong>“Quét Mã QR”</strong> để khởi động camera.
+                                    <div class='image-wrapper'><img src='../img/Attendance3.png' alt='QR Code Scanning Interface' class='zoomable-image' style='width:45%;'></div>
+                                </li>
+                                <li>Sinh viên đưa mã QR của mình ra trước webcam.
+                                    <div class='image-wrapper'><img src='../img/Attendance4.png' alt='Scanning a QR Code' class='zoomable-image' style='width:40%;'><img src='../img/Attendance5.png' alt='Successful Scan' class='zoomable-image' style='width:40%;'></div>
+                                    <div class='image-wrapper'><img src='../img/Attendance6.png' alt='Attendance Confirmation' class='zoomable-image' style='width:47%;'></div>
+                                </li>
+                                <li>Ứng dụng sẽ phát hiện và giải mã mã QR theo thời gian thực.</li>"></ul>
+
+                            <h4 data-en="Step 3: Record Attendance" data-vi="Bước 3: Ghi nhận Điểm danh"></h4>
+                            <ul data-en="<li>Upon successful scanning, the app displays a confirmation message with student info.</li>
+                                <li>All attendance records are saved in a <code>.csv</code> file for future tracking.
+                                    <div class='image-wrapper'><img src='../img/Attendance7.png' alt='CSV File Example 1' class='zoomable-image' style='width:45%;'><img src='../img/Attendance8.png' alt='CSV File Example 2' class='zoomable-image' style='width:45%;'></div>
+                                </li>"
+                                data-vi="<li>Sau khi quét thành công, ứng dụng sẽ hiển thị thông báo xác nhận cùng với thông tin sinh viên.</li>
+                                <li>Tất cả các bản ghi điểm danh được lưu vào một file <code>.csv</code> để theo dõi sau này.
+                                    <div class='image-wrapper'><img src='../img/Attendance7.png' alt='CSV File Example 1' class='zoomable-image' style='width:45%;'><img src='../img/Attendance8.png' alt='CSV File Example 2' class='zoomable-image' style='width:45%;'></div>
+                                </li>"></ul>
+
+                            <h3 data-en="Technologies Used" data-vi="Công nghệ sử dụng"></h3>
+                            <ul>
+                                <li><strong>Python</strong> – Logic ứng dụng</li>
+                                <li><code>OpenCV</code> – Xử lý camera thời gian thực và phát hiện QR</li>
+                                <li><code>qrcode</code> – Tạo mã QR</li>
+                                <li><code>Tkinter</code> – Giao diện đồ họa người dùng</li>
+                                <li><code>csv</code> – Lưu trữ dữ liệu điểm danh</li>
+                            </ul>
+
+                            <h3 data-en="Highlights" data-vi="Điểm nổi bật"></h3>
+                            <ul data-en="<li>No external scanner required – a standard webcam is sufficient.</li><li>Lightweight and easy to use for both teachers and students.</li><li>Reduces time spent on traditional roll-call methods.</li>"
+                                data-vi="<li>Không yêu cầu máy quét ngoài – chỉ cần một webcam tiêu chuẩn là đủ.</li><li>Gọn nhẹ và dễ sử dụng cho cả giảng viên và sinh viên.</li><li>Giảm thời gian dành cho các phương pháp điểm danh truyền thống.</li>"></ul>
+
+                            <h3 data-en="Future Enhancements" data-vi="Các cải tiến trong tương lai"></h3>
+                            <ul data-en="<li>Restrict duplicate check-ins using timestamps or class codes.</li><li>Add teacher login and class session management features.</li><li>Integrate with a centralized database or cloud system.</li>"
+                                data-vi="<li>Hạn chế điểm danh trùng lặp bằng cách sử dụng dấu thời gian hoặc mã lớp học.</li><li>Thêm tính năng đăng nhập cho giảng viên và quản lý buổi học.</li><li>Tích hợp với cơ sở dữ liệu tập trung hoặc hệ thống đám mây.</li>"></ul>
+                            
+                        </div>
+                        <a href="../index.html#projects" class="btn btn-primary mt-5" data-en="← Back to All Projects" data-vi="← Quay lại Tất cả Dự án"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =================================================================== -->
+    <!-- PART 4                                                              -->
+    <!-- =================================================================== -->
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+
+                <p class="copyright-license-text" data-en="© 2025 Ninh Doan Nhat. All Rights Reserved." data-vi="© 2025 Ninh Doan Nhat. Bảo lưu mọi quyền."></p>
+                <p class="footer-social-icons">
+                    <a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nin_nichi_dnn/" target="_blank" rel="noopener"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/NinNichiCode" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                </p>
+                <p class="powered-by" data-en="Design inspired by Wowchemy" data-vi="Thiết kế lấy cảm hứng từ Wowchemy"></p>
+
+            </footer>
+        </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close-modal">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

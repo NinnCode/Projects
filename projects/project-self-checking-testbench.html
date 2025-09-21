@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-vn">
+
+<head>
+    <!-- =================================================================== -->
+    <!-- PART 1: Head Section                                              -->
+    <!-- =================================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+        media="print" onload='this.media="all"'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous" media="print" onload='this.media="all"'>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEN4X51SZF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } function trackOutboundLink(e, t) { gtag("event", "click", { event_category: "outbound", event_label: e, transport_type: "beacon", event_callback: function () { t !== "_blank" && (document.location = e) } }), console.debug("Outbound link clicked: " + e) } function onClickCallback(e) { if (e.target.tagName !== "A" || e.target.host === window.location.host) return; trackOutboundLink(e.target, e.target.getAttribute("target")) } gtag("js", new Date), gtag("config", "G-XEN4X51SZF", {}), gtag("set", { cookie_flags: "SameSite=None;Secure" }), document.addEventListener("click", onClickCallback, !1)
+    </script>
+    <meta name="author" content="Nin">
+    <meta name="description" content="Student in HCMUS VNU-HCM">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32.png?text=Icon">
+    <link rel="apple-touch-icon" type="image/png" href="https://via.placeholder.com/180x180.png?text=Icon">
+    <meta name="theme-color" content="#1565c0">
+    <meta property="og:site_name" content="Academic">
+    <meta property="og:title" content="Nin Nichi | Academic">
+    <meta property="og:description" content="Student in ISE and Computing">
+    <meta property="og:locale" content="en-vn">
+    <meta property="og:updated_time" content="2023-01-27T00:00:00+00:00">
+    <title>Project: ALU with Self-Checking Testbench | Nin Nichi</title>
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark-mode">
+
+    <!-- =================================================================== -->
+    <!-- PART 2: Header with Language Switcher                             -->
+    <!-- =================================================================== -->
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item"><a class="nav-link" href="../index.html#about"><span data-en="Home" data-vi="Trang chủ"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#experience"><span data-en="Experience" data-vi="Kinh nghiệm"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#accomplishments"><span data-en="Accomplishments" data-vi="Thành tựu"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#projects"><span data-en="Projects" data-vi="Dự án"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#activities"><span data-en="Other Activities" data-vi="Hoạt động khác"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#contact"><span data-en="Contact" data-vi="Liên hệ"></span></a></li>
+                        </ul>
+                    </div>
+                    <div id="language-switcher" class="nav-item d-flex align-items-center">
+                        <button id="lang-vi" class="lang-btn active">VIE</button>
+                        <span class="text-white mx-1">|</span>
+                        <button id="lang-en" class="lang-btn">ENG</button>
+                    </div>
+                    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                        <li class="nav-item">
+                            <a id="dark-mode-toggler" class="nav-link" href="#" title="Toggle Dark Mode"
+                                aria-label="Toggle Dark Mode">
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- =================================================================== -->
+    <!--                      Main Content (Translated)                      -->
+    <!-- =================================================================== -->
+    <div class="page-body">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article-container">
+                        <h1 style="text-align: center;" data-en="Verifying an 8-bit ALU with a Self-Checking Testbench and Golden Model" data-vi="Kiểm tra ALU 8-bit với Testbench Tự kiểm tra và Golden Model"></h1>
+                        <div class="article-style">
+                            <p data-en="<strong>Personal Project – VLSI Verification Methodology</strong><br><strong>Tools:</strong> Verilog, SystemVerilog, QuestaSim"
+                               data-vi="<strong>Dự án Cá nhân – Phương pháp luận Kiểm tra VLSI</strong><br><strong>Công cụ:</strong> Verilog, SystemVerilog, QuestaSim"></p>
+
+                            <h3 data-en="1. Project Overview & The Role of the Golden Model" data-vi="1. Tổng quan Dự án & Vai trò của Golden Model"></h3>
+                            <p data-en="This project demonstrates a fundamental concept in VLSI verification: the use of a <strong>self-checking testbench</strong> with a <strong>Golden Model</strong> to automate the verification of an 8-bit Arithmetic Logic Unit (ALU). Instead of manually checking thousands of test cases, this approach provides a reliable and efficient way to detect design flaws."
+                               data-vi="Dự án này minh họa một khái niệm cơ bản trong kiểm tra VLSI: sử dụng một <strong>testbench tự kiểm tra</strong> với một <strong>Golden Model (Mô hình Vàng)</strong> để tự động hóa việc xác minh một Đơn vị Số học và Logic (ALU) 8-bit. Thay vì kiểm tra thủ công hàng ngàn trường hợp, phương pháp này cung cấp một cách đáng tin cậy và hiệu quả để phát hiện các lỗi thiết kế."></p>
+                            <p data-en="In the semiconductor industry, the RTL Team (designing the hardware) and the Verification Team (creating the Golden Model in C++/Python/SystemVerilog) work independently. This separation is crucial because:"
+                               data-vi="Trong ngành công nghiệp bán dẫn, Nhóm RTL (thiết kế phần cứng) và Nhóm Kiểm tra (tạo Golden Model bằng C++/Python/SystemVerilog) làm việc độc lập. Sự tách biệt này rất quan trọng vì:"></p>
+                            <ul data-en="<li><strong>Independent Verification:</strong> It provides a trusted, independent reference to catch bugs. If the DUT was simply a copy of the model, conceptual errors would go undetected.</li><li><strong>Different Optimizations:</strong> The DUT (Verilog) is optimized for hardware (pipelining, low power), while the Golden Model (SystemVerilog behavioral) focuses purely on functional correctness.</li>"
+                                data-vi="<li><strong>Kiểm tra Độc lập:</strong> Nó cung cấp một tham chiếu đáng tin cậy, độc lập để bắt lỗi. Nếu DUT chỉ là một bản sao của mô hình, các lỗi về mặt khái niệm sẽ không bị phát hiện.</li><li><strong>Tối ưu hóa Khác nhau:</strong> DUT (Verilog) được tối ưu hóa cho phần cứng (pipeline, năng lượng thấp), trong khi Golden Model (SystemVerilog behavioral) chỉ tập trung vào tính đúng đắn về chức năng.</li>"></ul>
+
+                            <h3 data-en="2. Design Under Test (DUT): The 8-bit ALU" data-vi="2. Thiết kế được Kiểm thử (DUT): ALU 8-bit"></h3>
+                            <p data-en="A standard 8-bit ALU was designed in Verilog. It supports the following operations:"
+                               data-vi="Một ALU 8-bit tiêu chuẩn được thiết kế bằng Verilog. Nó hỗ trợ các hoạt động sau:"></p>
+                            <ul data-en="<li><strong>Arithmetic Operations:</strong> Addition (with/without carry), Subtraction, Increment, Decrement.</li><li><strong>Logical Operations:</strong> AND, NOT.</li><li><strong>Bitwise Operations:</strong> Rotate Left, Rotate Right.</li>"
+                                data-vi="<li><strong>Phép toán Số học:</strong> Cộng (có/không có nhớ), Trừ, Tăng, Giảm.</li><li><strong>Phép toán Logic:</strong> AND, NOT.</li><li><strong>Phép toán Bit:</strong> Xoay Trái, Xoay Phải.</li>"></ul>
+                            
+                            <h3 data-en="3. Self-Checking Testbench Architecture" data-vi="3. Kiến trúc Testbench Tự kiểm tra"></h3>
+                            <p data-en="The SystemVerilog testbench was built with three key components:"
+                               data-vi="Testbench SystemVerilog được xây dựng với ba thành phần chính:"></p>
+                            <ol data-en="<li><strong>Stimulus Generation:</strong> A loop generates a large number of random test cases by randomizing the operands (<code>a</code>, <code>b</code>) and the <code>opcode</code> using Verilog's <code>$random</code> function.</li><li><strong>Golden Model (<code>model_ALU</code> function):</strong> An independent, behavioral model of the ALU written within the testbench. It takes the same inputs as the DUT and calculates the expected result based on pure functional logic.</li><li><strong>Comparator (<code>compare_data</code> function):</strong> After each random transaction, this function compares every output from the DUT (result, flags) against the outputs from the Golden Model. It increments a success or error counter and prints a clear PASS/FAIL message.</li>"
+                                data-vi="<li><strong>Tạo Kích thích:</strong> Một vòng lặp tạo ra số lượng lớn các trường hợp kiểm tra ngẫu nhiên bằng cách ngẫu nhiên hóa các toán hạng (<code>a</code>, <code>b</code>) và <code>opcode</code> bằng hàm <code>$random</code> của Verilog.</li><li><strong>Golden Model (hàm <code>model_ALU</code>):</strong> Một mô hình hành vi độc lập của ALU được viết trong testbench. Nó nhận cùng các đầu vào như DUT và tính toán kết quả mong đợi dựa trên logic chức năng thuần túy.</li><li><strong>Bộ so sánh (hàm <code>compare_data</code>):</strong> Sau mỗi giao dịch ngẫu nhiên, hàm này so sánh mọi đầu ra từ DUT (kết quả, cờ) với các đầu ra từ Golden Model. Nó tăng bộ đếm thành công hoặc lỗi và in ra thông báo PASS/FAIL rõ ràng.</li>">
+                            </ol> <!-- ĐÃ SỬA LỖI Ở ĐÂY -->
+                            
+                            <h3 data-en="4. Verification and Bug Detection" data-vi="4. Kiểm tra và Phát hiện Lỗi"></h3>
+                            <p data-en="To demonstrate the testbench's effectiveness, a deliberate bug was introduced into the DUT's addition logic: the <code>carry_out</code> flag was omitted. The verification was automated using a <code>vsim.do</code> script in QuestaSim."
+                               data-vi="Để chứng minh hiệu quả của testbench, một lỗi đã được cố ý đưa vào logic phép cộng của DUT: cờ <code>carry_out</code> đã bị bỏ qua. Quá trình kiểm tra được tự động hóa bằng script <code>vsim.do</code> trong QuestaSim."></p>
+                            <p data-en="<strong>Results:</strong>"
+                               data-vi="<strong>Kết quả:</strong>"></p>
+                            <ul data-en="<li>With a small number of tests (e.g., 5), the overflow bug was not triggered.</li><li>As the number of random tests increased (50, 500), the testbench successfully detected multiple failures.</li><li>The comparator flagged these errors because the DUT's result (without carry) mismatched the Golden Model's result (which correctly handled the carry), proving the testbench's ability to find corner-case bugs automatically.</li>"
+                                data-vi="<li>Với số lượng test nhỏ (ví dụ: 5), lỗi tràn số đã không được kích hoạt.</li><li>Khi số lượng test ngẫu nhiên tăng lên (50, 500), testbench đã phát hiện thành công nhiều lỗi.</li><li>Bộ so sánh đã gắn cờ các lỗi này vì kết quả của DUT (không có carry) không khớp với kết quả của Golden Model (xử lý carry một cách chính xác), chứng tỏ khả năng của testbench trong việc tự động tìm ra các lỗi ở trường hợp góc.</li>"></ul>
+
+                            <h3 data-en="5. Lecture & Demonstration Video" data-vi="5. Video Bài giảng & Minh họa"></h3>
+                            <p data-en="I created a detailed video lecture explaining the importance of the Golden Model methodology, walking through the Verilog code for the DUT and the testbench, and demonstrating the bug detection process live in QuestaSim."
+                               data-vi="Tôi đã tạo một video bài giảng chi tiết giải thích tầm quan trọng của phương pháp luận Golden Model, phân tích mã Verilog của DUT và testbench, và minh họa trực tiếp quá trình phát hiện lỗi trong QuestaSim."></p>
+                            
+                            <div class="video-container" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                                <iframe src="https://www.youtube.com/embed/yJkcCUqqdp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+                        <a href="../index.html#projects" class="btn btn-primary mt-5" data-en="← Back to All Projects" data-vi="← Quay lại Tất cả Dự án"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ... (Phần Footer và Scripts giữ nguyên) ... -->
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+                <p class="copyright-license-text" data-en="© 2025 Ninh Doan Nhat. All Rights Reserved." data-vi="© 2025 Ninh Doan Nhat. Bảo lưu mọi quyền."></p>
+                <p class="footer-social-icons">
+                    <a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nin_nichi_dnn/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/NinNichiCode" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </p>
+                <p class="powered-by" data-en="Design inspired by Wowchemy" data-vi="Thiết kế lấy cảm hứng từ Wowchemy"></p>
+            </footer>
+        </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close-modal">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

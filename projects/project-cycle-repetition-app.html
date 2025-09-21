@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-vn"> 
+
+<head>
+    <!-- =================================================================== -->
+    <!-- PART 1                                                              -->
+    <!-- =================================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+        media="print" onload='this.media="all"'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous" media="print" onload='this.media="all"'>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEN4X51SZF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } function trackOutboundLink(e, t) { gtag("event", "click", { event_category: "outbound", event_label: e, transport_type: "beacon", event_callback: function () { t !== "_blank" && (document.location = e) } }), console.debug("Outbound link clicked: " + e) } function onClickCallback(e) { if (e.target.tagName !== "A" || e.target.host === window.location.host) return; trackOutboundLink(e.target, e.target.getAttribute("target")) } gtag("js", new Date), gtag("config", "G-XEN4X51SZF", {}), gtag("set", { cookie_flags: "SameSite=None;Secure" }), document.addEventListener("click", onClickCallback, !1)
+    </script>
+    <meta name="author" content="Nin">
+    <meta name="description" content="Student in HCMUS VNU-HCM">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32.png?text=Icon">
+    <link rel="apple-touch-icon" type="image/png" href="https://via.placeholder.com/180x180.png?text=Icon">
+    <meta name="theme-color" content="#1565c0">
+    <meta property="og:site_name" content="Academic">
+    <meta property="og:title" content="Nin Nichi | Academic">
+    <meta property="og:description" content="Student in ISE and Computing">
+    <meta property="og:locale" content="en-vn"> 
+    <meta property="og:updated_time" content="2023-01-27T00:00:00+00:00">
+    <title>Project: English Learning App | Nin Nichi</title> <!-- Thay đổi: Cập nhật Title -->
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark-mode">
+
+    <!-- =================================================================== -->
+    <!-- PART 2: Header with Language Switcher                             -->
+    <!-- =================================================================== -->
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item"><a class="nav-link" href="../index.html#about"><span data-en="Home" data-vi="Trang chủ"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#experience"><span data-en="Experience" data-vi="Kinh nghiệm"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#accomplishments"><span data-en="Accomplishments" data-vi="Thành tựu"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#projects"><span data-en="Projects" data-vi="Dự án"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#activities"><span data-en="Other Activities" data-vi="Hoạt động khác"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#contact"><span data-en="Contact" data-vi="Liên hệ"></span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- THÊM MỚI: Nút chuyển đổi ngôn ngữ -->
+                    <div id="language-switcher" class="nav-item d-flex align-items-center">
+                        <button id="lang-vi" class="lang-btn active">VIE</button>
+                        <span class="text-white mx-1">|</span>
+                        <button id="lang-en" class="lang-btn">ENG</button>
+                    </div>
+
+                    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                        <li class="nav-item">
+                            <a id="dark-mode-toggler" class="nav-link" href="#" title="Toggle Dark Mode"
+                                aria-label="Toggle Dark Mode">
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- =================================================================== -->
+    <!--                      Main Content (Translated)                      -->
+    <!-- =================================================================== -->
+    <div class="page-body">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article-container">
+                        <h1 style="text-align: center;" data-en="English Learning with Spaced Repetition & Pomodoro" data-vi="Ứng dụng Học Tiếng Anh với Lặp lại Ngắt quãng & Pomodoro"></h1>
+                        <div class="article-style">
+                            <p data-en="<strong>Course Project – Advanced Programming Techniques</strong> | VNUHCM - University of Science<br><strong>Team size:</strong> 4 | <strong>My role:</strong> Team Leader"
+                               data-vi="<strong>Đồ án Môn học – Kỹ thuật Lập trình Nâng cao</strong> | ĐHKHTN - ĐHQG-HCM<br><strong>Quy mô nhóm:</strong> 4 | <strong>Vai trò:</strong> Trưởng nhóm"></p>
+                            <p data-en="This was a final project for the Advanced Programming Techniques course. The goal was to develop a C# WPF desktop application that helps users learn English by integrating proven methodologies like Spaced Repetition and the Pomodoro Technique."
+                               data-vi="Đây là đồ án cuối kỳ cho môn Kỹ thuật Lập trình Nâng cao. Mục tiêu là phát triển một ứng dụng desktop C# WPF giúp người dùng học tiếng Anh bằng cách tích hợp các phương pháp đã được chứng minh hiệu quả như Lặp lại Ngắt quãng và Kỹ thuật Pomodoro."></p>
+                            
+                            <h2 data-en="Project Overview (Application Features & Interface)" data-vi="Tổng quan Dự án (Tính năng & Giao diện Ứng dụng)"></h2>
+                            <p data-en="The application's interface is divided into four distinct sections:"
+                               data-vi="Giao diện của ứng dụng được chia thành bốn phần riêng biệt:"></p>
+
+                            <h4 data-en="Author Team" data-vi="Nhóm Tác giả"></h4>
+                            <p data-en="A dedicated section that displays the names and student IDs of all team members who contributed to the project"
+                               data-vi="Một phần riêng biệt hiển thị tên và mã số sinh viên của tất cả các thành viên đã đóng góp cho dự án."></p>
+                            <div class="image-wrapper">
+                                <img src="../img/en_cycle_app2.png" alt="app interface" class="zoomable-image" style="width:50%;">
+                            </div>
+                            
+                            <h4 data-en="App Information" data-vi="Thông tin Ứng dụng"></h4>
+                            <p data-en="This section serves as an interactive, context-sensitive user guide. As a user interacts with the 'Repeat Sentence' feature, instructional text boxes appear sequentially to guide them through each step, ensuring a smooth and intuitive onboarding experience."
+                               data-vi="Phần này đóng vai trò như một hướng dẫn sử dụng tương tác, theo ngữ cảnh. Khi người dùng tương tác với tính năng 'Lặp lại Câu', các hộp văn bản hướng dẫn sẽ xuất hiện tuần tự để chỉ dẫn họ qua từng bước, đảm bảo trải nghiệm ban đầu mượt mà và trực quan."></p>
+                            <div class="image-wrapper">
+                                <img src="../img/en_cycle_app3.png" alt="app interface" class="zoomable-image" style="width:50%;">
+                            </div>
+                            
+                            <h4 data-en="Learning" data-vi="Học tập"></h4>
+                            <p data-en="This module is designed for active vocabulary building and reinforcement."
+                               data-vi="Module này được thiết kế để xây dựng và củng cố từ vựng một cách chủ động."></p>
+                            <ul data-en="<li><strong>Word Input:</strong> Users begin by entering 10 English words paired with their Vietnamese translations.</li><li><strong>Flashcard Session:</strong> Upon completing the list, a 'Start' button enables a learning session with interactive flashcards to help users build initial familiarity with the new words.</li><li><strong>Timed Quiz:</strong> After the learning session, users can test their knowledge. A Vietnamese meaning is displayed, and the user has 60 seconds to type the corresponding English word. A correct answer earns one point (out of 10). If an answer is incorrect, a notification prompts the user to try again. If the time limit is exceeded, the correct answers for any remaining words are displayed on the screen.</li>"
+                                data-vi="<li><strong>Nhập từ:</strong> Người dùng bắt đầu bằng cách nhập 10 từ tiếng Anh kèm theo nghĩa tiếng Việt.</li><li><strong>Học với Flashcard:</strong> Sau khi hoàn thành danh sách, một nút 'Bắt đầu' sẽ kích hoạt phiên học với các thẻ flashcard tương tác để giúp người dùng làm quen ban đầu với các từ mới.</li><li><strong>Kiểm tra có hẹn giờ:</strong> Sau phiên học, người dùng có thể kiểm tra kiến thức của mình. Một nghĩa tiếng Việt sẽ được hiển thị, và người dùng có 60 giây để gõ từ tiếng Anh tương ứng. Mỗi câu trả lời đúng được một điểm (trên 10). Nếu trả lời sai, một thông báo sẽ yêu cầu người dùng thử lại. Nếu hết thời gian, các đáp án đúng cho những từ còn lại sẽ được hiển thị trên màn hình.</li>"></ul>
+                            <div class="image-wrapper">
+                                <img src="../img/en_cycle_app4.png" alt="app interface" class="zoomable-image" style="width:48%;">
+                                <img src="../img/en_cycle_app15.png" alt="app interface" class="zoomable-image" style="width:48%;">
+                                <img src="../img/en_cycle_app5.png" alt="app interface" class="zoomable-image" style="width:48%;">
+                            </div>
+
+                            <h4 data-en="Repeat Sentence (Main Feature)" data-vi="Lặp lại Câu (Tính năng Chính)"></h4>
+                            <p data-en="This is the application's core functionality, which ingeniously integrates passive English listening practice with the Pomodoro Technique for time management."
+                               data-vi="Đây là chức năng cốt lõi của ứng dụng, tích hợp một cách thông minh việc luyện nghe tiếng Anh thụ động với Kỹ thuật Pomodoro để quản lý thời gian."></p>
+                            <ul data-en="<li><strong>Voice Selection:</strong> Users first choose a preferred text-to-speech voice from the system's available options (e.g., Microsoft David is shown in the example).
+                                    <div class='image-wrapper'><img src='../img/en_cycle_app6.png' alt='en_cycle_repetition_app' class='zoomable-image' style='width:50%;'></div>
+                                    <div class='image-wrapper'><img src='../img/en_cycle_app7.png' alt='en_cycle_repetition_app' class='zoomable-image' style='width:50%;'></div>
+                                </li>
+                                <li><strong>Text Input:</strong> Next, they input any English text, sentence, or paragraph they wish to listen to.
+                                    <div class='image-wrapper'><img src='../img/en_cycle_app8.png' alt='en_cycle_repetition_app' class='zoomable-image' style='width:50%;'></div>
+                                </li>
+                                <li><strong>Timer Configuration:</strong> The user then sets the timing parameters:
+                                    <ul>
+                                        <li><strong>Minute per repeat & Second per repeat:</strong> These define the duration of a focused work interval.
+                                            <div class='image-wrapper'><img src='../img/en_cycle_app9.png' alt='en_cycle_repetition_app' class='zoomable-image' style='width:48%;'><img src='../img/en_cycle_app10.png' alt='en_cycle_repetition_app' class='zoomable-image' style='width:48%;'></div>
+                                        </li>
+                                        <li><strong>Time repeat:</strong> This specifies how many times the audio will repeat during the subsequent break.</li>
+                                    </ul>
+                                    <div class='image-wrapper'><img src='../img/en_cycle_app11.png' alt='en_cycle_repetition_app' class='zoomable-image' style='width:50%;'></div>
+                                </li>
+                                <li><strong>Activation:</strong> Clicking the 'Start' button initiates the cycle.</li>"
+                                data-vi="<li><strong>Chọn Giọng đọc:</strong> Đầu tiên, người dùng chọn một giọng đọc chuyển văn bản thành giọng nói ưa thích từ các tùy chọn có sẵn của hệ thống (ví dụ: Microsoft David được hiển thị).
+                                    <div class='image-wrapper'><img src='../img/en_cycle_app6.png' alt='en_cycle_repetition_app' class='zoomable-image' style='width:50%;'></div>
+                                    <div class='image-wrapper'><img src='../img/en_cycle_app7.png' alt='en_cycle_repetition_app' class='zoomable-image' style='width:50%;'></div>
+                                </li>
+                                <li><strong>Nhập Văn bản:</strong> Tiếp theo, họ nhập bất kỳ văn bản, câu hoặc đoạn văn tiếng Anh nào muốn nghe.
+                                    <div class='image-wrapper'><img src='../img/en_cycle_app8.png' alt='en_cycle_repetition_app' class='zoomable-image' style='width:50%;'></div>
+                                </li>
+                                <li><strong>Cấu hình Hẹn giờ:</strong> Sau đó, người dùng thiết lập các thông số thời gian:
+                                    <ul>
+                                        <li><strong>Phút mỗi lần lặp & Giây mỗi lần lặp:</strong> Các thông số này xác định thời lượng của một khoảng thời gian làm việc tập trung.
+                                            <div class='image-wrapper'><img src='../img/en_cycle_app9.png' alt='en_cycle_repetition_app' class='zoomable-image' style='width:48%;'><img src='../img/en_cycle_app10.png' alt='en_cycle_repetition_app' class='zoomable-image' style='width:48%;'></div>
+                                        </li>
+                                        <li><strong>Số lần lặp:</strong> Thông số này chỉ định số lần âm thanh sẽ lặp lại trong thời gian nghỉ giải lao sau đó.</li>
+                                    </ul>
+                                    <div class='image-wrapper'><img src='../img/en_cycle_app11.png' alt='en_cycle_repetition_app' class='zoomable-image' style='width:50%;'></div>
+                                </li>
+                                <li><strong>Kích hoạt:</strong> Nhấn nút 'Bắt đầu' để khởi động chu trình.</li>"></ul>
+                            
+                            <div class="image-wrapper">
+                                <img src="../img/en_cycle_app12.png" alt="en_cycle_repetition_app" class="zoomable-image" style="width:50%;">
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="../img/en_cycle_app13.png" alt="en_cycle_repetition_app" class="zoomable-image" style="width:50%;">
+                            </div>
+                            <p data-en="This feature allows users to apply the Pomodoro method effectively. For instance, a user can set a 25-minute work interval and configure the app to repeat a chosen English sentence 10 times. After 25 minutes of focused work, the app automatically plays the audio, allowing the user to utilize their 5-minute break for passive language immersion."
+                               data-vi="Tính năng này cho phép người dùng áp dụng phương pháp Pomodoro một cách hiệu quả. Ví dụ, người dùng có thể đặt khoảng thời gian làm việc là 25 phút và cấu hình ứng dụng lặp lại một câu tiếng Anh đã chọn 10 lần. Sau 25 phút làm việc tập trung, ứng dụng sẽ tự động phát âm thanh, cho phép người dùng tận dụng 5 phút giải lao của mình để nghe tiếng Anh một cách thụ động."></p>
+
+                            <h3 data-en="My Contributions" data-vi="Đóng góp của tôi"></h3>
+                            <ul data-en="<li>As <strong>Team Leader</strong>, I proposed the core idea, created the project plan, and delegated tasks.</li><li>I personally designed and coded the entire <strong>'Repeat Sentence' feature</strong>, including the UI and backend logic for the Pomodoro cycle and text-to-speech integration.</li><li>I regularly monitored progress, provided technical support and bug-fixing assistance to my teammates, and was responsible for the final integration of all modules.</li>"
+                                data-vi="<li>Với vai trò <strong>Trưởng nhóm</strong>, tôi đã đề xuất ý tưởng cốt lõi, lập kế hoạch dự án và phân công nhiệm vụ.</li><li>Tôi đã trực tiếp thiết kế và lập trình toàn bộ <strong>tính năng 'Lặp lại Câu'</strong>, bao gồm giao diện người dùng và logic backend cho chu trình Pomodoro và tích hợp chuyển văn bản thành giọng nói.</li><li>Tôi thường xuyên theo dõi tiến độ, cung cấp hỗ trợ kỹ thuật và giúp đỡ các thành viên trong nhóm sửa lỗi, đồng thời chịu trách nhiệm tích hợp cuối cùng cho tất cả các module.</li>"></ul>
+
+                            <h3 data-en="Results" data-vi="Kết quả"></h3>
+                            <ul data-en="<li>The application was fully functional, delivering all planned features effectively.</li><li>The project received high scores and is effective for reviewing English vocabulary.</li>"
+                                data-vi="<li>Ứng dụng đã hoạt động đầy đủ, cung cấp hiệu quả tất cả các tính năng đã lên kế hoạch.</li><li>Dự án đã nhận được điểm số cao và hiệu quả trong việc ôn tập từ vựng tiếng Anh.</li>"></ul>
+                            <div class="video-wrapper" style="text-align: center; margin: 20px 0;">
+                                <video controls style="width:60%; border-radius: 10px;">
+                                    <source src="../video/test_en_cycle_app.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+
+                            <div class="project-resources mt-4 mb-4">
+                                <h4 data-en="Project Resources" data-vi="Tài nguyên Dự án"></h4>
+                                <a href="https://drive.google.com/file/d/1qN3XVFVurQBgcgxw00HyMdYao0a4XAHN/view?usp=sharing" target="_blank" class="btn btn-outline-primary mr-2"
+                                   data-en="<i class='far fa-file-pdf mr-1'></i> View Full Report (PDF)"
+                                   data-vi="<i class='far fa-file-pdf mr-1'></i> Xem Báo cáo Đầy đủ (PDF)"></a>
+                               
+                            </div>
+                        </div>
+                        <a href="../index.html#projects" class="btn btn-primary mt-5" data-en="← Back to All Projects" data-vi="← Quay lại Tất cả Dự án"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- PART 4                                                              -->
+    <!-- =================================================================== -->
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+
+                <p class="copyright-license-text" data-en="© 2025 Ninh Doan Nhat. All Rights Reserved." data-vi="© 2025 Ninh Doan Nhat. Bảo lưu mọi quyền."></p>
+                <p class="footer-social-icons">
+                    <a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nin_nichi_dnn/" target="_blank" rel="noopener"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/NinNichiCode" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                </p>
+                <p class="powered-by" data-en="Design inspired by Wowchemy" data-vi="Thiết kế lấy cảm hứng từ Wowchemy"></p>
+            </footer>
+        </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close-modal">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

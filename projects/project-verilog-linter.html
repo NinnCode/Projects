@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-vn">
+
+<head>
+    <!-- =================================================================== -->
+    <!-- PART 1: Head Section                                              -->
+    <!-- =================================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+        media="print" onload='this.media="all"'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous" media="print" onload='this.media="all"'>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEN4X51SZF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } function trackOutboundLink(e, t) { gtag("event", "click", { event_category: "outbound", event_label: e, transport_type: "beacon", event_callback: function () { t !== "_blank" && (document.location = e) } }), console.debug("Outbound link clicked: " + e) } function onClickCallback(e) { if (e.target.tagName !== "A" || e.target.host === window.location.host) return; trackOutboundLink(e.target, e.target.getAttribute("target")) } gtag("js", new Date), gtag("config", "G-XEN4X51SZF", {}), gtag("set", { cookie_flags: "SameSite=None;Secure" }), document.addEventListener("click", onClickCallback, !1)
+    </script>
+    <meta name="author" content="Nin">
+    <meta name="description" content="Student in HCMUS VNU-HCM">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32.png?text=Icon">
+    <link rel="apple-touch-icon" type="image/png" href="https://via.placeholder.com/180x180.png?text=Icon">
+    <meta name="theme-color" content="#1565c0">
+    <meta property="og:site_name" content="Academic">
+    <meta property="og:title" content="Nin Nichi | Academic">
+    <meta property="og:description" content="Student in ISE and Computing">
+    <meta property="og:locale" content="en-vn">
+    <meta property="og:updated_time" content="2023-01-27T00:00:00+00:00">
+    <title>Project: Automated Verilog Linter | Nin Nichi</title>
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark-mode">
+
+    <!-- =================================================================== -->
+    <!-- PART 2: Header with Language Switcher                             -->
+    <!-- =================================================================== -->
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item"><a class="nav-link" href="../index.html#about"><span data-en="Home" data-vi="Trang chủ"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#experience"><span data-en="Experience" data-vi="Kinh nghiệm"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#accomplishments"><span data-en="Accomplishments" data-vi="Thành tựu"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#projects"><span data-en="Projects" data-vi="Dự án"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#activities"><span data-en="Other Activities" data-vi="Hoạt động khác"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#contact"><span data-en="Contact" data-vi="Liên hệ"></span></a></li>
+                        </ul>
+                    </div>
+                    <div id="language-switcher" class="nav-item d-flex align-items-center">
+                        <button id="lang-vi" class="lang-btn active">VIE</button>
+                        <span class="text-white mx-1">|</span>
+                        <button id="lang-en" class="lang-btn">ENG</button>
+                    </div>
+                    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                        <li class="nav-item">
+                            <a id="dark-mode-toggler" class="nav-link" href="#" title="Toggle Dark Mode"
+                                aria-label="Toggle Dark Mode">
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- =================================================================== -->
+    <!--                      Main Content (Translated)                      -->
+    <!-- =================================================================== -->
+    <div class="page-body">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article-container">
+                        <h1 style="text-align: center;" data-en="Building an Automated Verilog Linting and Analysis Script with Verilator" data-vi="Xây dựng Script Tự động Kiểm tra và Phân tích Cú pháp Verilog bằng Verilator"></h1>
+                        <div class="article-style">
+                            <p data-en="<strong>Personal Project – VLSI Workflow Automation</strong><br><strong>Language:</strong> Bash Script<br><strong>Core Tool:</strong> Verilator"
+                               data-vi="<strong>Dự án Cá nhân – Tự động hóa Quy trình VLSI</strong><br><strong>Ngôn ngữ:</strong> Bash Script<br><strong>Công cụ Cốt lõi:</strong> Verilator"></p>
+
+                            <h3 data-en="1. Problem Statement & Solution" data-vi="1. Vấn đề và Giải pháp"></h3>
+                            <p data-en="<strong>Problem:</strong> In VLSI design, manually checking each Verilog file for syntax errors and potential issues is time-consuming and error-prone. Full simulators often have long startup times just for a syntax check.<br><strong>Solution:</strong> A lightweight, fast, and powerful command-line script named <code>check_v</code> was developed. It seamlessly integrates into the design workflow, using Verilator to analyze a single file or an entire directory, and consolidates all findings into a clean, readable report."
+                               data-vi="<strong>Vấn đề:</strong> Trong các dự án thiết kế VLSI, việc kiểm tra thủ công từng file Verilog để tìm lỗi cú pháp và các vấn đề tiềm ẩn là một quá trình tốn thời gian và dễ xảy ra sai sót. Các công cụ mô phỏng đầy đủ thường mất nhiều thời gian để khởi chạy chỉ để kiểm tra cú pháp.<br><strong>Giải pháp:</strong> Một script dòng lệnh nhẹ, nhanh và mạnh mẽ tên là <code>check_v</code> đã được phát triển. Nó tích hợp liền mạch vào quy trình làm việc, sử dụng Verilator để phân tích một file hoặc toàn bộ thư mục, và tổng hợp các lỗi/cảnh báo vào một báo cáo duy nhất, dễ đọc."></p>
+
+                            <h3 data-en="2. Key Features and Operating Principles" data-vi="2. Các Tính năng Chính và Nguyên lý Hoạt động"></h3>
+                            <ul data-en="<li><strong>Flexible Checking:</strong> Supports checking a single Verilog file or recursively scanning an entire directory for batch analysis.</li><li><strong>Comprehensive Analysis:</strong> Uses Verilator's <code>--lint-only -Wall</code> options to enable all warnings for potential issues like unused variables, bit-width mismatches, and non-synthesizable constructs.</li><li><strong>Intelligent & Clear Reporting:</strong> Classifies results as OK, Warning, or Error. Automatically creates a <code>verilator_logs</code> directory for detailed logs and a <code>verilator_summary.log</code> for batch runs.</li><li><strong>Smart Error Highlighting:</strong> Prioritizes displaying the first syntax error, as it is often the root cause of subsequent errors, helping the user debug more efficiently.</li><li><strong>Handles Unsupported Constructs:</strong> The script is programmed to automatically detect and skip files containing unsupported constructs like <code>#delay</code>, ensuring batch analysis completes without interruption.</li>"
+                                data-vi="<li><strong>Kiểm tra Linh hoạt:</strong> Hỗ trợ kiểm tra một file Verilog đơn lẻ hoặc quét đệ quy toàn bộ thư mục để phân tích hàng loạt.</li><li><strong>Phân tích Toàn diện:</strong> Sử dụng tùy chọn <code>--lint-only -Wall</code> của Verilator để bật tất cả các cảnh báo về các lỗi tiềm ẩn, chẳng hạn như biến không sử dụng, sai lệch độ rộng bit, và các cấu trúc không thể tổng hợp.</li><li><strong>Báo cáo Thông minh và Rõ ràng:</strong> Phân loại kết quả thành OK, Warning, hoặc Error. Tự động tạo thư mục <code>verilator_logs</code> cho log chi tiết và file tóm tắt <code>verilator_summary.log</code> cho các lần chạy hàng loạt.</li><li><strong>Ưu tiên Hiển thị Lỗi:</strong> Ưu tiên hiển thị lỗi cú pháp đầu tiên, vì đây thường là nguyên nhân gốc rễ gây ra các lỗi khác, giúp người dùng gỡ lỗi hiệu quả hơn.</li><li><strong>Xử lý các Cấu trúc Không được Hỗ trợ:</strong> Script tự động phát hiện và bỏ qua các file chứa các cấu trúc không được hỗ trợ như <code>#delay</code>, đảm bảo quá trình phân tích hàng loạt diễn ra suôn sẻ.</li>"></ul>
+
+                            <h3 data-en="3. Demonstration and Analysis" data-vi="3. Minh họa và Phân tích"></h3>
+                            <p data-en="The script's effectiveness is demonstrated through a practical workflow: identifying an error, fixing it, and re-verifying."
+                               data-vi="Tính hiệu quả của script được minh họa qua một quy trình làm việc thực tế: xác định lỗi, sửa lỗi, và xác minh lại."></p>
+                            
+                            <h4 data-en="Initial Scan with Errors:" data-vi="Lần quét Ban đầu có Lỗi:"></h4>
+                            <p data-en="Running <code>check_v .</code> on a project with faulty files immediately flags the problematic files, as shown in the summary."
+                               data-vi="Chạy lệnh <code>check_v .</code> trên một dự án có các file bị lỗi sẽ ngay lập tức gắn cờ các file có vấn đề, như được hiển thị trong bản tóm tắt."></p>
+                            <div class="image-wrapper">
+                                <img src="../img/checkv1.png" alt="Initial scan showing files with errors" class="zoomable-image" style="width:80%;">
+                            </div>
+
+                            <h4 data-en="Detailed Error Analysis:" data-vi="Phân tích Lỗi Chi tiết:"></h4>
+                            <p data-en="Running the script on a specific faulty file (e.g., <code>check_v prng.v</code>) provides a detailed error report from Verilator. The report clearly indicates issues like a variable having the same name as its module instance, which is unsupported when converting to C++."
+                               data-vi="Chạy script trên một file bị lỗi cụ thể (ví dụ: <code>check_v prng.v</code>) cung cấp một báo cáo lỗi chi tiết từ Verilator. Báo cáo chỉ ra rõ các vấn đề như một biến có cùng tên với thực thể module của nó, một điều không được hỗ trợ khi chuyển đổi sang C++."></p>
+                            <div class="image-wrapper">
+                                <img src="../img/checkv2.png" alt="Detailed error report for a specific file" class="zoomable-image" style="width:80%;">
+                            </div>
+                            <p data-en="Similarly, for <code>true_dual_port_ram.v</code>, the script intelligently highlights the first syntax error—a missing comma—which is the root cause of the subsequent 'unexpected always' error."
+                               data-vi="Tương tự, đối với file <code>true_dual_port_ram.v</code>, script ưu tiên hiển thị lỗi cú pháp đầu tiên—thiếu một dấu phẩy—là nguyên nhân gốc rễ của lỗi 'unexpected always' theo sau."></p>
+                            <div class="image-wrapper">
+                                <img src="../img/checkv3.png" alt="Analysis of another faulty file" class="zoomable-image" style="width:80%;">
+                                <img src="../img/checkv4.png" alt="Intelligent highlighting of the root cause error" class="zoomable-image" style="width:80%;">
+                            </div>
+
+                            <h4 data-en="Successful Verification:" data-vi="Xác minh Thành công:"></h4>
+                            <p data-en="After fixing the identified issues, re-running the script confirms that all files are now 'OK', ensuring high code quality before moving to the next design stage."
+                               data-vi="Sau khi khắc phục các sự cố đã xác định, chạy lại script sẽ xác nhận rằng tất cả các file hiện đã 'OK', đảm bảo chất lượng code cao trước khi chuyển sang giai đoạn thiết kế tiếp theo."></p>
+                            <div class="image-wrapper">
+                                <img src="../img/checkv5.png" alt="Successful verification after fixing errors" class="zoomable-image" style="width:80%;">
+                            </div>
+
+
+                        </div>
+                        <a href="../index.html#projects" class="btn btn-primary mt-5" data-en="← Back to All Projects" data-vi="← Quay lại Tất cả Dự án"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- PART 4: Footer and Modal                                            -->
+    <!-- =================================================================== -->
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+                <p class="copyright-license-text" data-en="© 2025 Ninh Doan Nhat. All Rights Reserved." data-vi="© 2025 Ninh Doan Nhat. Bảo lưu mọi quyền."></p>
+                <p class="footer-social-icons">
+                    <a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nin_nichi_dnn/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/NinNichiCode" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </p>
+                <p class="powered-by" data-en="Design inspired by Wowchemy" data-vi="Thiết kế lấy cảm hứng từ Wowchemy"></p>
+            </footer>
+        </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close-modal">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- PART 5: Scripts                                                     -->
+    <!-- =================================================================== -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

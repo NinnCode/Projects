@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-vn">
+
+<head>
+    <!-- =================================================================== -->
+    <!-- PART 1: Head Section                                              -->
+    <!-- =================================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+        media="print" onload='this.media="all"'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous" media="print" onload='this.media="all"'>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEN4X51SZF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } function trackOutboundLink(e, t) { gtag("event", "click", { event_category: "outbound", event_label: e, transport_type: "beacon", event_callback: function () { t !== "_blank" && (document.location = e) } }), console.debug("Outbound link clicked: " + e) } function onClickCallback(e) { if (e.target.tagName !== "A" || e.target.host === window.location.host) return; trackOutboundLink(e.target, e.target.getAttribute("target")) } gtag("js", new Date), gtag("config", "G-XEN4X51SZF", {}), gtag("set", { cookie_flags: "SameSite=None;Secure" }), document.addEventListener("click", onClickCallback, !1)
+    </script>
+    <meta name="author" content="Nin">
+    <meta name="description" content="Student in HCMUS VNU-HCM">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32.png?text=Icon">
+    <link rel="apple-touch-icon" type="image/png" href="https://via.placeholder.com/180x180.png?text=Icon">
+    <meta name="theme-color" content="#1565c0">
+    <meta property="og:site_name" content="Academic">
+    <meta property="og:title" content="Nin Nichi | Academic">
+    <meta property="og:description" content="Student in ISE and Computing">
+    <meta property="og:locale" content="en-vn">
+    <meta property="og:updated_time" content="2023-01-27T00:00:00+00:00">
+    <title>Project: Trivium on FPGA | Nin Nichi</title>
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark-mode">
+
+    <!-- =================================================================== -->
+    <!-- PART 2: Header with Language Switcher                             -->
+    <!-- =================================================================== -->
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item"><a class="nav-link" href="../index.html#about"><span data-en="Home" data-vi="Trang chủ"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#experience"><span data-en="Experience" data-vi="Kinh nghiệm"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#accomplishments"><span data-en="Accomplishments" data-vi="Thành tựu"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#projects"><span data-en="Projects" data-vi="Dự án"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#activities"><span data-en="Other Activities" data-vi="Hoạt động khác"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#contact"><span data-en="Contact" data-vi="Liên hệ"></span></a></li>
+                        </ul>
+                    </div>
+                    <div id="language-switcher" class="nav-item d-flex align-items-center">
+                        <button id="lang-vi" class="lang-btn active">VIE</button>
+                        <span class="text-white mx-1">|</span>
+                        <button id="lang-en" class="lang-btn">ENG</button>
+                    </div>
+                    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                        <li class="nav-item">
+                            <a id="dark-mode-toggler" class="nav-link" href="#" title="Toggle Dark Mode"
+                                aria-label="Toggle Dark Mode">
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- =================================================================== -->
+    <!--                      Main Content (Translated)                      -->
+    <!-- =================================================================== -->
+    <div class="page-body">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article-container">
+                        <h1 style="text-align: center;" data-en="FPGA Implementation and Verification of the Trivium Stream Cipher" data-vi="Triển khai và Kiểm tra Mạch mã hóa Dòng Trivium trên FPGA"></h1>
+                        <div class="article-style">
+                            <p data-en="<strong>Personal Project – Digital Design & FPGA Verification</strong><br><strong>Tools:</strong> Verilog, SystemVerilog, Python, Intel Quartus Prime"
+                               data-vi="<strong>Dự án Cá nhân – Thiết kế Số & Kiểm tra trên FPGA</strong><br><strong>Công cụ:</strong> Verilog, SystemVerilog, Python, Intel Quartus Prime"></p>
+
+                            <h3 data-en="Project Overview" data-vi="Tổng quan Dự án"></h3>
+                            <p data-en="The objective of this advanced personal project was to implement the Trivium stream cipher in hardware, from initial RTL design to full system verification on an FPGA board. The project demonstrates a complete design cycle, including hardware-software co-verification and timing analysis."
+                               data-vi="Mục tiêu của dự án cá nhân nâng cao này là triển khai mạch mã hóa dòng Trivium trên phần cứng, từ thiết kế RTL ban đầu đến kiểm tra toàn bộ hệ thống trên bo mạch FPGA. Dự án thể hiện một chu trình thiết kế hoàn chỉnh, bao gồm đồng kiểm tra phần cứng-phần mềm và phân tích thời gian."></p>
+
+                            <h3 data-en="Key Development Stages" data-vi="Các Giai đoạn Phát triển Chính"></h3>
+                            
+                            <h4 data-en="1. RTL Design (Verilog)" data-vi="1. Thiết kế RTL (Verilog)"></h4>
+                            <p data-en="Designed and implemented the 288-bit internal state and keystream generation logic of the Trivium algorithm in synthesizable Verilog, following the official cryptographic specification. The design includes three non-linear feedback shift registers (NLFSRs). Additionally, 8-bit buffer registers were added at the input and output for compatibility with the later integrated uart."
+                               data-vi="Thiết kế và triển khai logic trạng thái nội 288-bit và logic tạo chuỗi khóa (keystream) của thuật toán Trivium bằng Verilog có thể tổng hợp được, tuân thủ theo đặc tả mật mã chính thức. Thiết kế bao gồm ba thanh ghi dịch hồi tiếp phi tuyến (NLFSRs). Đồng thời bổ sung thêm các thanh ghi đệm 8 bit ở ngõ vào và ra để tương thích với uart tích hợp vào sau đó"></p>
+                                <div class="image-wrapper">
+                                    <img src="../img/triv_fpga2.png" alt="block diagram of the trivium IP Core" class="zoomable-image" style="width:45%;">
+                                    <img src="../img/triv_fpga3.png" alt="block diagram of the trivium IP Core" class="zoomable-image" style="width:45%;">
+                                </div>
+                                <div class="image-wrapper">
+                                    <img src="../img/triv_fpga3.1.png" alt="flowchart of the trivium IP Core" class="zoomable-image" style="width:70%;">
+                                </div>
+                            <h4 data-en="2. System Integration on FPGA" data-vi="2. Tích hợp Hệ thống trên FPGA"></h4>
+                            <p data-en="Developed a top-level system architecture that integrates the Trivium core with a UART module for communication. A custom Finite State Machine (FSM) was designed to manage the entire workflow: receiving the 80-bit key and IV, handling the 1152-cycle warm-up phase, and controlling the real-time data encryption/decryption stream."
+                               data-vi="Phát triển một kiến trúc hệ thống cấp cao tích hợp lõi Trivium với một module UART để giao tiếp. Một Máy Trạng thái Hữu hạn (FSM) tùy chỉnh đã được thiết kế để quản lý toàn bộ luồng công việc: nhận khóa 80-bit và vector khởi tạo (IV), xử lý giai đoạn khởi động 1152 chu kỳ, và điều khiển luồng mã hóa/giải mã dữ liệu thời gian thực."></p>
+                                <div class="image-wrapper">
+                                    <img src="../img/triv_fpga4.png" alt="block diagram of the trivium IP Core for testing on fpga" class="zoomable-image" style="width:60%;">
+                                </div>
+                                <div class="image-wrapper">
+                                    <img src="../img/triv_fpga4.1.png" alt="block diagram of the trivium IP Core for testing on fpga" class="zoomable-image" style="width:60%;">
+                                </div>
+                            <h4 data-en="3. Verification (Simulation & Hardware)" data-vi="3. Kiểm tra (Mô phỏng & Phần cứng)"></h4>
+                            <p data-en="A dual-pronged verification strategy was employed:"
+                               data-vi="Một chiến lược kiểm tra kép đã được áp dụng:"></p>
+                            
+                                <p data-en="<strong>Simulation:</strong> A SystemVerilog testbench was created to perform initial functional verification of the RTL design."
+                                    data-vi="<strong>Mô phỏng:</strong> Một testbench SystemVerilog đã được tạo để thực hiện kiểm tra chức năng ban đầu của thiết kế RTL.</li>">
+                                <div class="image-wrapper">
+                                    <img src="../img/triv_fpga5.png" alt="simulation of the trivium IP Core " class="zoomable-image" style="width:60%;">
+                                </div>
+                                <div class="image-wrapper">
+                                    <img src="../img/triv_fpga6.png" alt="simulation of the trivium IP Core " class="zoomable-image" style="width:60%;">
+                                </div>
+                                <div class="image-wrapper">
+                                    <img src="../img/triv_fpga7.png" alt="simulation of the trivium IP Core " class="zoomable-image" style="width:60%;">
+                                </div>
+                                <div class="image-wrapper">
+                                    <img src="../img/triv_fpga8.png" alt="simulation of the trivium IP Core " class="zoomable-image" style="width:60%;">
+                                </div>
+              
+                                <p data-en="<strong>Hardware Co-Verification:</strong> Developed a Python script to automate hardware testing. The script sends test vectors (key, IV, plaintext) from a PC to the FPGA via UART, receives the encrypted ciphertext back, and compares it against a golden reference file to declare a PASS or FAIL result."
+                                    data-vi="<strong>Đồng kiểm tra trên Phần cứng:</strong> Phát triển một script Python để tự động hóa việc kiểm tra trên phần cứng. Script này gửi các vector kiểm tra (khóa, IV, bản rõ) từ máy tính đến FPGA qua UART, nhận lại bản mã đã được mã hóa, và so sánh nó với một file tham chiếu vàng để xác định kết quả PASS hoặc FAIL.</li>">
+                                <div class="image-wrapper">
+                                    <img src="../img/triv_fpga9.png" alt="block diagram of the trivium IP Core for testing on FPGA" class="zoomable-image" style="width:60%;">
+                                </div>
+                                <div class="image-wrapper">
+                                    <img src="../img/triv_fpga1.png" alt="Testing trivium IP Core on FPGA" class="zoomable-image" style="width:50%;">
+                                </div>
+
+                            <h3 data-en="Key Results & Analysis" data-vi="Kết quả & Phân tích chính"></h3>
+                            
+                            <h4 data-en="Synthesis & Resource Utilization" data-vi="Kết quả Tổng hợp & Sử dụng Tài nguyên"></h4>
+                            <p data-en="The design was successfully synthesized on an Intel FPGA, demonstrating a highly efficient and compact implementation:"
+                               data-vi="Thiết kế đã được tổng hợp thành công trên FPGA của Intel, cho thấy một sự triển khai hiệu quả và nhỏ gọn:"></p>
+                            <ul>
+                                <li data-en="<strong>Logic Utilization:</strong> 311 ALMs (< 1% of total resources).</li>"
+                                    data-vi="<strong>Sử dụng Logic:</strong> 311 ALMs (< 1% tổng tài nguyên).</li>">
+                                <li data-en="<strong>Total Registers:</strong> 651 registers used for FSM, counters, and internal buffers.</li>"
+                                    data-vi="<strong>Tổng số Thanh ghi:</strong> 651 thanh ghi được sử dụng cho FSM, bộ đếm và các bộ đệm nội.</li>">
+                            </ul>
+                            <div class="image-wrapper">
+                                    <img src="../img/triv_fpga10.1.png" alt="result of the trivium IP Core for testing on FPGA" class="zoomable-image" style="width:60%;">
+                                    <img src="../img/triv_fpga10.png" alt="result of the trivium IP Core for testing on FPGA" class="zoomable-image" style="width:60%;">
+                                    <img src="../img/triv_fpga11.png" alt="result of the trivium IP Core for testing on FPGA" class="zoomable-image" style="width:60%;">
+                            </div>
+
+                            <h4 data-en="Timing Analysis (STA)" data-vi="Phân tích Thời gian (STA)"></h4>
+                            <p data-en="Static Timing Analysis confirmed that all setup, hold, and pulse width constraints were met with significant positive slack. The design achieved a maximum frequency (Fmax) of <strong>77.44 MHz</strong>, well above the 50 MHz system target, ensuring stable hardware operation."
+                               data-vi="Phân tích Thời gian Tĩnh xác nhận rằng tất cả các ràng buộc về setup, hold, và độ rộng xung đều được đáp ứng với độ dự trữ (slack) dương đáng kể. Thiết kế đạt tần số tối đa (Fmax) là <strong>77.44 MHz</strong>, cao hơn nhiều so với mục tiêu hệ thống là 50 MHz, đảm bảo hoạt động ổn định trên phần cứng."></p>
+                            <div class="image-wrapper">
+                                    <img src="../img/triv_fpga12.png" alt="result of the trivium IP Core for testing on FPGA" class="zoomable-image" style="width:35%;">
+                                    <img src="../img/triv_fpga13.png" alt="result of the trivium IP Core for testing on FPGA" class="zoomable-image" style="width:50%;">
+                            </div>
+                            <h4 data-en="Functional Verification & Robustness" data-vi="Kiểm tra Chức năng & Độ bền vững"></h4>
+                            <p data-en="The system passed all functional tests. To handle potential UART transmission errors, the Python test script was designed to automatically re-run any failed tests up to five times to differentiate between genuine design flaws and transient communication noise, ensuring high confidence in the final results."
+                               data-vi="Hệ thống đã vượt qua tất cả các bài kiểm tra chức năng. Để xử lý các lỗi truyền UART tiềm ẩn, script kiểm tra Python được thiết kế để tự động chạy lại bất kỳ bài kiểm tra nào thất bại tối đa năm lần nhằm phân biệt giữa lỗi thiết kế thực sự và nhiễu giao tiếp nhất thời, đảm bảo độ tin cậy cao cho kết quả cuối cùng."></p>
+                            <div class="image-wrapper">
+                                    <img src="../img/triv_fpga14.png" alt="result of the trivium IP Core for testing on FPGA" class="zoomable-image" style="width:40%;">
+                                    <img src="../img/triv_fpga15.png" alt="result of the trivium IP Core for testing on FPGA" class="zoomable-image" style="width:40%;">
+                                    <img src="../img/triv_fpga16.png" alt="result of the trivium IP Core for testing on FPGA" class="zoomable-image" style="width:40%;">
+                                </div>
+                            <div class="project-resources mt-4 mb-4">
+                                <h4 data-en="Project Resources" data-vi="Tài nguyên Dự án"></h4>
+                                <a href="https://drive.google.com/file/d/1xuZB58SPpbP7anvC1gbMqrFQ3nPhxk8X/view?usp=sharing" target="_blank" class="btn btn-outline-primary mr-2"
+                                   data-en="<i class='far fa-file-pdf mr-1'></i> View Full Report (PDF)"
+                                   data-vi="<i class='far fa-file-pdf mr-1'></i> Xem Báo cáo Đầy đủ (PDF)"></a>
+                                <a href="https://docs.google.com/presentation/d/1Rusiu9gEzS6F5POsMyYJdMl94UBt0en1/edit?usp=sharing&ouid=112204221691197441302&rtpof=true&sd=true" target="_blank" class="btn btn-outline-primary"
+                                   data-en="<i class='fas fa-file-powerpoint mr-1'></i> View Full Slide (PPT)"
+                                   data-vi="<i class='fas fa-file-powerpoint mr-1'></i> Xem Slide Đầy đủ (PPT)"></a>
+                            </div>
+                        </div>
+                        <a href="../index.html#projects" class="btn btn-primary mt-5" data-en="← Back to All Projects" data-vi="← Quay lại Tất cả Dự án"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =================================================================== -->
+    <!-- PART 4: Footer and Modal                                            -->
+    <!-- =================================================================== -->
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+
+                <p class="copyright-license-text" data-en="© 2025 Ninh Doan Nhat. All Rights Reserved." data-vi="© 2025 Ninh Doan Nhat. Bảo lưu mọi quyền."></p>
+                <p class="footer-social-icons">
+                    <a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nin_nichi_dnn/" target="_blank" rel="noopener"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/NinNichiCode" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                </p>
+                <p class="powered-by" data-en="Design inspired by Wowchemy" data-vi="Thiết kế lấy cảm hứng từ Wowchemy"></p>
+
+            </footer>
+        </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close-modal">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- PART 5: Scripts                                                     -->
+    <!-- =================================================================== -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

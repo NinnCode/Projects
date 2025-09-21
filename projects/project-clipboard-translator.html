@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-vn"> 
+<head>
+    <!-- =================================================================== -->
+    <!-- PART 1                                                              -->
+    <!-- =================================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+        media="print" onload='this.media="all"'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous" media="print" onload='this.media="all"'>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEN4X51SZF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } function trackOutboundLink(e, t) { gtag("event", "click", { event_category: "outbound", event_label: e, transport_type: "beacon", event_callback: function () { t !== "_blank" && (document.location = e) } }), console.debug("Outbound link clicked: " + e) } function onClickCallback(e) { if (e.target.tagName !== "A" || e.target.host === window.location.host) return; trackOutboundLink(e.target, e.target.getAttribute("target")) } gtag("js", new Date), gtag("config", "G-XEN4X51SZF", {}), gtag("set", { cookie_flags: "SameSite=None;Secure" }), document.addEventListener("click", onClickCallback, !1)
+    </script>
+    <meta name="author" content="Nin">
+    <meta name="description" content="Student in HCMUS VNU-HCM">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32.png?text=Icon">
+    <link rel="apple-touch-icon" type="image/png" href="https://via.placeholder.com/180x180.png?text=Icon">
+    <meta name="theme-color" content="#1565c0">
+    <meta property="og:site_name" content="Academic">
+    <meta property="og:title" content="Nin Nichi | Academic">
+    <meta property="og:description" content="Student in ISE and Computing">
+    <meta property="og:locale" content="en-vn"> 
+    <meta property="og:updated_time" content="2023-01-27T00:00:00+00:00">
+    <title>Project: Clipboard Translator | Nin Nichi</title> <!-- Thay đổi: Cập nhật Title -->
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark-mode">
+
+    <!-- =================================================================== -->
+    <!-- PART 2: Header with Language Switcher                             -->
+    <!-- =================================================================== -->
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item"><a class="nav-link" href="../index.html#about"><span data-en="Home" data-vi="Trang chủ"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#experience"><span data-en="Experience" data-vi="Kinh nghiệm"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#accomplishments"><span data-en="Accomplishments" data-vi="Thành tựu"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#projects"><span data-en="Projects" data-vi="Dự án"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#activities"><span data-en="Other Activities" data-vi="Hoạt động khác"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#contact"><span data-en="Contact" data-vi="Liên hệ"></span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- THÊM MỚI: Nút chuyển đổi ngôn ngữ -->
+                    <div id="language-switcher" class="nav-item d-flex align-items-center">
+                        <button id="lang-vi" class="lang-btn active">VIE</button>
+                        <span class="text-white mx-1">|</span>
+                        <button id="lang-en" class="lang-btn">ENG</button>
+                    </div>
+
+                    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                        <li class="nav-item">
+                            <a id="dark-mode-toggler" class="nav-link" href="#" title="Toggle Dark Mode"
+                                aria-label="Toggle Dark Mode">
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!-- =================================================================== -->
+    <!--                      Main Content (Translated)                      -->
+    <!-- =================================================================== -->
+    <div class="page-body">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article-container">
+                        <h1 style="text-align: center;" data-en="Clipboard Translator & Vocabulary Saver" data-vi="Trình dịch Clipboard & Lưu trữ Từ vựng"></h1>
+                        <div class="article-style">
+                            <p data-en="<strong>Personal Project</strong> | Python Application<br><strong>Role:</strong> Individual Developer"
+                               data-vi="<strong>Dự án Cá nhân</strong> | Ứng dụng Python<br><strong></p>
+
+                            <h3 data-en="The Problem" data-vi="Vấn đề"></h3>
+                            <p data-en="When reading English documents online or on a local machine, translating an unknown word often requires switching context—copying the text and pasting it into a web translator. While browser extensions can help, they don't work for local documents (like PDFs or Word files). Conversely, desktop translation software may not function online or integrate smoothly for documents on the Internet."
+                               data-vi="Khi đọc tài liệu tiếng Anh trực tuyến hoặc trên máy tính, việc dịch một từ không biết thường đòi hỏi phải chuyển đổi ngữ cảnh—sao chép văn bản và dán vào một trình dịch web. Mặc dù các tiện ích mở rộng của trình duyệt có thể hữu ích, chúng không hoạt động với các tài liệu cục bộ (như file PDF hoặc Word). Ngược lại, các phần mềm dịch thuật trên máy tính có thể không hoạt động trực tuyến hoặc tích hợp mượt mà cho các tài liệu trên Internet."></p>
+
+                            <h3 data-en="The Solution" data-vi="Giải pháp"></h3>
+                            <p data-en="This Python application bridges that gap by providing a seamless translation experience for any copyable text on your computer. It runs in the background and uses global keyboard shortcuts to instantly translate content from the clipboard, whether it's from a website, a PDF, or any other application."
+                               data-vi="Ứng dụng Python này thu hẹp khoảng cách đó bằng cách cung cấp trải nghiệm dịch thuật liền mạch cho bất kỳ văn bản nào có thể sao chép trên máy tính của bạn. Nó chạy trong nền và sử dụng các phím tắt toàn cục để dịch ngay lập tức nội dung từ clipboard, cho dù đó là từ một trang web, một file PDF hay bất kỳ ứng dụng nào khác."></p>
+
+                            <h3 data-en="How It Works" data-vi="Cách Hoạt động"></h3>
+                            <p data-en="The workflow is designed for maximum efficiency:"
+                               data-vi="Luồng hoạt động được thiết kế để đạt hiệu quả tối đa:"></p>
+                            <ol>
+                                <li data-en="The user highlights and copies (Ctrl+C) any English text they want to translate."
+                                    data-vi="Người dùng bôi đen và sao chép (Ctrl+C) bất kỳ văn bản tiếng Anh nào họ muốn dịch."></li>
+                                <li data-en="The user then presses a predefined keyboard shortcut to trigger an action."
+                                    data-vi="Sau đó, người dùng nhấn một phím tắt đã được định nghĩa trước để kích hoạt hành động."></li>
+                            </ol>
+
+                            <h4 data-en="Keyboard Shortcuts:" data-vi="Các phím tắt:"></h4>
+                            <table class="table table-bordered mt-3">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th scope="col" data-en="Shortcut" data-vi="Phím tắt"></th>
+                                        <th scope="col" data-en="Action" data-vi="Hành động"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>Ctrl</code> + <code>B</code></td>
+                                        <td data-en="Translates the clipboard content and shows a notification popup."
+                                            data-vi="Dịch nội dung trong clipboard và hiển thị một cửa sổ thông báo."></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>Ctrl</code> + <code>M</code></td>
+                                        <td data-en="Translates, shows the popup, and <strong>saves</strong> the English text and its translation to a <code>.txt</code> file for later review."
+                                            data-vi="Dịch, hiển thị thông báo, và <strong>lưu</strong> văn bản tiếng Anh cùng với bản dịch vào một file <code>.txt</code> để xem lại sau."></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h4 data-en="Example Usage:" data-vi="Ví dụ Sử dụng:"></h4>
+                            <p data-en="1. Copy this sentence: <code>He has versatile experience.</code>"
+                               data-vi="1. Sao chép câu này: <code>He has versatile experience.</code>"></p>
+                            <p data-en="2. Press <code>Ctrl + B</code>."
+                               data-vi="2. Nhấn <code>Ctrl + B</code>."></p>
+                            <p data-en="3. A popup will appear on your screen showing the translation:"
+                               data-vi="3. Một cửa sổ thông báo sẽ xuất hiện trên màn hình của bạn hiển thị bản dịch:"></p>
+                            <blockquote class="blockquote text-center">
+                                <div class="image-wrapper">
+                                    <img src="../img/clipboard_trans1.png" alt="Translation popup example" class="zoomable-image" style="width:20%;">
+                                    <img src="../img/clipboard_trans2.png" alt="Translation popup example" class="zoomable-image" style="width:20%;">
+                                </div>
+                            </blockquote>
+                            <p data-en="If you had pressed <code>Ctrl + M</code> instead, the same translation would also be appended to your vocabulary list file, making it easy to build a personal dictionary for future study."
+                               data-vi="Nếu bạn nhấn <code>Ctrl + M</code>, bản dịch tương tự cũng sẽ được thêm vào cuối file danh sách từ vựng của bạn, giúp dễ dàng xây dựng một từ điển cá nhân để học tập sau này."></p>
+                            <div class="image-wrapper">
+                                <img src="../img/clipboard_trans3.png" alt="Translation popup example" class="zoomable-image" style="width:20%;">
+                                <img src="../img/clipboard_trans4.png" alt="Translation popup example" class="zoomable-image" style="width:20%;">
+                            </div>
+                            
+                            <h3 data-en="Technologies Used" data-vi="Công nghệ sử dụng"></h3>
+                            <ul data-en="<li><strong>Python</strong>: Core application logic.</li><li><strong>Tkinter</strong>: To create the simple, non-intrusive popup window.</li><li><strong>keyboard</strong> library: To listen for global keyboard shortcuts (hotkeys) even when the app is not in focus.</li><li><strong>pyperclip</strong> library: To access the content of the system clipboard.</li><li><strong>googletrans</strong>: To perform the translation.</li>"
+                                data-vi="<li><strong>Python</strong>: Logic cốt lõi của ứng dụng.</li><li><strong>Tkinter</strong>: Để tạo cửa sổ thông báo đơn giản, không gây gián đoạn.</li><li>Thư viện <strong>keyboard</strong>: Để lắng nghe các phím tắt toàn cục (hotkeys) ngay cả khi ứng dụng không được focus.</li><li>Thư viện <strong>pyperclip</strong>: Để truy cập nội dung của clipboard hệ thống.</li><li><strong>googletrans</strong>: Để thực hiện việc dịch.</li>"></ul>
+                            
+                        </div>
+
+                        <a href="../index.html#projects" class="btn btn-primary mt-5" data-en="← Back to All Projects" data-vi="← Quay lại Tất cả Dự án"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =================================================================== -->
+    <!-- PART 4                                                              -->
+    <!-- =================================================================== -->
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+
+                <p class="copyright-license-text" data-en="© 2025 Ninh Doan Nhat. All Rights Reserved." data-vi="© 2025 Ninh Doan Nhat. Bảo lưu mọi quyền."></p>
+                <p class="footer-social-icons">
+                    <a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nin_nichi_dnn/" target="_blank" rel="noopener"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/NinNichiCode" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                </p>
+                <p class="powered-by" data-en="Design inspired by Wowchemy" data-vi="Thiết kế lấy cảm hứng từ Wowchemy"></p>
+            </footer>
+        </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close-modal">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-vn"> 
+
+<head>
+    <!-- =================================================================== -->
+    <!-- PART 1                                                              -->
+    <!-- =================================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+        media="print" onload='this.media="all"'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous" media="print" onload='this.media="all"'>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEN4X51SZF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } function trackOutboundLink(e, t) { gtag("event", "click", { event_category: "outbound", event_label: e, transport_type: "beacon", event_callback: function () { t !== "_blank" && (document.location = e) } }), console.debug("Outbound link clicked: " + e) } function onClickCallback(e) { if (e.target.tagName !== "A" || e.target.host === window.location.host) return; trackOutboundLink(e.target, e.target.getAttribute("target")) } gtag("js", new Date), gtag("config", "G-XEN4X51SZF", {}), gtag("set", { cookie_flags: "SameSite=None;Secure" }), document.addEventListener("click", onClickCallback, !1)
+    </script>
+    <meta name="author" content="Nin">
+    <meta name="description" content="Student in HCMUS VNU-HCM">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32.png?text=Icon">
+    <link rel="apple-touch-icon" type="image/png" href="https://via.placeholder.com/180x180.png?text=Icon">
+    <meta name="theme-color" content="#1565c0">
+    <meta property="og:site_name" content="Academic">
+    <meta property="og:title" content="Nin Nichi | Academic">
+    <meta property="og:description" content="Student in ISE and Computing">
+    <meta property="og:locale" content="en-vn"> <!-- Thay đổi: Đặt Tiếng Việt -->
+    <meta property="og:updated_time" content="2023-01-27T00:00:00+00:00">
+    <title>Project: VLSI Design for UART | Nin Nichi</title> <!-- Thay đổi: Cập nhật Title -->
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark-mode">
+
+    <!-- =================================================================== -->
+    <!-- PART 2: Header with Language Switcher                             -->
+    <!-- =================================================================== -->
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item"><a class="nav-link" href="../index.html#about"><span data-en="Home" data-vi="Trang chủ"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#experience"><span data-en="Experience" data-vi="Kinh nghiệm"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#accomplishments"><span data-en="Accomplishments" data-vi="Thành tựu"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#projects"><span data-en="Projects" data-vi="Dự án"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#activities"><span data-en="Other Activities" data-vi="Hoạt động khác"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#contact"><span data-en="Contact" data-vi="Liên hệ"></span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- THÊM MỚI: Nút chuyển đổi ngôn ngữ -->
+                    <div id="language-switcher" class="nav-item d-flex align-items-center">
+                        <button id="lang-vi" class="lang-btn active">VIE</button>
+                        <span class="text-white mx-1">|</span>
+                        <button id="lang-en" class="lang-btn">ENG</button>
+                    </div>
+
+                    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                        <li class="nav-item">
+                            <a id="dark-mode-toggler" class="nav-link" href="#" title="Toggle Dark Mode"
+                                aria-label="Toggle Dark Mode">
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- =================================================================== -->
+    <!--                      Main Content (Translated)                      -->
+    <!-- =================================================================== -->
+    <div class="page-body">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article-container">
+                        <h1 style="text-align: center;" data-en="VLSI Design for UART Circuit with Integrated FIFO, Registers and Security" data-vi="Thiết kế VLSI cho Mạch UART tích hợp FIFO, Thanh ghi và Bảo mật"></h1>
+                        <div class="article-style">
+                            <p data-en="<strong>Personal Project – VLSI Design & Verification</strong><br><strong>Languages:</strong> Verilog (RTL), SystemVerilog (Testbench)<br><strong>Tool:</strong> Xilinx Vivado"
+                               data-vi="<strong>Dự án Cá nhân – Thiết kế & Kiểm tra VLSI</strong><br><strong>Ngôn ngữ:</strong> Verilog (RTL), SystemVerilog (Testbench)<br><strong>Công cụ:</strong> Xilinx Vivado"></p>
+
+                            <h3 data-en="Project Goal" data-vi="Mục tiêu Dự án"></h3>
+                            <p data-en="The objective of this personal project was to design a modern, feature-rich UART (Universal Asynchronous Receiver-Transmitter) IP core. The design goes beyond a basic UART by incorporating essential components like FIFOs and registers, and experimentally integrating a security layer for data encryption. A key focus was placed on robust verification using a SystemVerilog testbench."
+                               data-vi="Mục tiêu của dự án cá nhân này là thiết kế một lõi IP UART (Bộ thu phát không đồng bộ đa năng) hiện đại và giàu tính năng. Thiết kế này vượt ra ngoài một UART cơ bản bằng cách tích hợp các thành phần thiết yếu như FIFO và thanh ghi, đồng thời tích hợp thử nghiệm một lớp bảo mật để mã hóa dữ liệu. Một trọng tâm chính được đặt vào việc kiểm tra chặt chẽ bằng cách sử dụng một testbench SystemVerilog."></p>
+
+                            <h3 data-en="Core Architecture" data-vi="Kiến trúc Cốt lõi"></h3>
+                            <p data-en="The UART IP core was designed in <strong>Verilog</strong> with a modular architecture, comprising the following key blocks:"
+                               data-vi="Lõi IP UART được thiết kế bằng <strong>Verilog</strong> với kiến trúc module, bao gồm các khối chính sau:"></p>
+                            <ul>
+                                <div class="image-wrapper">
+                                    <img src="../img/vlsi1.png" alt="Detailed Schematic of the UART IP Core" class="zoomable-image" style="width:50%;">
+                                </div>
+                                <li data-en="<strong>Register Block:</strong> A set of configurable registers to control UART parameters such as baud rate, parity, and stop bits."
+                                    data-vi="<strong>Khối Thanh ghi:</strong> Một tập hợp các thanh ghi có thể cấu hình để điều khiển các thông số UART như tốc độ baud, bit chẵn lẻ và bit dừng."></li>
+                                <li data-en="<strong>TX FIFO:</strong> A First-In, First-Out buffer to store data waiting to be transmitted."
+                                    data-vi="<strong>TX FIFO:</strong> Một bộ đệm Vào trước, Ra trước (FIFO) để lưu trữ dữ liệu đang chờ được truyền đi."></li>
+                                <li data-en="<strong>RX FIFO:</strong> A buffer to store received data, preventing data loss if the CPU is busy."
+                                    data-vi="<strong>RX FIFO:</strong> Một bộ đệm để lưu trữ dữ liệu đã nhận, ngăn ngừa mất dữ liệu nếu CPU đang bận."></li>
+                                <div class="image-wrapper">
+                                    <img src="../img/vlsi_fifo1.png" alt="Simulation TX FIFO" class="zoomable-image" style="width:45%;">
+                                    <img src="../img/vlsi_fifo2.png" alt="Simulation TX FIFO" class="zoomable-image" style="width:45%;">
+                                    <img src="../img/vlsi_fifo3.png" alt="Simulation RX FIFO" class="zoomable-image" style="width:45%;">
+                                    <img src="../img/vlsi_fifo4.png" alt="Simulation RX FIFO" class="zoomable-image" style="width:45%;">
+                                </div>
+                                <li data-en="<strong>Transmitter (TX) Block:</strong> Handles parallel-to-serial data conversion, adds start/stop/parity bits, and sends data out."
+                                    data-vi="<strong>Khối Truyền (TX):</strong> Xử lý chuyển đổi dữ liệu từ song song sang nối tiếp, thêm các bit bắt đầu/dừng/chẵn lẻ, và gửi dữ liệu ra ngoài."></li>
+                                <div class="image-wrapper">
+                                    <img src="../img/vlsi3.png" alt="Simulation waveform in Vivado showing UART transmission" class="zoomable-image" style="width:50%;">
+                                </div>
+                                <li data-en="<strong>Receiver (RX) Block:</strong> Handles serial-to-parallel data conversion and performs error checking."
+                                    data-vi="<strong>Khối Nhận (RX):</strong> Xử lý chuyển đổi dữ liệu từ nối tiếp sang song song và thực hiện kiểm tra lỗi."></li>
+                                <div class="image-wrapper">
+                                    <img src="../img/vlsi4.png" alt="Simulation waveform in Vivado showing UART received " class="zoomable-image" style="width:50%;">
+                                </div>
+                                <li data-en="<strong>Security Layer (Experimental):</strong> An integrated LFSR-based keystream generator for basic data encryption/decryption."
+                                    data-vi="<strong>Lớp Bảo mật (Thử nghiệm):</strong> Một bộ tạo chuỗi khóa tích hợp dựa trên LFSR để mã hóa/giải mã dữ liệu cơ bản."></li>
+                            </ul>
+                            <div class="image-wrapper">
+                                <img src="../img/vlsi9.png" alt="Detailed block diagram of the UART IP Core" class="zoomable-image" style="width:30%;">
+                                <img src="../img/vlsi6.png" alt="Code LFSR" class="zoomable-image" style="width:45%;">
+                                <img src="../img/vlsi7.png" alt="Simulation waveform in Vivado showing UART transmission with LFSR" class="zoomable-image" style="width:40%;">
+                                <img src="../img/vlsi8.png" alt="Simulation waveform in Vivado showing UART received with LFSR" class="zoomable-image" style="width:51%;">
+                            </div>
+
+                            <h3 data-en="My Role and Key Tasks" data-vi="Vai trò và Nhiệm vụ chính"></h3>
+                            <p data-en="As a personal project, I was responsible for the entire design and verification lifecycle:"
+                               data-vi="Là một dự án cá nhân, tôi chịu trách nhiệm cho toàn bộ vòng đời thiết kế và kiểm tra:"></p>
+                            <ol data-en="<li><strong>Research & Specification:</strong> Conducted in-depth research on modern UART standards and defined the functional specifications for the IP core.</li><li><strong>RTL Design in Verilog:</strong> Wrote the synthesizable RTL code for all modules of the UART using Verilog.</li><li><strong>Verification with SystemVerilog:</strong> Developed a comprehensive testbench using SystemVerilog to validate the design's functionality. This included creating constrained-random stimulus, checking for correct data transmission/reception, and verifying the security features.</li><li><strong>Simulation and Debugging:</strong> Performed all simulations and debugging within the Xilinx Vivado environment.</li><li><strong>Security Integration:</strong> Experimentally integrated a Linear-Feedback Shift Register (LFSR) to act as a pseudo-random keystream generator for data encryption and decryption.</li>"
+                                data-vi="<li><strong>Nghiên cứu & Đặc tả:</strong> Thực hiện nghiên cứu sâu về các tiêu chuẩn UART hiện đại và xác định các thông số kỹ thuật chức năng cho lõi IP.</li><li><strong>Thiết kế RTL bằng Verilog:</strong> Viết mã RTL có thể tổng hợp được cho tất cả các module của UART bằng Verilog.</li><li><strong>Kiểm tra bằng SystemVerilog:</strong> Phát triển một testbench toàn diện bằng SystemVerilog để xác thực chức năng của thiết kế. Điều này bao gồm việc tạo ra các kích thích ngẫu nhiên có ràng buộc, kiểm tra việc truyền/nhận dữ liệu chính xác và xác minh các tính năng bảo mật.</li><li><strong>Mô phỏng và Gỡ lỗi:</strong> Thực hiện tất cả các quá trình mô phỏng và gỡ lỗi trong môi trường Xilinx Vivado.</li><li><strong>Tích hợp Bảo mật:</strong> Tích hợp thử nghiệm một Thanh ghi Dịch chuyển Hồi tiếp Tuyến tính (LFSR) để hoạt động như một bộ tạo chuỗi khóa giả ngẫu nhiên cho việc mã hóa và giải mã dữ liệu.</li>"></ol>
+
+                            <h3 data-en="Results & Future Work" data-vi="Kết quả & Hướng phát triển"></h3>
+                            <ul data-en="<li>The UART circuit passed all directed tests defined in the SystemVerilog testbench, including successful data transmission, reception, and the encryption/decryption process under various configurations.</li><li><strong>Area for Improvement:</strong> The current verification environment relies on directed testing. The next step is to enhance the testbench to support coverage-driven and constrained-random verification methodologies to uncover more complex bugs and edge cases.</li><li><strong>Security Enhancement:</strong> The LFSR-based security is a proof-of-concept. Further research into more robust cryptographic hardware accelerators (like AES) would be necessary for real-world applications.</li>"
+                                data-vi="<li>Mạch UART đã vượt qua tất cả các bài kiểm tra có định hướng được xác định trong testbench SystemVerilog, bao gồm việc truyền, nhận dữ liệu thành công và quá trình mã hóa/giải mã dưới nhiều cấu hình khác nhau.</li><li><strong>Điểm cần Cải thiện:</strong> Môi trường kiểm tra hiện tại dựa trên kiểm tra có định hướng. Bước tiếp theo là nâng cao testbench để hỗ trợ các phương pháp kiểm tra dựa trên độ bao phủ và ngẫu nhiên có ràng buộc để phát hiện các lỗi phức tạp và các trường hợp biên.</li><li><strong>Nâng cao Bảo mật:</strong> Bảo mật dựa trên LFSR chỉ là một bằng chứng về khái niệm. Cần nghiên cứu thêm về các bộ tăng tốc phần cứng mật mã mạnh mẽ hơn (như AES) cho các ứng dụng thực tế.</li>"></ul>
+                            
+                            <div class="project-resources mt-4 mb-4">
+                                <h4 data-en="Project Resources" data-vi="Tài nguyên Dự án"></h4>
+                                <a href="https://drive.google.com/file/d/1xuZB58SPpbP7anvC1gbMqrFQ3nPhxk8X/view?usp=sharing" target="_blank" class="btn btn-outline-primary mr-2"
+                                   data-en="<i class='far fa-file-pdf mr-1'></i> View Full Report (PDF)"
+                                   data-vi="<i class='far fa-file-pdf mr-1'></i> Xem Báo cáo Đầy đủ (PDF)"></a>
+                                <a href="https://docs.google.com/presentation/d/1Rusiu9gEzS6F5POsMyYJdMl94UBt0en1/edit?usp=sharing&ouid=112204221691197441302&rtpof=true&sd=true" target="_blank" class="btn btn-outline-primary"
+                                   data-en="<i class='fas fa-file-powerpoint mr-1'></i> View Full Slide (PPT)"
+                                   data-vi="<i class='fas fa-file-powerpoint mr-1'></i> Xem Slide Đầy đủ (PPT)"></a>
+                            </div>
+                        </div>
+                        <a href="../index.html#projects" class="btn btn-primary mt-5" data-en="← Back to All Projects" data-vi="← Quay lại Tất cả Dự án"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =================================================================== -->
+    <!-- PART 4                                                              -->
+    <!-- =================================================================== -->
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+
+                <p class="copyright-license-text" data-en="© 2025 Ninh Doan Nhat. All Rights Reserved." data-vi="© 2025 Ninh Doan Nhat. Bảo lưu mọi quyền."></p>
+                <p class="footer-social-icons">
+                    <a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nin_nichi_dnn/" target="_blank" rel="noopener"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/NinNichiCode" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                </p>
+                <p class="powered-by" data-en="Design inspired by Wowchemy" data-vi="Thiết kế lấy cảm hứng từ Wowchemy"></p>
+
+            </footer>
+        </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close-modal">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

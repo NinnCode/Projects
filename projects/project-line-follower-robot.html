@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-vn"> 
+
+<head>
+    <!-- =================================================================== -->
+    <!-- PART 1                                                              -->
+    <!-- =================================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+        media="print" onload='this.media="all"'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous" media="print" onload='this.media="all"'>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEN4X51SZF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } function trackOutboundLink(e, t) { gtag("event", "click", { event_category: "outbound", event_label: e, transport_type: "beacon", event_callback: function () { t !== "_blank" && (document.location = e) } }), console.debug("Outbound link clicked: " + e) } function onClickCallback(e) { if (e.target.tagName !== "A" || e.target.host === window.location.host) return; trackOutboundLink(e.target, e.target.getAttribute("target")) } gtag("js", new Date), gtag("config", "G-XEN4X51SZF", {}), gtag("set", { cookie_flags: "SameSite=None;Secure" }), document.addEventListener("click", onClickCallback, !1)
+    </script>
+    <meta name="author" content="Nin">
+    <meta name="description" content="Student in HCMUS VNU-HCM">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32.png?text=Icon">
+    <link rel="apple-touch-icon" type="image/png" href="https://via.placeholder.com/180x180.png?text=Icon">
+    <meta name="theme-color" content="#1565c0">
+    <meta property="og:site_name" content="Academic">
+    <meta property="og:title" content="Nin Nichi | Academic">
+    <meta property="og:description" content="Student in ISE and Computing">
+    <meta property="og:locale" content="en-vn"> <!-- Thay đổi: Đặt Tiếng Việt -->
+    <meta property="og:updated_time" content="2023-01-27T00:00:00+00:00">
+    <title>Project: Line Follower Robot | Nin Nichi</title> <!-- Thay đổi: Cập nhật Title -->
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark-mode">
+
+    <!-- =================================================================== -->
+    <!-- PART 2: Header with Language Switcher                             -->
+    <!-- =================================================================== -->
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item"><a class="nav-link" href="../index.html#about"><span data-en="Home" data-vi="Trang chủ"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#experience"><span data-en="Experience" data-vi="Kinh nghiệm"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#accomplishments"><span data-en="Accomplishments" data-vi="Thành tựu"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#projects"><span data-en="Projects" data-vi="Dự án"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#activities"><span data-en="Other Activities" data-vi="Hoạt động khác"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#contact"><span data-en="Contact" data-vi="Liên hệ"></span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- THÊM MỚI: Nút chuyển đổi ngôn ngữ -->
+                    <div id="language-switcher" class="nav-item d-flex align-items-center">
+                        <button id="lang-vi" class="lang-btn active">VIE</button>
+                        <span class="text-white mx-1">|</span>
+                        <button id="lang-en" class="lang-btn">ENG</button>
+                    </div>
+
+                    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                        <li class="nav-item">
+                            <a id="dark-mode-toggler" class="nav-link" href="#" title="Toggle Dark Mode"
+                                aria-label="Toggle Dark Mode">
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!-- =================================================================== -->
+    <!--                      Main Content (Translated)                      -->
+    <!-- =================================================================== -->
+    <div class="page-body">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article-container">
+                        <h1 style="text-align: center;" data-en="Line Follower Robot with Obstacle Avoidance" data-vi="Robot Dò đường với Chức năng Tránh Vật cản"></h1>
+                        
+                        <div class="article-style">
+                            <p data-en="<strong>Competition Project – F-Race Model Car Competition</strong><br><strong>Team size:</strong> 3 | <strong>My role:</strong> Team Leader"
+                               data-vi="<strong>Dự án Thi đấu – Cuộc thi đua Xe mô hình F-Race</strong><br><strong>Quy mô nhóm:</strong> 3 | <strong>Vai trò:</strong> Trưởng nhóm"></p>
+
+                            <h3 data-en="Project Goal" data-vi="Mục tiêu Dự án"></h3>
+                            <p data-en="The objective was to design, build, and program an autonomous robot capable of smoothly navigating a black line track and accurately detecting and stopping for obstacles in its path. This project was developed for the F-Race model car competition."
+                               data-vi="Mục tiêu là thiết kế, chế tạo và lập trình một robot tự hành có khả năng di chuyển mượt mà trên đường vạch đen, đồng thời phát hiện chính xác và dừng lại khi có vật cản trên đường đi. Dự án này được phát triển để tham gia cuộc thi đua xe mô hình F-Race."></p>
+
+                            <h3 data-en="Hardware Components" data-vi="Thành phần Phần cứng"></h3>
+                            <p data-en="The robot was constructed using the following key components:"
+                               data-vi="Robot được chế tạo bằng các thành phần chính sau:"></p>
+                            <ul data-en="<li><strong>Microcontroller:</strong> Arduino Uno R3, processing all sensor data and controlling the motors.</li><li><strong>Motors:</strong> V1 Geared DC Motors - Provided the necessary torque and speed for movement.</li><li><strong>Line Sensor:</strong> An array of IR (Infrared) sensors to detect the black line on a white surface.</li><li><strong>Obstacle Sensor:</strong> HC-SR04 Ultrasonic Sensor - To measure the distance to objects in front of the robot.</li><li><strong>Motor Driver:</strong> L298N Motor Driver Module - To control the speed and direction of the DC motors.</li>"
+                                data-vi="<li><strong>Vi điều khiển:</strong> Arduino Uno R3, xử lý tất cả dữ liệu từ cảm biến và điều khiển động cơ.</li><li><strong>Động cơ:</strong> Động cơ DC giảm tốc V1 - Cung cấp mô-men xoắn và tốc độ cần thiết cho việc di chuyển.</li><li><strong>Cảm biến dò đường:</strong> Một dãy cảm biến hồng ngoại (IR) để phát hiện vạch đen trên nền trắng.</li><li><strong>Cảm biến vật cản:</strong> Cảm biến siêu âm HC-SR04 - Dùng để đo khoảng cách đến các vật thể phía trước robot.</li><li><strong>Mạch điều khiển động cơ:</strong> Module L298N - Để điều khiển tốc độ và hướng quay của động cơ DC.</li>"></ul>
+
+                            <div class="image-wrapper">
+                                <img src="../img/Robot_Line1.jpg" alt="Items of project" class="zoomable-image" style="width:48%;">
+                                <img src="../img/Robot_Line2.jpg" alt="Robot navigating the track" class="zoomable-image" style="width:48%;">
+                            </div>
+                            <h4 data-en="Demo:" data-vi="Trình diễn:"></h4>
+                            <p data-en="(Videos in the process of researching, improving, and designing the Line Follower Robot with Obstacle Avoidance)"
+                               data-vi="(Các video trong quá trình nghiên cứu, cải tiến và thiết kế Robot Dò đường với Chức năng Tránh Vật cản)"></p>
+                            
+                            <div class="video-wrapper" style="text-align: center; margin: 20px 0;">
+                                <video controls style="width:27%; border-radius: 10px; margin-right: 50px;">
+                                    <source src="../video/vid_robot_line2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video controls style="width:27%; border-radius: 10px; margin-right: 50px;">
+                                    <source src="../video/vid_robot_line3.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video controls style="width:27%; border-radius: 10px; text-align: right;">
+                                    <source src="../video/vid_robot_line1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+
+                            <h3 data-en="My Contributions" data-vi="Đóng góp của tôi"></h3>
+                            <ul data-en="<li>As <strong>Team Leader</strong>, I developed the initial concept, created the project timeline, and coordinated the team's efforts.</li><li>I was responsible for researching and implementing the core control algorithm in Arduino C++. This involved tuning parameters to ensure the robot followed the line smoothly and responded quickly to curves without oscillating.</li><li>I integrated the ultrasonic sensor data into the main loop to create a reliable obstacle avoidance system.</li>"
+                                data-vi="<li>Với vai trò <strong>Trưởng nhóm</strong>, tôi đã phát triển ý tưởng ban đầu, tạo ra tiến trình dự án và điều phối công việc của cả đội.</li><li>Tôi chịu trách nhiệm nghiên cứu và triển khai thuật toán điều khiển cốt lõi bằng Arduino C++. Công việc này bao gồm việc tinh chỉnh các thông số để đảm bảo robot đi theo vạch một cách mượt mà và phản ứng nhanh ở các đoạn cong mà không bị dao động.</li><li>Tôi đã tích hợp dữ liệu từ cảm biến siêu âm vào vòng lặp chính để tạo ra một hệ thống tránh vật cản đáng tin cậy.</li>"></ul>
+
+                            <h3 data-en="Result" data-vi="Kết quả"></h3>
+                            <p data-en="The robot successfully navigated the entire track, maintained stability at high speeds, and stopped consistently when an obstacle was placed in its path, fulfilling all project requirements. This project won 3rd place in the F-Race model car competition."
+                               data-vi="Robot đã hoàn thành xuất sắc toàn bộ đường đua, duy trì sự ổn định ở tốc độ cao và dừng lại một cách nhất quán khi có vật cản đặt trên đường, đáp ứng mọi yêu cầu của dự án. Dự án này đã đạt giải Ba trong cuộc thi đua xe mô hình F-Race."></p>
+
+                            <div class="image-wrapper">
+                                <img src="../img/Robot_Line3.jpg" alt="Awards cup" class="zoomable-image" style="width:20%;">
+                            </div>
+                        </div>
+                        <a href="../index.html#projects" class="btn btn-primary mt-5" data-en="← Back to All Projects" data-vi="← Quay lại Tất cả Dự án"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- PART 4: Footer (Translated)                                         -->
+    <!-- =================================================================== -->
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+
+                <p class="copyright-license-text" data-en="© 2025 Ninh Doan Nhat. All Rights Reserved." data-vi="© 2025 Ninh Doan Nhat. Bảo lưu mọi quyền."></p>
+                <p class="footer-social-icons">
+                    <a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nin_nichi_dnn/" target="_blank" rel="noopener"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/NinNichiCode" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                </p>
+                <p class="powered-by" data-en="Design inspired by Wowchemy" data-vi="Thiết kế lấy cảm hứng từ Wowchemy"></p>
+
+            </footer>
+        </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close-modal">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+    <!-- Custom JS (already has language switching logic) -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

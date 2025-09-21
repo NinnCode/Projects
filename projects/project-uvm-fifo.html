@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-vn">
+
+<head>
+    <!-- =================================================================== -->
+    <!-- PART 1: Head Section                                              -->
+    <!-- =================================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+        media="print" onload='this.media="all"'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous" media="print" onload='this.media="all"'>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEN4X51SZF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } function trackOutboundLink(e, t) { gtag("event", "click", { event_category: "outbound", event_label: e, transport_type: "beacon", event_callback: function () { t !== "_blank" && (document.location = e) } }), console.debug("Outbound link clicked: " + e) } function onClickCallback(e) { if (e.target.tagName !== "A" || e.target.host === window.location.host) return; trackOutboundLink(e.target, e.target.getAttribute("target")) } gtag("js", new Date), gtag("config", "G-XEN4X51SZF", {}), gtag("set", { cookie_flags: "SameSite=None;Secure" }), document.addEventListener("click", onClickCallback, !1)
+    </script>
+    <meta name="author" content="Nin">
+    <meta name="description" content="Student in HCMUS VNU-HCM">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32.png?text=Icon">
+    <link rel="apple-touch-icon" type="image/png" href="https://via.placeholder.com/180x180.png?text=Icon">
+    <meta name="theme-color" content="#1565c0">
+    <meta property="og:site_name" content="Academic">
+    <meta property="og:title" content="Nin Nichi | Academic">
+    <meta property="og:description" content="Student in ISE and Computing">
+    <meta property="og:locale" content="en-vn">
+    <meta property="og:updated_time" content="2023-01-27T00:00:00+00:00">
+    <title>Project: UVM Testbench for FIFO | Nin Nichi</title>
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark-mode">
+
+    <!-- =================================================================== -->
+    <!-- PART 2: Header with Language Switcher                             -->
+    <!-- =================================================================== -->
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item"><a class="nav-link" href="../index.html#about"><span data-en="Home" data-vi="Trang chủ"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#experience"><span data-en="Experience" data-vi="Kinh nghiệm"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#accomplishments"><span data-en="Accomplishments" data-vi="Thành tựu"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#projects"><span data-en="Projects" data-vi="Dự án"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#activities"><span data-en="Other Activities" data-vi="Hoạt động khác"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#contact"><span data-en="Contact" data-vi="Liên hệ"></span></a></li>
+                        </ul>
+                    </div>
+                    <div id="language-switcher" class="nav-item d-flex align-items-center">
+                        <button id="lang-vi" class="lang-btn active">VIE</button>
+                        <span class="text-white mx-1">|</span>
+                        <button id="lang-en" class="lang-btn">ENG</button>
+                    </div>
+                    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                        <li class="nav-item">
+                            <a id="dark-mode-toggler" class="nav-link" href="#" title="Toggle Dark Mode"
+                                aria-label="Toggle Dark Mode">
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- =================================================================== -->
+    <!--                      Main Content (Translated)                      -->
+    <!-- =================================================================== -->
+    <div class="page-body">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article-container">
+                        <h1 style="text-align: center;" data-en="Building a UVM Testbench for a Synchronous FIFO Design" data-vi="Xây dựng Môi trường Kiểm thử UVM cho Thiết kế FIFO Đồng bộ"></h1>
+                        <div class="article-style">
+                            <p data-en="<strong>Personal Project – Advanced VLSI Verification</strong><br><strong>Methodology:</strong> Universal Verification Methodology (UVM)<br><strong>Tools:</strong> SystemVerilog, Verilog, QuestaSim, Makefile"
+                               data-vi="<strong>Dự án Cá nhân – Kiểm tra VLSI Nâng cao</strong><br><strong>Phương pháp luận:</strong> Universal Verification Methodology (UVM)<br><strong>Công cụ:</strong> SystemVerilog, Verilog, QuestaSim, Makefile"></p>
+
+                            <h3 data-en="1. Project Overview" data-vi="1. Tổng quan Dự án"></h3>
+                            <p data-en="This project focuses on building a complete testbench based on the Universal Verification Methodology (UVM) to verify the functionality of a Synchronous FIFO design. The primary goal was to create a reusable, structured, and robust test environment capable of generating complex random scenarios and measuring verification quality through Functional Coverage."
+                               data-vi="Dự án này tập trung vào việc xây dựng một môi trường kiểm thử (testbench) hoàn chỉnh dựa trên phương pháp luận Universal Verification Methodology (UVM) để xác minh chức năng của một thiết kế hàng đợi vào trước-ra trước đồng bộ (Synchronous FIFO). Mục tiêu chính là tạo ra một môi trường kiểm thử tái sử dụng, có cấu trúc và có khả năng tạo ra các kịch bản kiểm thử ngẫu nhiên phức tạp, đồng thời đo lường chất lượng kiểm thử thông qua Functional Coverage."></p>
+                             <div class="image-wrapper">
+                                <img src="../img/uvm_fifo1.png" alt="UVM Testbench Architecture for the FIFO" class="zoomable-image" style="width:50%;">
+                                <p class="image-caption" data-en="UVM Testbench Architecture for the FIFO" data-vi="Kiến trúc Môi trường Kiểm thử UVM cho FIFO"></p>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="../img/uvm_fifo3.png" alt="Waveform of the FIFO" class="zoomable-image" style="width:50%;">
+                                <p class="image-caption" data-en="Waveform of the FIFO" data-vi="Dạng sóng Kiểm thử UVM cho FIFO"></p>
+                            </div>
+                            <h3 data-en="2. UVM Testbench Architecture" data-vi="2. Kiến trúc Môi trường Kiểm thử UVM"></h3>
+                            <p data-en="The testbench was built following the standard UVM architecture, comprising the following key components:"
+                               data-vi="Môi trường kiểm thử được xây dựng theo kiến trúc UVM tiêu chuẩn, bao gồm các thành phần chính:"></p>
+
+                            <ul data-en="<li><strong>Sequence Item & Sequences:</strong> Defined basic transactions and created targeted sequences for specific scenarios (write-only, read-only, fully randomized read/writes).</li><li><strong>Driver:</strong> Drove stimulus to the DUT's virtual interface based on items received from the sequencer.</li><li><strong>Monitor:</strong> Passively observed interface activity, collected transactions, and broadcast them to the scoreboard and coverage collector.</li><li><strong>Scoreboard:</strong> Contained a golden model (reference queue) to predict expected behavior and compared DUT outputs against it to determine PASS/FAIL results.</li><li><strong>Coverage Collector:</strong> Implemented a <code>covergroup</code> to measure functional coverage, including coverpoints for key signals, cross coverage for corner cases (e.g., writing when full), and transition bins.</li><li><strong>Agent, Environment, and Test Layers:</strong> Encapsulated and connected all components to form the complete, hierarchical test environment.</li>"
+                                data-vi="<li><strong>Sequence Item & Sequences:</strong> Định nghĩa các transaction cơ bản và tạo ra các chuỗi sequence có mục tiêu cho các kịch bản cụ thể (chỉ ghi, chỉ đọc, đọc/ghi hoàn toàn ngẫu nhiên).</li><li><strong>Driver:</strong> Đưa các kích thích đến giao diện ảo của DUT dựa trên các item nhận được từ sequencer.</li><li><strong>Monitor:</strong> Quan sát thụ động hoạt động trên giao diện, thu thập các transaction và gửi chúng đến scoreboard và coverage collector.</li><li><strong>Scoreboard:</strong> Chứa một mô hình tham chiếu vàng (golden model) để dự đoán hành vi mong đợi và so sánh đầu ra của DUT với nó để xác định kết quả PASS/FAIL.</li><li><strong>Coverage Collector:</strong> Hiện thực một <code>covergroup</code> để đo lường độ phủ chức năng, bao gồm các coverpoint cho các tín hiệu chính, cross coverage cho các trường hợp góc (ví dụ: ghi khi đầy), và các bin chuyển tiếp.</li><li><strong>Các lớp Agent, Environment, và Test:</strong> Đóng gói và kết nối tất cả các thành phần để tạo thành một môi trường kiểm thử phân cấp hoàn chỉnh.</li>"></ul>
+
+                            <h3 data-en="3. Automation and Verification Flow" data-vi="3. Tự động hóa và Quy trình Kiểm thử"></h3>
+                            <p data-en="The entire verification flow was automated using a Makefile, streamlining the process:"
+                               data-vi="Toàn bộ quy trình kiểm thử được tự động hóa bằng Makefile, giúp tinh giản quá trình:"></p>
+                            <ol data-en="<li><code>make compile</code>: Compiles all Verilog (DUT) and SystemVerilog (UVM testbench) files.</li><li><code>make simulate</code>: Runs the simulation, executes the testcase, and automatically saves coverage results to a <code>.ucdb</code> file.</li><li>The Makefile then automatically generates both an HTML coverage report and a detailed text report for analysis.</li>"
+                                data-vi="<li><code>make compile</code>: Biên dịch tất cả các file Verilog (DUT) và SystemVerilog (UVM testbench).</li><li><code>make simulate</code>: Chạy mô phỏng, thực thi testcase, và tự động lưu kết quả coverage vào một file <code>.ucdb</code>.</li><li>Makefile sau đó tự động tạo ra cả báo cáo coverage dạng HTML và báo cáo chi tiết dạng văn bản để phân tích.</li>"></ol>
+
+                            <h3 data-en="4. Results and Coverage Analysis" data-vi="4. Kết quả và Phân tích Độ phủ"></h3>
+                            <p data-en="The simulation ran successfully with zero errors reported by the scoreboard, confirming the DUT's functional correctness. The functional coverage report indicated a high-quality verification effort:"
+                               data-vi="Quá trình mô phỏng đã chạy thành công mà không có lỗi nào từ scoreboard, xác nhận tính đúng đắn về chức năng của DUT. Báo cáo Functional Coverage cho thấy một nỗ lực kiểm thử chất lượng cao:"></p>
+                            <div class="image-wrapper">
+                                <img src="../img/uvm_fifo2.png" alt="UVM Functional Coverage Report" class="zoomable-image" style="width:80%;">
+                                <p class="image-caption" data-en="UVM Functional Coverage Report Summary" data-vi="Tóm tắt Báo cáo Functional Coverage UVM"></p>
+                            </div>
+                            <ul>
+                                <li data-en="<strong>Total Coverage: 98.58%</strong></li>"
+                                    data-vi="<strong>Tổng Độ phủ (Total Coverage): 98.58%</strong></li>">
+                                <li data-en="<strong>Code Coverage (Statement/Branch):</strong> High scores (95-100%) indicate that nearly all lines of code and conditional branches in the DUT were executed.</li>"
+                                    data-vi="<strong>Độ phủ Mã nguồn (Statement/Branch):</strong> Điểm số cao (95-100%) cho thấy gần như tất cả các dòng mã và các nhánh điều kiện trong DUT đã được thực thi.</li>">
+                                <li data-en="<strong>Functional Coverage:</strong> The high overall percentage confirms that the UVM testbench successfully generated diverse and effective stimuli, covering almost all specified functionalities of the FIFO design.</li>"
+                                    data-vi="<strong>Độ phủ Chức năng:</strong> Tỷ lệ tổng thể cao xác nhận rằng môi trường kiểm thử UVM đã tạo ra các kích thích đa dạng và hiệu quả, bao phủ gần như toàn bộ các chức năng đã định rõ của thiết kế FIFO.</li>">
+                            </ul>
+                            
+                            <div class="project-resources mt-4 mb-4">
+                                <h4 data-en="Project Resources" data-vi="Tài nguyên Dự án"></h4>
+                                <a href="https://github.com/NinNichiCode/UVM_FIFO" target="_blank" class="btn btn-outline-primary"
+                                   data-en="<i class='fab fa-github mr-1'></i> View Source Code on GitHub"
+                                   data-vi="<i class='fab fa-github mr-1'></i> Xem Mã nguồn trên GitHub"></a>
+                            </div>
+                        </div>
+                        <a href="../index.html#projects" class="btn btn-primary mt-5" data-en="← Back to All Projects" data-vi="← Quay lại Tất cả Dự án"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- PART 4: Footer and Modal                                            -->
+    <!-- =================================================================== -->
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+                <p class="copyright-license-text" data-en="© 2025 Ninh Doan Nhat. All Rights Reserved." data-vi="© 2025 Ninh Doan Nhat. Bảo lưu mọi quyền."></p>
+                <p class="footer-social-icons">
+                    <a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nin_nichi_dnn/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/NinNichiCode" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </p>
+                <p class="powered-by" data-en="Design inspired by Wowchemy" data-vi="Thiết kế lấy cảm hứng từ Wowchemy"></p>
+            </footer>
+        </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close-modal">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- PART 5: Scripts                                                     -->
+    <!-- =================================================================== -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

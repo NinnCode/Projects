@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-vn"> 
+
+<head>
+    <!-- =================================================================== -->
+    <!-- PART 1                                                              -->
+    <!-- =================================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+        media="print" onload='this.media="all"'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous" media="print" onload='this.media="all"'>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEN4X51SZF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } function trackOutboundLink(e, t) { gtag("event", "click", { event_category: "outbound", event_label: e, transport_type: "beacon", event_callback: function () { t !== "_blank" && (document.location = e) } }), console.debug("Outbound link clicked: " + e) } function onClickCallback(e) { if (e.target.tagName !== "A" || e.target.host === window.location.host) return; trackOutboundLink(e.target, e.target.getAttribute("target")) } gtag("js", new Date), gtag("config", "G-XEN4X51SZF", {}), gtag("set", { cookie_flags: "SameSite=None;Secure" }), document.addEventListener("click", onClickCallback, !1)
+    </script>
+    <meta name="author" content="Nin">
+    <meta name="description" content="Student in HCMUS VNU-HCM">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32.png?text=Icon">
+    <link rel="apple-touch-icon" type="image/png" href="https://via.placeholder.com/180x180.png?text=Icon">
+    <meta name="theme-color" content="#1565c0">
+    <meta property="og:site_name" content="Academic">
+    <meta property="og:title" content="Nin Nichi | Academic">
+    <meta property="og:description" content="Student in ISE and Computing">
+    <meta property="og:locale" content="en-vn"> 
+    <meta property="og:updated_time" content="2023-01-27T00:00:00+00:00">
+    <title>Project: Voice-Controlled Car | Nin Nichi</title> <!-- Thay đổi: Cập nhật Title -->
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark-mode">
+
+    <!-- =================================================================== -->
+    <!-- PART 2: Header with Language Switcher                             -->
+    <!-- =================================================================== -->
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item"><a class="nav-link" href="../index.html#about"><span data-en="Home" data-vi="Trang chủ"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#experience"><span data-en="Experience" data-vi="Kinh nghiệm"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#accomplishments"><span data-en="Accomplishments" data-vi="Thành tựu"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#projects"><span data-en="Projects" data-vi="Dự án"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#activities"><span data-en="Other Activities" data-vi="Hoạt động khác"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#contact"><span data-en="Contact" data-vi="Liên hệ"></span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- THÊM MỚI: Nút chuyển đổi ngôn ngữ -->
+                    <div id="language-switcher" class="nav-item d-flex align-items-center">
+                        <button id="lang-vi" class="lang-btn active">VIE</button>
+                        <span class="text-white mx-1">|</span>
+                        <button id="lang-en" class="lang-btn">ENG</button>
+                    </div>
+
+                    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                        <li class="nav-item">
+                            <a id="dark-mode-toggler" class="nav-link" href="#" title="Toggle Dark Mode"
+                                aria-label="Toggle Dark Mode">
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- =================================================================== -->
+    <!--                      Main Content (Translated)                      -->
+    <!-- =================================================================== -->
+    <div class="page-body">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article-container">
+                        <h1 style="text-align: center;" data-en="Voice-Controlled Car with Custom Speech Recognition (MFCC)" data-vi="Xe Điều khiển bằng Giọng nói với Nhận dạng Tiếng nói Tùy chỉnh (MFCC)"></h1>
+                        <div class="article-style">
+                            <p data-en="<strong>Final Course Project – Microcontroller</strong><br><strong>Team size:</strong> 3"
+                               data-vi="<strong>Đồ án Cuối kỳ – Môn học Vi điều khiển</strong><br><strong>Quy mô nhóm:</strong> 3"></p>
+
+                            <h3 data-en="Project Challenge" data-vi="Thách thức của Dự án"></h3>
+                            <p data-en="This capstone project for the Microcontroller course aimed to develop a model car controlled by voice commands. The key challenge was to implement a <strong>basic speech recognition system from scratch</strong> on an STM32F4 microcontroller, without relying on pre-existing libraries. The system needed to process voice commands captured from a custom Android app and transmitted via Bluetooth."
+                               data-vi="Đồ án cuối kỳ này cho môn học Vi điều khiển nhằm mục đích phát triển một xe mô hình được điều khiển bằng lệnh thoại. Thách thức chính là triển khai một <strong>hệ thống nhận dạng tiếng nói cơ bản từ đầu</strong> trên vi điều khiển STM32F4, mà không dựa vào các thư viện có sẵn. Hệ thống cần xử lý các lệnh thoại được thu từ một ứng dụng Android tùy chỉnh và truyền qua Bluetooth."></p>
+
+                            <h3 data-en="Core Technical Components" data-vi="Các Thành phần Kỹ thuật Cốt lõi"></h3>
+
+                            <h4 data-en="1. Custom Speech Recognition Engine (MFCC Algorithm)" data-vi="1. Hệ thống Nhận dạng Tiếng nói Tùy chỉnh (Thuật toán MFCC)"></h4>
+                            <p data-en="The most complex part of the project was building the speech recognition logic. The process involved:"
+                               data-vi="Phần phức tạp nhất của dự án là xây dựng logic nhận dạng tiếng nói. Quá trình này bao gồm:"></p>
+                            <ul data-en="<li><strong>Research:</strong> In-depth study of speech processing methods, focusing on the <strong>Mel-Frequency Cepstral Coefficients (MFCC)</strong> algorithm for feature extraction from audio signals.</li><li><strong>Feature Extraction:</strong> Implementing the mathematical steps of MFCC to convert raw audio data into a compact set of features that represent the unique characteristics of a spoken word.</li><li><strong>Training & Recognition:</strong> Implementing a basic pattern matching algorithm (like Dynamic Time Warping - DTW, or a simple classifier) to compare extracted features from new commands against a pre-trained set of voice samples (e.g., 'forward,' 'backward,' 'left,' 'right').</li>"
+                                data-vi="<li><strong>Nghiên cứu:</strong> Nghiên cứu sâu về các phương pháp xử lý tiếng nói, tập trung vào thuật toán <strong>Hệ số Cepstral trên thang Mel (MFCC)</strong> để trích xuất đặc trưng từ tín hiệu âm thanh.</li><li><strong>Trích xuất Đặc trưng:</strong> Triển khai các bước toán học của MFCC để chuyển đổi dữ liệu âm thanh thô thành một bộ đặc trưng nhỏ gọn, đại diện cho các đặc tính riêng của một từ được nói ra.</li><li><strong>Huấn luyện & Nhận dạng:</strong> Triển khai một thuật toán so khớp mẫu cơ bản (như Dynamic Time Warping - DTW, hoặc một bộ phân loại đơn giản) để so sánh các đặc trưng được trích xuất từ lệnh mới với một bộ mẫu giọng nói đã được huấn luyện trước (ví dụ: 'tiến', 'lùi', 'trái', 'phải').</li>"></ul>
+                            <div class="image-wrapper">
+                                <img src="../img/robot_voice1.png" alt="MFCC Feature Extraction Process" class="zoomable-image" style="width:80%;">
+                            </div>
+
+                            <h4 data-en="2. Hardware and PCB Design" data-vi="2. Thiết kế Phần cứng và Mạch in (PCB)"></h4>
+                            <p data-en="The team designed the physical model car and a custom PCB to integrate all electronic components, including the STM32F4 microcontroller, motor drivers, and a Bluetooth module for wireless communication."
+                               data-vi="Nhóm đã thiết kế mô hình xe vật lý và một mạch PCB tùy chỉnh để tích hợp tất cả các thành phần điện tử, bao gồm vi điều khiển STM32F4, mạch điều khiển động cơ và module Bluetooth để giao tiếp không dây."></p>
+                            <div class="image-wrapper">
+                                <img src="../img/robot_voice2.png" alt="PCB" class="zoomable-image" style="width:42%; margin-right: 50px;">
+                                <img src="../img/robot_voice3.png" alt="PCB" class="zoomable-image" style="width:35%;">
+                                <img src="../img/robot_voice4.png" alt="PCB" class="zoomable-image" style="width:30%; margin-left: 50px; margin-right: 50px; margin-top: 20px;">
+                            </div>
+                            
+                            <h4 data-en="3. Android Control Application" data-vi="3. Ứng dụng Điều khiển trên Android"></h4>
+                            <p data-en="A dedicated Android application was developed to:
+                                <ul><li>Capture the user's voice commands using the phone's microphone.</li><li>Transmit the raw audio data or processed commands to the STM32F4 board via Bluetooth.</li></ul>"
+                               data-vi="Một ứng dụng Android chuyên dụng đã được phát triển để:
+                                <ul><li>Thu lại lệnh thoại của người dùng bằng micro của điện thoại.</li><li>Truyền dữ liệu âm thanh thô hoặc các lệnh đã xử lý đến bo mạch STM32F4 qua Bluetooth.</li></ul>"></p>
+                            <div class="image-wrapper">
+                                <img src="../img/robot_voice5.png" alt="Control app" class="zoomable-image" style="width:40%;">
+                                <img src="../img/robot_voice6.png" alt="Control app" class="zoomable-image" style="width:40%;">
+                            </div>
+
+                            <h4 data-en="Some videos were recorded during the testing and research process to carry out the project:" 
+                                data-vi="Một số video được ghi lại trong quá trình thử nghiệm và nghiên cứu để thực hiện dự án:"></h4>
+                            <div class="video-wrapper" style="text-align: center; margin: 20px 0;">
+                                <video controls style="width:20%; border-radius: 10px; margin-right: 30px;">
+                                    <source src="../video/vid_robot_voice1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video controls style="width:62%; border-radius: 10px;">
+                                    <source src="../video/vid_robot_voice2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+
+                            <h3 data-en="My Contributions" data-vi="Đóng góp của tôi"></h3>
+                            <ul data-en="<li>Conducted extensive research into speech recognition methodologies, primarily focusing on the MFCC algorithm and other feature extraction techniques.</li><li>Developed a C# simulation to test and validate the MFCC algorithm's logic before implementing it on the microcontroller.</li><li>Provided support in coding the STM32 firmware, particularly in the process of sampling voice data and training the recognition model.</li>"
+                                data-vi="<li>Thực hiện nghiên cứu sâu rộng về các phương pháp nhận dạng tiếng nói, chủ yếu tập trung vào thuật toán MFCC và các kỹ thuật trích xuất đặc trưng khác.</li><li>Phát triển một chương trình mô phỏng bằng C# để kiểm tra và xác thực logic của thuật toán MFCC trước khi triển khai trên vi điều khiển.</li><li>Hỗ trợ lập trình firmware cho STM32, đặc biệt là trong quá trình lấy mẫu dữ liệu giọng nói và huấn luyện mô hình nhận dạng.</li>"></ul>
+
+                            <h3 data-en="Results & Achievements" data-vi="Kết quả & Thành tích"></h3>
+                            <ul data-en="<li>The application successfully recognized basic commands ('forward,' 'backward,' 'left,' 'right') and controlled the car's movements as expected.</li><li>Achieved the maximum score for the Microcontroller course, demonstrating a deep understanding of embedded systems and signal processing.</li><li><strong>Technical Reflection:</strong> Implementing a speech recognition system without libraries proved to be a significant challenge. The system's accuracy was susceptible to background noise. Future improvements would involve more advanced noise filtering techniques and a more robust classification model.</li>"
+                                data-vi="<li>Ứng dụng đã nhận dạng thành công các lệnh cơ bản ('tiến', 'lùi', 'trái', 'phải') và điều khiển chuyển động của xe đúng như mong đợi.</li><li>Đạt điểm tối đa cho môn học Vi điều khiển, thể hiện sự am hiểu sâu sắc về hệ thống nhúng và xử lý tín hiệu.</li><li><strong>Nhìn nhận Kỹ thuật:</strong> Việc triển khai một hệ thống nhận dạng tiếng nói mà không dùng thư viện là một thách thức lớn. Độ chính xác của hệ thống dễ bị ảnh hưởng bởi tiếng ồn nền. Các cải tiến trong tương lai sẽ bao gồm các kỹ thuật lọc nhiễu tiên tiến hơn và một mô hình phân loại mạnh mẽ hơn.</li>"></ul>
+                            
+                            <div class="project-resources mt-4 mb-4">
+                                <h4 data-en="Project Resources" data-vi="Tài nguyên Dự án"></h4>
+                                <a href="https://drive.google.com/file/d/1U8f_abFeUvseytrwo7WPOBJ45wj-nIfE/view?usp=sharing" target="_blank" class="btn btn-outline-primary mr-2"
+                                   data-en="<i class='far fa-file-pdf mr-1'></i> View Full Report (PDF)"
+                                   data-vi="<i class='far fa-file-pdf mr-1'></i> Xem Báo cáo Đầy đủ (PDF)"></a>
+                            </div>
+                        </div>
+                        <a href="../index.html#projects" class="btn btn-primary mt-5" data-en="← Back to All Projects" data-vi="← Quay lại Tất cả Dự án"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =================================================================== -->
+    <!-- PART 4                                                              -->
+    <!-- =================================================================== -->
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+
+                <p class="copyright-license-text" data-en="© 2025 Ninh Doan Nhat. All Rights Reserved." data-vi="© 2025 Ninh Doan Nhat. Bảo lưu mọi quyền."></p>
+                <p class="footer-social-icons">
+                    <a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="https://www.instagram.com/nin_nichi_dnn/" target="_blank" rel="noopener"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+                    <a href="https://github.com/NinNichiCode" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                </p>
+
+                <p class="powered-by" data-en="Design inspired by Wowchemy" data-vi="Thiết kế lấy cảm hứng từ Wowchemy"></p>
+
+            </footer>
+        </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close-modal">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

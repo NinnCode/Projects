@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-vn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+        media="print" onload='this.media="all"'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous" media="print" onload='this.media="all"'>
+    <link rel="stylesheet" href="../css/style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEN4X51SZF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } function trackOutboundLink(e, t) { gtag("event", "click", { event_category: "outbound", event_label: e, transport_type: "beacon", event_callback: function () { t !== "_blank" && (document.location = e) } }), console.debug("Outbound link clicked: " + e) } function onClickCallback(e) { if (e.target.tagName !== "A" || e.target.host === window.location.host) return; trackOutboundLink(e.target, e.target.getAttribute("target")) } gtag("js", new Date), gtag("config", "G-XEN4X51SZF", {}), gtag("set", { cookie_flags: "SameSite=None;Secure" }), document.addEventListener("click", onClickCallback, !1)
+    </script>
+    <meta name="author" content="Nin">
+    <meta name="description" content="Student in HCMUS VNU-HCM">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32.png?text=Icon">
+    <link rel="apple-touch-icon" type="image/png" href="https://via.placeholder.com/180x180.png?text=Icon">
+    <meta name="theme-color" content="#1565c0">
+    <meta property="og:site_name" content="Academic">
+    <meta property="og:title" content="Nin Nichi | Academic">
+    <meta property="og:description" content="Student in ISE and Computing">
+    <meta property="og:locale" content="en-vn">
+    <meta property="og:updated_time" content="2023-01-27T00:00:00+00:00">
+    <title>Project: 32-bit RISC-V SoC on FPGA | Nin Nichi</title>
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark-mode">
+
+    <!-- =================================================================== -->
+    <!-- PART 2: Header with Language Switcher                             -->
+    <!-- =================================================================== -->
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+                    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item"><a class="nav-link" href="../index.html#about"><span data-en="Home" data-vi="Trang chủ"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#experience"><span data-en="Experience" data-vi="Kinh nghiệm"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#accomplishments"><span data-en="Accomplishments" data-vi="Thành tựu"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#projects"><span data-en="Projects" data-vi="Dự án"></span></a></li>
+                            <li class="nav-item"><a class="nav-item"><a class="nav-link" href="../index.html#activities"><span data-en="Other Activities" data-vi="Hoạt động khác"></span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#contact"><span data-en="Contact" data-vi="Liên hệ"></span></a></li>
+                        </ul>
+                    </div>
+                    <div id="language-switcher" class="nav-item d-flex align-items-center">
+                        <button id="lang-vi" class="lang-btn active">VIE</button>
+                        <span class="text-white mx-1">|</span>
+                        <button id="lang-en" class="lang-btn">ENG</button>
+                    </div>
+                    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                        <li class="nav-item">
+                            <a id="dark-mode-toggler" class="nav-link" href="#" title="Toggle Dark Mode"
+                                aria-label="Toggle Dark Mode">
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- =================================================================== -->
+    <!--                      Main Content (Translated)                      -->
+    <!-- =================================================================== -->
+    <div class="page-body">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article-container">
+                        <h1 style="text-align: center;" data-en="Design of a 32-bit RISC-V Microcontroller from Scratch in Verilog and FPGA Implementation" data-vi="Thiết kế Vi điều khiển 32-bit dựa trên Kiến trúc RISC-V từ đầu bằng Verilog và triển khai trên FPGA"></h1>
+                        <div class="article-style">
+                            <p data-en="<strong>Personal Project – Full-Cycle SoC Design</strong><br><strong>Technologies:</strong> Verilog HDL, RISC-V (RV32I), C, Gowin EDA, Icarus Verilog, Sipeed TANG NANO 9K FPGA"
+                               data-vi="<strong>Dự án Cá nhân – Thiết kế SoC Chu trình Đầy đủ</strong><br><strong>Công nghệ:</strong> Verilog HDL, RISC-V (RV32I), C, Gowin EDA, Icarus Verilog, FPGA Sipeed TANG NANO 9K"></p>
+
+                            <h3 data-en="Project Overview" data-vi="Tổng quan Dự án"></h3>
+                            <p data-en="This project is a comprehensive design journey of a 32-bit microcontroller system, compliant with the open-source RISC-V (RV32I) instruction set architecture. The entire CPU core and peripherals were built from scratch using Verilog, without relying on pre-existing IP cores. The final System-on-Chip (SoC) was successfully implemented on a physical FPGA board, creating a tangible, interactive product."
+                               data-vi="Dự án này là một hành trình thiết kế toàn diện một hệ thống vi điều khiển 32-bit, tuân thủ kiến trúc tập lệnh (ISA) mã nguồn mở RISC-V (RV32I). Toàn bộ lõi CPU và các ngoại vi được xây dựng từ đầu bằng Verilog, không phụ thuộc vào các IP core có sẵn. Hệ thống trên Chip (SoC) cuối cùng đã được triển khai thành công trên một bo mạch FPGA vật lý, tạo ra một sản phẩm tương tác thực tế."></p>
+
+                            <hr>
+
+                            <h3 data-en="1. Introduction to RISC and RISC-V" data-vi="1. Giới thiệu về RISC và RISC-V"></h3>
+                            <p data-en="This project implements the RV32I, the 32-bit base integer instruction set of the RISC-V open-source ISA. The RISC (Reduced Instruction Set Computer) philosophy simplifies hardware design, allowing for higher clock speeds and lower power consumption by focusing on a small, highly optimized set of instructions."
+                               data-vi="Dự án này hiện thực hóa tập lệnh cơ sở RV32I, là nền tảng 32-bit cho các phép toán số nguyên của ISA mã nguồn mở RISC-V. Triết lý RISC (Reduced Instruction Set Computer) giúp đơn giản hóa thiết kế phần cứng, cho phép CPU chạy ở xung nhịp cao hơn và tiêu thụ ít năng lượng hơn bằng cách tập trung vào một bộ lệnh nhỏ, được tối ưu hóa cao."></p>
+                            <div class="image-wrapper">
+                                <img src="../img/RV32I_1.png" alt="RISC-V" class="zoomable-image" data-en="Schematic of progmem" data-vi="Sơ đồ của progmem">
+                                <img src="../img/RV32I_2.png" alt="RISC-V" class="zoomable-image" data-en="Schematic of progmem" data-vi="Sơ đồ của progmem">
+                                <img src="../img/RV32I_3.png" alt="RISC-V" class="zoomable-image" data-en="Schematic of progmem" data-vi="Sơ đồ của progmem">
+                            </div>
+
+                            <h3 data-en="2. Memory Module Design (progmem.v)" data-vi="2. Thiết kế Module Bộ nhớ (progmem.v)"></h3>
+                            <p data-en="The <code>progmem</code> module is the central storage component, acting as a unified memory for both program and data, implementing a synchronous RAM."
+                               data-vi="Module <code>progmem</code> là thành phần lưu trữ trung tâm, hoạt động như một bộ nhớ đa dụng cho cả chương trình và dữ liệu, hiện thực hóa một bộ nhớ RAM đồng bộ."></p>
+                            <div class="image-wrapper">
+                                <img src="../img/RV32I_4.png" alt="Schematic of progmem" class="zoomable-image" data-en="Schematic of progmem" data-vi="Sơ đồ của progmem">
+                            </div>
+                            <p data-en="<strong>Operating Principles:</strong><ul><li><strong>Architecture:</strong> Designed as an array of 1024 32-bit words, modeling a 4KB RAM.</li><li><strong>Interface:</strong> Accepts a 32-bit byte-addressable address from the CPU and converts it to a word address.</li><li><strong>Synchronous Read/Write:</strong> All operations are synchronized to the clock edge. When the <code>rd_strobe</code> signal is active, data is output on the next clock edge. Similarly, data is written to memory when <code>wr_strobe</code> is active.</li><li><strong>Byte-Enable Write:</strong> A 4-bit <code>wr_strobe</code> acts as a mask, enabling precise byte-level writes to support <code>sw</code>, <code>sh</code>, and <code>sb</code> instructions.</li><li><strong>Firmware Initialization:</strong> In simulation, the memory is pre-loaded with a <code>firmware.hex</code> file using <code>$readmemh</code>, ensuring the program is ready when the CPU starts.</li></ul>"
+                               data-vi="<strong>Nguyên lý hoạt động:</strong><ul><li><strong>Kiến trúc:</strong> Module được thiết kế như một mảng 1024 ô nhớ, mỗi ô rộng 32-bit, mô hình hóa một RAM 4KB.</li><li><strong>Giao tiếp:</strong> Nó nhận một địa chỉ 32-bit theo chuẩn byte-addressable từ CPU và tự động chuyển đổi thành địa chỉ word để truy cập vào mảng lưu trữ.</li><li><strong>Đọc/Ghi đồng bộ:</strong> Mọi thao tác đều được đồng bộ theo xung nhịp. Khi tín hiệu <code>rd_strobe</code> được kích hoạt, dữ liệu sẽ được đưa ra ở cạnh xung nhịp tiếp theo. Tương tự, dữ liệu được ghi vào bộ nhớ khi <code>wr_strobe</code> được kích hoạt.</li><li><strong>Ghi theo Byte (Byte-Enable):</strong> Tín hiệu <code>wr_strobe</code> 4-bit hoạt động như một mặt nạ, cho phép ghi chính xác vào từng byte riêng lẻ trong một word, hỗ trợ đầy đủ các lệnh <code>sw</code>, <code>sh</code>, <code>sb</code>.</li><li><strong>Khởi tạo Firmware:</strong> Trong mô phỏng, bộ nhớ được tự động nạp chương trình từ file <code>firmware.hex</code> bằng lệnh <code>$readmemh</code>, đảm bảo chương trình đã sẵn sàng khi CPU bắt đầu chạy.</li></ul>"></p>
+
+                            <h3 data-en="3. CPU Core Design (cpu.v)" data-vi="3. Thiết kế Lõi CPU (cpu.v)"></h3>
+                            <p data-en="The CPU core is the brain of the system, designed with a multi-cycle architecture to decode and execute the entire RV32I base instruction set."
+                               data-vi="Lõi CPU là bộ não của hệ thống, được thiết kế theo kiến trúc đa chu kỳ (multi-cycle), có khả năng giải mã và thực thi toàn bộ tập lệnh cơ sở RV32I."></p>
+                            <div class="image-wrapper">
+                                <img src="../img/RV32I_5.png" alt="Schematic of progmem" class="zoomable-image" data-en="Schematic of progmem" >
+                            </div>                            
+                            <p data-en="<strong>Operating Principles:</strong><ul><li><strong>Overall Architecture:</strong> Built around three main components: <ul><li><strong>Control Unit:</strong> Implemented as a Finite State Machine (FSM) with core states (FETCH, DECODE, EXECUTE) and auxiliary states for memory access. The FSM generates all internal control signals.</li><li><strong>Datapath:</strong> Includes a 32x32-bit register file (regfile) and an Arithmetic Logic Unit (ALU).</li><li><strong>ALU:</strong> Capable of performing arithmetic (add, subtract), logical (AND, OR, XOR), shift, and comparison operations.</li></ul></li><li><strong>Instruction Execution Cycle:</strong><ul><li><strong>FETCH:</strong> The Program Counter (PC) is sent to the address bus to fetch an instruction from memory, stored in the Instruction Register.</li><li><strong>DECODE:</strong> The control unit decodes the instruction and reads operands from the regfile.</li><li><strong>EXECUTE:</strong> The ALU performs the required operation. For load/store/branch instructions, the ALU is reused to compute effective addresses.</li><li><strong>MEMORY:</strong> (For load/store instructions) The CPU interacts with the data memory.</li><li><strong>WRITE-BACK:</strong> Results are written back to the regfile.</li></ul></li></ul>"
+                               data-vi="<strong>Nguyên lý hoạt động:</strong><ul><li><strong>Kiến trúc tổng thể:</strong> CPU được xây dựng xung quanh ba thành phần chính: <ul><li><strong>Khối Điều khiển:</strong> Hiện thực bằng một Máy trạng thái hữu hạn (FSM) với các trạng thái cốt lõi: FETCH, DECODE, EXECUTE, và các trạng thái phụ để xử lý truy cập bộ nhớ. FSM này tạo ra tất cả các tín hiệu điều khiển nội bộ.</li><li><strong>Khối Dữ liệu:</strong> Bao gồm một bộ thanh ghi đa dụng (regfile) 32x32-bit, và một Đơn vị Số học & Logic (ALU).</li><li><strong>ALU:</strong> Có khả năng thực hiện các phép toán số học (cộng, trừ), logic (AND, OR, XOR), dịch bit (shift), và so sánh.</li></ul></li><li><strong>Chu trình thực thi lệnh:</strong><ul><li><strong>FETCH:</strong> PC (Program Counter) được gửi ra bus địa chỉ để nạp lệnh từ bộ nhớ. Lệnh được lưu vào Thanh ghi Lệnh (Instruction Register).</li><li><strong>DECODE:</strong> Khối điều khiển giải mã lệnh, đọc các toán hạng từ regfile.</li><li><strong>EXECUTE:</strong> ALU thực hiện phép toán được yêu cầu. Đối với các lệnh load/store/branch, ALU được tái sử dụng để tính toán địa chỉ hiệu dụng.</li><li><strong>MEMORY:</strong> (Đối với lệnh load/store) CPU tương tác với bộ nhớ dữ liệu.</li><li><strong>WRITE-BACK:</strong> Kết quả được ghi trở lại vào regfile.</li></ul></li></ul>"></p>
+
+                            <h3 data-en="4. System Integration (SoC) and Assembly Testing" data-vi="4. Tích hợp Hệ thống (SoC) và Kiểm thử với Assembly"></h3>
+                            <p data-en="To form a functional system, the CPU core and memory were integrated in a top-level module (<code>top.v</code>). Small Assembly programs were written to test each instruction group independently (R-type, I-type, Branch, Load/Store)."
+                               data-vi="Để tạo thành một hệ thống hoạt động, lõi CPU và bộ nhớ được tích hợp trong một module cấp cao (<code>top.v</code>). Các chương trình Assembly nhỏ được viết để kiểm tra từng nhóm lệnh một cách độc lập (R-type, I-type, Branch, Load/Store)."></p>
+                            <div class="image-wrapper">
+                                <img src="../img/RV32I_6.png" alt="Schematic of CPU & progmem" class="zoomable-image" data-en="Schematic of CPU & progmem" style="width:60%;" >
+                            </div>                                
+                            <p data-en="<strong>Operating Principles:</strong><ul><li><strong>Von Neumann Architecture:</strong> The design uses a Von Neumann architecture, where instructions and data share a single memory space and a single bus. Although the CPU has separate internal logic paths for instruction fetch and data access (a Harvard-like feature), these are serialized over a shared physical bus.</li><li><strong>Interface:</strong> The <code>top.v</code> module connects the CPU's <code>mem_addr</code> port to the <code>addr</code> port of <code>progmem</code>, and similarly for data and control buses.</li></ul><strong>Testing Process:</strong><ul><li>Small Assembly programs were written using a text editor.</li><li>An online assembler was used to compile Assembly code into hex machine code.</li><li>The hex code was copied into a <code>firmware.hex</code> file.</li><li>Simulation was run using Icarus Verilog.</li><li>Results were verified by printing register values to the console and analyzing waveforms in GTKWave to confirm correct instruction execution.</li></ul>"
+                               data-vi="<strong>Nguyên lý hoạt động:</strong><ul><li><strong>Kiến trúc Von Neumann:</strong> Thiết kế này sử dụng một kiến trúc Von Neumann, nơi lệnh và dữ liệu cùng chia sẻ một không gian bộ nhớ và một bộ bus giao tiếp duy nhất. Mặc dù CPU có các đường dẫn logic nội bộ riêng cho việc nạp lệnh và truy cập dữ liệu (một đặc điểm của Harvard), các truy cập này được tuần tự hóa qua một bus vật lý chung.</li><li><strong>Giao tiếp:</strong> Module <code>top.v</code> kết nối cổng <code>mem_addr</code> của CPU với cổng <code>addr</code> của <code>progmem</code>, và tương tự cho các bus dữ liệu và tín hiệu điều khiển.</li></ul><strong>Quy trình Kiểm thử:</strong><ul><li>Các chương trình Assembly nhỏ được viết bằng trình soạn thảo văn bản.</li><li>Sử dụng một trình hợp dịch (assembler) online để dịch mã Assembly thành mã máy hex.</li><li>Copy mã hex vào file <code>firmware.hex</code>.</li><li>Chạy mô phỏng bằng Icarus Verilog.</li><li>Kiểm tra kết quả bằng cách in giá trị các thanh ghi ra console và phân tích dạng sóng bằng GTKWave để xác minh hoạt động của từng lệnh là chính xác.</li></ul>"></p>
+                            
+                            <div class="image-wrapper">
+                                <img src="../img/RV32I_7.png" alt="System Integration (SoC) and Assembly Testing" class="zoomable-image" data-en="System Integration (SoC) and Assembly Testing"  style="width:40%;">
+                                <img src="../img/RV32I_8.png" alt="System Integration (SoC) and Assembly Testing" class="zoomable-image" data-en="System Integration (SoC) and Assembly Testing" style="width:45%;">
+                                <img src="../img/RV32I_9.png" alt="System Integration (SoC) and Assembly Testing" class="zoomable-image" data-en="System Integration (SoC) and Assembly Testing" style="width:47%;">
+                                <img src="../img/RV32I_10.png" alt="System Integration (SoC) and Assembly Testing" class="zoomable-image" data-en="System Integration (SoC) and Assembly Testing" style="width:47%;">
+                                <img src="../img/RV32I_11.png" alt="System Integration (SoC) and Assembly Testing" class="zoomable-image" data-en="System Integration (SoC) and Assembly Testing" style="width:47%;">
+                                <img src="../img/RV32I_12.png" alt="System Integration (SoC) and Assembly Testing" class="zoomable-image" data-en="System Integration (SoC) and Assembly Testing" style="width:90%;">
+                            </div>  
+                            <h3 data-en="5. SoC Expansion with Peripherals (GPIO & UART)" data-vi="5. Mở rộng SoC với các Ngoại vi GPIO (LED & UART)"></h3>
+                            <p data-en="To enable interaction with the outside world, custom peripheral IP cores were designed and integrated using <strong>Memory-Mapped I/O (MMIO)</strong>. An address decoder in <code>top.v</code> listens to the address bus and routes CPU read/write requests to the correct device: <code>progmem</code> (0x0...), <code>led_gpio</code> (0x1...), or <code>uart_gpio</code> (0x2... onwards)."
+                               data-vi="Để hệ thống có thể tương tác với thế giới bên ngoài, các khối ngoại vi (IP core) được thiết kế và tích hợp. <strong>Memory-Mapped I/O (MMIO)</strong> được sử dụng, nơi một bộ giải mã địa chỉ trong <code>top.v</code> sẽ 'lắng nghe' bus địa chỉ và định tuyến các yêu cầu đọc/ghi của CPU đến đúng thiết bị: <code>progmem</code> (vùng 0x0...), <code>led_gpio</code> (vùng 0x1...), hoặc <code>uart_gpio</code> (vùng 0x2... trở đi)."></p>
+                            <div class="image-wrapper">
+                                <img src="../img/RV32I_13.png" alt="Schematic of SoC with LED and UART" class="zoomable-image" data-en="Schematic of SoC with LED and UART" style="width:27%;">
+                                <img src="../img/RV32I_14.png" alt="Schematic of SoC with LED and UART" class="zoomable-image" data-en="Schematic of SoC with LED and UART" style="width:30%;">
+                                <img src="../img/RV32I_15.png" alt="Schematic of SoC with LED and UART" class="zoomable-image" data-en="Schematic of SoC with LED and UART" style="width:30%;">
+                                <img src="../img/RV32I_16.png" alt="Schematic of SoC with LED and UART" class="zoomable-image" data-en="Schematic of SoC with LED and UART" style="width:95%;">
+                            </div>                            
+                            
+                            <p data-en="<strong>Operating Principles - Memory-Mapped I/O (MMIO):</strong><ul><li>Peripherals are not directly connected to the CPU but are mapped into its address space.</li><li>The address decoder routes requests based on the high-order bits of the address.</li><li>For the CPU, controlling a peripheral (e.g., turning on/off an LED) is as simple as a memory store to a specific address.</li></ul><strong>Peripheral Modules:</strong><ul><li><code>led_gpio.v</code>: A simple module with a 32-bit register. Writing to this register controls the state of output pins connected to LEDs.</li><li><code>uart_tx/rx_gpio.v</code>: More complex interface modules containing Data, Control, and Status registers, enabling the CPU to send and receive serial data via the UART protocol.</li></ul>"
+                               data-vi="<strong>Nguyên lý hoạt động - Memory-Mapped I/O (MMIO):</strong><ul><li>Các ngoại vi không được kết nối trực tiếp với CPU. Thay vào đó, chúng được ánh xạ vào không gian địa chỉ của CPU.</li><li>Một bộ giải mã địa chỉ sẽ định tuyến các yêu cầu dựa trên các bit cao của địa chỉ.</li><li>Đối với CPU, việc bật/tắt một đèn LED cũng giống như thực hiện một lệnh store vào một địa chỉ bộ nhớ cụ thể.</li></ul><strong>Các module Ngoại vi:</strong><ul><li><code>led_gpio.v</code>: Một module đơn giản chứa một thanh ghi 32-bit. Việc ghi vào thanh ghi này sẽ điều khiển trạng thái của các chân ra nối với LED.</li><li><code>uart_tx/rx_gpio.v</code>: Các module giao diện phức tạp hơn, chứa các thanh ghi Dữ liệu, Điều khiển, và Trạng thái, cho phép CPU gửi và nhận dữ liệu nối tiếp theo giao thức UART.</li></ul>"></p>
+
+                            <h3 data-en="6. Software Workflow: Compiling C to Firmware" data-vi="6. Quy trình Phần mềm: Biên dịch C sang Firmware"></h3>
+                            <p data-en="To develop more complex applications, a C-based workflow with a Makefile was established to automate the compilation process."
+                               data-vi="Để phát triển các ứng dụng phức tạp hơn, một quy trình làm việc dựa trên ngôn ngữ C và Makefile đã được thiết lập để tự động hóa toàn bộ quy trình."></p>
+                            <p data-en="<strong>Operating Principles:</strong><ul><li><strong>RISC-V GCC Toolchain:</strong> A cross-compiler runs on an x86 machine but generates RISC-V machine code.</li><li><strong>Makefile:</strong> Automates the process:<ul><li><code>riscv-gcc -c</code>: Compiles C (<code>.c</code>) and Assembly (<code>.S</code>) files into object files (<code>.o</code>).</li><li><code>riscv-gcc -T</code>: Links object files using a custom linker script (<code>sections.lds</code>) to create an ELF executable.</li><li><code>riscv-objcopy</code>: Extracts raw binary from the ELF file.</li><li>Python Script: Converts the binary to a <code>firmware.hex</code> text format readable by <code>progmem</code>.</li></ul></li><li><strong>C Software:</strong> C programs interact with peripherals using pointers to memory-mapped addresses (MMIO).</li></ul>"
+                               data-vi="<strong>Nguyên lý hoạt động:</strong><ul><li><strong>RISC-V GCC Toolchain:</strong> Một bộ công cụ biên dịch chéo (cross-compiler) được sử dụng, chạy trên máy tính x86 nhưng tạo ra mã máy cho kiến trúc RISC-V.</li><li><strong>Makefile:</strong> Tự động hóa toàn bộ quy trình:<ul><li><code>riscv-gcc -c</code>: Biên dịch các file <code>.c</code> (mã C) và <code>.S</code> (mã Assembly khởi động) thành các file object (<code>.o</code>).</li><li><code>riscv-gcc -T</code>: Liên kết các file object lại với nhau bằng một kịch bản liên kết (linker script) tùy chỉnh (<code>sections.lds</code>) để tạo ra một file thực thi định dạng ELF.</li><li><code>riscv-objcopy</code>: Trích xuất mã máy thô (raw binary) từ file ELF.</li><li>Script Python: Chuyển đổi file binary thành định dạng văn bản hex (<code>firmware.hex</code>) mà <code>progmem</code> có thể đọc được.</li></ul></li><li><strong>Phần mềm C:</strong> Các chương trình C được viết để tương tác với các ngoại vi bằng cách sử dụng các con trỏ trỏ trực tiếp đến các địa chỉ đã được ánh xạ bộ nhớ (MMIO).</li></ul>"></p>
+
+                            <h3 data-en="7. Full System Simulation" data-vi="7. Mô phỏng Toàn bộ Hệ thống SoC"></h3>
+                            <p data-en="Before hardware implementation, the entire SoC was simulated to verify the interaction between C software and Verilog hardware. A C program generating a binary counter was compiled and run, with simulation results showing sequential LED output changes, confirming correct CPU execution."
+                               data-vi="Trước khi triển khai lên phần cứng, toàn bộ hệ thống SoC được mô phỏng để xác minh sự tương tác giữa phần mềm C và phần cứng Verilog. Một chương trình C tạo bộ đếm nhị phân đã được biên dịch và chạy, kết quả mô phỏng cho thấy các cổng LED thay đổi giá trị tuần tự, chứng tỏ CPU đã thực thi đúng chương trình."></p>
+                            <p data-en="<strong>Operating Principles:</strong><ul><li><strong>Test Program:</strong> A C program was written to generate a binary counter and write values to <code>led_gpio</code>.</li><li><strong>Process:</strong><ul><li>The C program was compiled into <code>firmware.hex</code> using the Makefile.</li><li><code>firmware.hex</code> was loaded into <code>progmem</code> in the simulation environment.</li><li>A testbench (<code>top_test.v</code>) initialized the <code>top</code> module and provided a clock signal.</li></ul></li><li><strong>Verification:</strong> The output ports (e.g., <code>leds</code>) were monitored, showing sequential counting, confirming successful CPU and GPIO interaction.</li></ul>"
+                               data-vi="<strong>Nguyên lý hoạt động:</strong><ul><li><strong>Chương trình kiểm thử:</strong> Một chương trình C được viết để tạo ra một bộ đếm nhị phân và ghi giá trị liên tục ra <code>led_gpio</code>.</li><li><strong>Quy trình:</strong><ul><li>Chương trình C được biên dịch thành <code>firmware.hex</code> bằng Makefile.</li><li><code>firmware.hex</code> được nạp vào <code>progmem</code> trong môi trường mô phỏng.</li><li>Testbench (<code>top_test.v</code>) được chạy, khởi tạo module <code>top</code> và cung cấp xung nhịp.</li></ul></li><li><strong>Xác minh:</strong> Giá trị của các cổng đầu ra (như <code>leds</code>) được theo dõi, cho thấy các cổng <code>leds</code> thay đổi giá trị tuần tự, chứng tỏ CPU đã thực thi đúng chương trình C và tương tác thành công với ngoại vi GPIO.</li></ul>"></p>
+
+                            <h3 data-en="8. FPGA Implementation and Hardware Testing" data-vi="8. Triển khai và Kiểm thử trên Phần cứng FPGA"></h3>
+                            <p data-en="The final design was synthesized and programmed onto a <strong>Sipeed TANG NANO 9K</strong> FPGA board to verify real-world operation."
+                               data-vi="Bước cuối cùng là hiện thực hóa thiết kế trên một bo mạch FPGA thật để xác minh hoạt động trong thế giới thực."></p>
+                            <div class="image-wrapper">
+                                <img src="../img/RV32I_17.png" alt="Sipeed Tang Nano 9k" class="zoomable-image" data-en="Sipeed Tang Nano 9k" style="width:65%;">
+                            </div> 
+
+                            <p data-en="<strong>Process:</strong><ul><li><strong>Synthesis & Place-and-Route (P&R):</strong> The Verilog project (excluding testbench) was processed in Gowin EDA to generate a bitstream through Synthesis and Place & Route.</li><li><strong>Pin Constraints:</strong> A <code>.cst</code> file mapped top-level ports (<code>clk</code>, <code>rst</code>, <code>leds</code>, <code>uart_tx</code>, <code>uart_rx</code>) to physical FPGA pins.</li><li><strong>Programming:</strong> The bitstream was loaded onto the Sipeed TANG NANO 9K FPGA board.</li></ul><strong>Interactive Testing:</strong><ul><li><strong>Program:</strong> An interactive 'echo' C program was compiled and loaded onto the FPGA.</li><li><strong>Operation:</strong> Using a terminal program (MobaXterm) on a PC, characters were sent to the board via UART.</li><li><strong>Results:</strong> The system worked as expected, echoing received characters back to the terminal (verifying <code>uart_rx</code> and <code>uart_tx</code>) and displaying corresponding values on LEDs (verifying <code>led_gpio</code> and CPU logic).</li></ul>"
+                               data-vi="<strong>Quy trình:</strong><ul><li><strong>Tổng hợp & P&R:</strong> Dự án Verilog (không bao gồm testbench) được đưa vào công cụ Gowin EDA để thực hiện Tổng hợp (Synthesis) và Sắp xếp & Đi dây (Place & Route), tạo ra một file bitstream.</li><li><strong>Ràng buộc Chân:</strong> Một file <code>.cst</code> được tạo để ánh xạ các cổng cấp cao của module <code>top</code> (như <code>clk</code>, <code>rst</code>, <code>leds</code>, <code>uart_tx</code>, <code>uart_rx</code>) với các chân vật lý trên chip FPGA.</li><li><strong>Lập trình:</strong> File bitstream được nạp vào bo mạch FPGA Sipeed TANG NANO 9K.</li></ul><strong>Kiểm thử Tương tác:</strong><ul><li><strong>Chương trình:</strong> Một chương trình 'echo' tương tác được viết bằng C và nạp vào FPGA.</li><li><strong>Thao tác:</strong> Sử dụng một chương trình terminal (MobaXterm) trên PC để gửi ký tự đến bo mạch qua UART.</li><li><strong>Kết quả:</strong> Hệ thống hoạt động như mong đợi, gửi lại chính xác ký tự đã nhận lên terminal (xác minh <code>uart_rx</code> và <code>uart_tx</code>), và đồng thời hiển thị giá trị số tương ứng lên các đèn LED (xác minh <code>led_gpio</code> và logic xử lý của CPU).</li></ul>"></p>
+                            <div class="video-container" style="margin-top: 1.5rem; margin-bottom: 0.5rem;">
+                                <iframe src="https://drive.google.com/file/d/1P6Y2x0HJqfUUK-ROvxWPLQhzF2GQ_N30/preview" width="100%" height="300" allow="autoplay"></iframe>
+                  
+                            </div>
+                            <br>
+                            <div class="video-container" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                                <iframe src="https://drive.google.com/file/d/1JSZC77FZisQvo-ljdynlTA3VRAwZ5l4k/preview" width="100%" height="300" allow="autoplay"></iframe>
+                            </div>
+
+                            <hr>
+                            <h3 data-en="Project Conclusion" data-vi="Kết luận Dự án"></h3>
+                            <p data-en="The project successfully completed the design, simulation, and implementation of a custom 32-bit RISC-V microcontroller system. The results of testing on physical hardware demonstrated the correct operation of both the CPU core and the integrated peripherals, showcasing the ability to build a complete SoC from scratch."
+                               data-vi="Dự án đã hoàn thành thành công việc thiết kế, mô phỏng, và hiện thực hóa một hệ thống vi điều khiển RISC-V 32-bit tùy chỉnh. Kết quả kiểm thử trên phần cứng thực tế đã chứng minh sự hoạt động chính xác của cả lõi CPU và các ngoại vi được tích hợp, thể hiện khả năng xây dựng một hệ thống SoC hoàn chỉnh từ đầu."></p>
+                        </div>
+                        <a href="../index.html#projects" class="btn btn-primary mt-5" data-en="← Back to All Projects" data-vi="← Quay lại Tất cả Dự án"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- PART 4: Footer and Modal                                            -->
+    <!-- =================================================================== -->
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+                <p class="copyright-license-text" data-en="© 2025 Ninh Doan Nhat. All Rights Reserved." data-vi="© 2025 Ninh Doan Nhat. Bảo lưu mọi quyền."></p>
+                <p class="footer-social-icons">
+                    <a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nin_nichi_dnn/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/NinNichiCode" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </p>
+                <p class="powered-by" data-en="Design inspired by Wowchemy" data-vi="Thiết kế lấy cảm hứng từ Wowchemy"></p>
+            </footer>
+        </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close-modal">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- PART 5: Scripts                                                     -->
+    <!-- =================================================================== -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,863 @@
+/* Global Styles & Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    padding-top: 70px; 
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand, .article-title a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+a {
+    color: #1565c0; 
+}
+a:hover {
+    color: #0d47a1;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #1565c0;
+    border-color: #1565c0;
+}
+.btn-primary:hover {
+    background-color: #0d47a1;
+    border-color: #0d47a1;
+}
+.btn-outline-primary {
+    color: #1565c0;
+    border-color: #1565c0;
+}
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #1565c0;
+    border-color: #1565c0;
+}
+
+
+/* Dark Mode (basic example) */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+body.dark-mode .navbar-light {
+    background-color: #1f1f1f !important; /* Ensure override */
+    border-bottom: 1px solid #333;
+}
+body.dark-mode .navbar-light .navbar-brand,
+body.dark-mode .navbar-light .nav-link {
+    color: #e0e0e0;
+}
+body.dark-mode .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+body.dark-mode .home-section {
+    background-color: #1e1e1e; /* Slightly lighter than body for sections */
+}
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
+    color: #f5f5f5;
+}
+body.dark-mode .card {
+    background-color: #2c2c2c;
+    border-color: #444;
+}
+body.dark-mode .card .card-title, 
+body.dark-mode .card .card-text, 
+body.dark-mode .card .text-muted,
+body.dark-mode .article-style,
+body.dark-mode .article-style a,
+body.dark-mode .article-metadata {
+    color: #ccc !important; /* Important to override Bootstrap's text-muted */
+}
+body.dark-mode .article-style a {
+    color: #64b5f6 !important; /* Lighter blue for dark mode links */
+}
+body.dark-mode .article-style a:hover {
+    color: #90caf9 !important;
+}
+body.dark-mode .section-subheading, body.dark-mode .text-muted {
+    color: #aaa !important;
+}
+body.dark-mode .form-control {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #555;
+}
+body.dark-mode .form-control::placeholder {
+    color: #888;
+}
+body.dark-mode .search-modal {
+    background-color: rgba(10, 10, 10, 0.95);
+}
+body.dark-mode .search-modal .form-control {
+    background-color: #333;
+    color: #f0f0f0;
+    border-color: #555;
+}
+body.dark-mode .search-modal .search-header h1,
+body.dark-mode .search-modal .section-search-results p {
+    color: #f0f0f0;
+}
+body.dark-mode .dropdown-menu {
+    background-color: #2c2c2c;
+    border-color: #444;
+}
+body.dark-mode .dropdown-item {
+    color: #ccc;
+}
+body.dark-mode .dropdown-item:hover {
+    background-color: #383838;
+    color: #fff;
+}
+
+
+/* Header & Navbar */
+.page-header.header--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030; /* Bootstrap's default for fixed navbar */
+    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency */
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+}
+
+.navbar .main-menu-item .nav-link {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.navbar-light {
+    background-color: transparent !important; /* Override Bootstrap if needed */
+}
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.nav-link {
+    font-weight: 500;
+}
+.nav-icons .nav-item .nav-link {
+    padding: 0.5rem 0.75rem;
+}
+.theme-dropdown .dropdown-menu {
+    min-width: auto;
+}
+
+/* Search Modal */
+.search-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    z-index: 1050; /* Higher than navbar */
+    display: none; /* Hidden by default */
+    padding-top: 5rem;
+    overflow-y: auto;
+}
+.search-modal.active {
+    display: block;
+}
+.search-header .col-search-close a {
+    font-size: 1.5rem;
+    float: right;
+}
+#search-query {
+    font-size: 1.5rem;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+#search-query:focus {
+    box-shadow: none;
+    border-color: #1565c0;
+}
+
+/* Home Sections General */
+.home-section {
+    padding: 60px 0;
+    /* background-color: #f8f9fa; */ /* Example for slight bg difference */
+}
+.home-section:nth-child(odd) { /* Alternate background if desired */
+   /* background-color: #fff; */
+}
+.section-heading h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+.section-subheading {
+    font-size: 1.5rem;
+    color: #6c757d; /* text-muted */
+    margin-bottom: 0.5rem;
+}
+
+/* About Section (#about) */
+#profile .avatar {
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: block;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+    /* Bổ sung thêm */
+    object-fit: cover;
+    object-position: center bottom;
+    width: 270px;
+    height: 270px;
+}
+section#about .article-style ul > li {
+    margin-bottom: 1.25rem; /* Bạn có thể điều chỉnh giá trị này, ví dụ: 1rem, 1.5rem, 20px */
+}
+
+
+#profile .portrait-title {
+    text-align: center;
+}
+#profile .portrait-title h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
+}
+#profile .portrait-title h3 {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+.network-icon {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+.network-icon li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.network-icon li a .big-icon {
+    font-size: 1.5rem;
+    color: #333;
+}
+body.dark-mode .network-icon li a .big-icon {
+    color: #ccc;
+}
+
+.article-style {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+.article-style ul {
+    padding-left: 20px;
+}
+.article-style li {
+    margin-bottom: 0.5rem;
+}
+.article-style details {
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 4px;
+}
+body.dark-mode .article-style details {
+    border-color: #444;
+}
+.article-style summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+  ul.ul-interests.fa-ul > li {
+    margin-bottom: 12px;
+  }
+
+    .ul-interests.fa-ul {
+    /* padding-left: 0 !important;  */
+    margin-left: 10px !important; 
+  }
+
+
+  
+.ul-edu .description .course {
+    font-weight: bold;
+    margin-bottom: 0.1rem;
+}
+.ul-edu .description .institution {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Accomplishment Section (#accomplishments) */
+.wg-experience .section-heading, .wg-accomplishments .section-heading {
+    text-align: center;
+}
+@media (min-width: 992px) { /* lg */
+    .wg-experience .section-heading, .wg-accomplishments .section-heading {
+        text-align: left;
+    }
+}
+.experience .card {
+    margin-bottom: 1rem;
+    border: 1px solid #e9ecef;
+}
+.experience .col-auto .badge {
+    background-color: #fff;
+    border: 1px solid #1565c0 !important; /* Ensure color */
+    width: 18px;
+    height: 18px;
+    padding: 0;
+}
+.experience .col-auto .border-right {
+    border-right: 1px solid #1565c0 !important; /* Ensure color */
+}
+.exp-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.exp-company a {
+    font-weight: 500;
+}
+.exp-meta {
+    font-size: 0.9rem;
+}
+.company-logo { /* For placeholder icons */
+    font-size: 3rem; /* Original was 56px */
+    color: #6c757d;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+}
+
+/* Accomplishments Section */
+.wg-accomplishments .card.course {
+    margin-bottom: 1.5rem;
+}
+.wg-accomplishments .card-title {
+    font-size: 1.2rem;
+}
+.wg-accomplishments .article-metadata {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+/* Posts & Activities Section (wg-collection) */
+.wg-collection .stream-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+body.dark-mode .wg-collection .stream-item {
+    border-bottom-color: #333;
+}
+.wg-collection .stream-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.wg-collection .article-title a {
+    font-size: 1.25rem;
+    color: #333;
+}
+body.dark-mode .wg-collection .article-title a {
+    color: #eee;
+}
+.wg-collection .article-style {
+    font-size: 1rem;
+    color: #555;
+}
+body.dark-mode .wg-collection .article-style {
+    color: #bbb;
+}
+.stream-meta .article-metadata {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+.stream-meta .middot-divider {
+    margin: 0 0.5em;
+}
+.wg-collection .media-body .btn-links {
+    margin-top: 0.5rem;
+}
+.wg-collection .btn-sm {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+}
+.see-all {
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+/* Projects Section (wg-portfolio) */
+.wg-portfolio .project-toolbar {
+    margin-bottom: 2rem;
+}
+.wg-portfolio .project-filters .btn {
+    margin: 0.25rem;
+}
+.projects-container .isotope-item {
+    margin-bottom: 30px; /* Spacing for items */
+}
+.view-showcase .article-title a {
+    font-size: 1.2rem;
+}
+.view-showcase img {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.view-showcase .btn-links {
+    margin-top: 1rem;
+}
+.btn-page-header {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Contact Section (wg-contact) */
+.wg-contact .fa-ul .fa-li {
+    font-size: 1.2rem; /* Controls icon size */
+    margin-bottom: 1rem;
+}
+.wg-contact .fa-ul span, .wg-contact .fa-ul a {
+    font-size: 1rem; /* Controls text size beside icon */
+    margin-left: 0.5em;
+}
+
+/* Footer */
+.page-footer {
+    padding: 40px 0;
+    background-color: #343a40; /* Dark background for footer */
+    color: #adb5bd; /* Light text for footer */
+    text-align: center;
+    font-size: 0.9rem;
+}
+.page-footer a {
+    color: #ced4da;
+}
+.page-footer a:hover {
+    color: #fff;
+}
+.powered-by {
+    margin-bottom: 0.5rem;
+}
+.footer-license-icons i {
+    margin: 0 0.2rem;
+}
+
+/* Utility */
+.middot-divider {
+    margin: 0 0.25em;
+}
+.mb-0 { margin-bottom: 0 !important; }
+.mt-0 { margin-top: 0 !important; }
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .page-body {
+        padding-top: 56px;
+    }
+    #profile .avatar {
+        width: 200px;
+        height: 200px;
+
+        /* vẫn giữ nguyên object-fit và position */
+        object-fit: cover;
+        object-position: center bottom;
+    }
+    .home-section {
+        padding: 40px 0;
+    }
+    .section-heading h1 {
+        font-size: 2rem;
+    }
+    .view-showcase .order-first {
+        order: -1 !important; 
+        margin-bottom: 1rem;
+    }
+}
+
+
+.section-subheading a:hover {
+  color: #0778f0;
+  text-decoration: underline;
+}
+
+/* Project: Show more, Show less */
+.project-description {
+  max-height: 200px; /* Giới hạn chiều cao hiển thị ban đầu */
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.1s ease;
+}
+
+.project-description.expanded {
+  max-height: 1000px; 
+}
+
+.show-more-btn {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+
+/* === Light Mode === */
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #1565c0;
+}
+
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+    color: #1565c0; 
+}
+
+
+/* === Dark Mode === */
+body.dark-mode .navbar-light .navbar-nav .nav-link:hover,
+body.dark-mode .navbar-light .navbar-nav .nav-link:focus {
+    color: #64b5f6; 
+}
+
+
+body.dark-mode .navbar-light .navbar-nav .active > .nav-link,
+body.dark-mode .navbar-light .navbar-nav .nav-link.active,
+body.dark-mode .navbar-light .navbar-nav .nav-link.show,
+body.dark-mode .navbar-light .navbar-nav .show > .nav-link {
+    color: #64b5f6; 
+}
+
+
+/* ---- CUSTOM CSS CHO FOOTER ---- */
+
+.site-footer {
+    text-align: center; 
+    padding: 2rem 0;
+    font-size: 0.9rem;
+    color: #6c757d; 
+}
+
+.site-footer p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-social-icons a {
+    color: #6c757d; 
+    margin: 0 10px; 
+    font-size: 1.5rem; 
+    transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+    color: #1565c0; 
+}
+
+
+body.dark-mode .site-footer,
+body.dark-mode .footer-social-icons a {
+    color: #aaa;
+}
+
+body.dark-mode .footer-social-icons a:hover {
+    color: #64b5f6; 
+}
+
+
+.project-showcase .view-showcase img.img-fluid {
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; 
+}
+
+.project-showcase .view-showcase a:hover img.img-fluid {
+    transform: translateY(-5px) scale(1.02); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Project2: Attendance */
+.image-wrapper {
+    text-align: center; 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.zoomable-image {
+    border-radius: 8px;
+    margin: 5px; 
+    cursor: pointer;
+    transition: opacity 0.3s;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+.zoomable-image:hover {
+    opacity: 0.8; 
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+    
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.3s, opacity 0.3s;
+}
+
+.modal.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 0.3s;
+}
+
+.modal-content {
+    display: block;
+    max-width: 95vw;  
+    max-height: 90vh; 
+    width: auto;
+    height: auto;
+    object-fit: contain; 
+    animation-name: zoom;
+    animation-duration: 0.4s;
+}
+
+/* Animation */
+@keyframes zoom {
+    from {transform: scale(0.5); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
+/* 6. close button (X) */
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-modal:hover {
+    color: #bbb;
+}
+
+/* Project clipboard_tranlator */
+body.dark-mode .table .thead-light th {
+    color: #e9ecef;           
+    background-color: #343a40; 
+    border-color: #454d55;     
+}
+
+body.dark-mode .table-bordered,
+body.dark-mode .table-bordered td,
+body.dark-mode .table-bordered th {
+    border-color: #454d55; 
+}
+
+body.dark-mode .table td {
+    color: #e0e0e0; 
+}
+
+body.dark-mode code {
+    color: #f8f9fa;
+    background-color: #3e444a;
+}
+
+
+/* ========================================================= */
+/* Custom styles for Font Awesome list */
+.fa-ul {
+  list-style-type: none; 
+  margin-left: 2em; 
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+.fa-ul > li .fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+/*  =============== experience ===============  */
+.image-caption {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: -5px; 
+}
+body.dark-mode .image-caption {
+    color: #aaa;
+}
+
+
+/* ============ */
+/* ========================================================== */
+/*           STYLES FOR FEATURED PROJECT BOX                  */
+/* ========================================================== */
+
+.featured-project-box {
+    margin-top: 1.5rem;
+    border: 1px solid #e0e0e0;
+    border-left: 4px solid #1565c0; 
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    overflow: hidden; 
+}
+
+.featured-project-box .project-box-header {
+    background-color: #f1f3f5;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+    color: #495057;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.featured-project-box .project-box-body {
+    padding: 1.25rem;
+}
+
+.featured-project-box .project-box-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.featured-project-box .project-box-title a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+}
+.featured-project-box .project-box-title a:hover {
+    color: #1565c0;
+}
+
+.featured-project-box .project-box-body p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+
+/* Dark Mode styles */
+body.dark-mode .featured-project-box {
+    border-color: #334155;
+    border-left-color: #64b5f6; 
+    background-color: #1e293b; 
+}
+
+body.dark-mode .featured-project-box .project-box-header {
+    background-color: #2c3a4e;
+    color: #cbd5e1;
+    border-bottom-color: #334155;
+}
+
+body.dark-mode .featured-project-box .project-box-title a:hover {
+    color: #64b5f6;
+}
+
+
+/* /////////////*/
+
+.video-container {
+    /* 1. Kích thước và căn giữa */
+    max-width: 700px; /* Đặt chiều rộng tối đa bạn muốn cho video */
+    width: 90%;
+    margin: 2rem auto; /* Căn giữa */
+
+    /* 2. Kiểu dáng */
+    background-color: #000;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    overflow: hidden; /* Đảm bảo bo góc cho iframe bên trong */
+}
+
+.video-container iframe {
+    /* 3. Responsive và Tỷ lệ khung hình */
+    width: 100%;
+    height: auto; /* Để chiều cao tự tính toán */
+
+    aspect-ratio: 4 / 3; 
+    
+    display: block; 
+    border: none;
+}
+ 
+
+/* Tùy chỉnh: Tăng khoảng cách trong mục Kinh nghiệm */
+#experience .card-text h4 {
+    margin-top: 1.25rem; /* Tạo khoảng trống phía trên các tiêu đề phụ (VD: "Kiến thức & Kỹ năng") */
+}
+
+#experience .card-text ul {
+    margin-bottom: 0.75rem; /* Tạo một chút khoảng trống dưới mỗi danh sách */
+}
+
+/* ========================================================== */
+/*           CUSTOM STYLES FOR PROJECT FILTER BUTTONS         */
+/* ========================================================== */
+
+
+/* Light Mode */
+/* --- Trạng thái ĐƯỢC CHỌN (active) --- */
+.project-filters .btn.btn-primary.active {
+    background-color: #ffffff !important; /* Nền trắng */
+    color: #1565c0 !important;           /* Chữ màu xanh */
+    border-color: #1565c0 !important;     /* Viền màu xanh */
+    box-shadow: none !important;          /* Bỏ đổ bóng mặc định */
+}
+
+/* Ngăn nút 'active' đổi màu khi hover vào */
+.project-filters .btn.btn-primary.active:hover {
+    background-color: #ffffff !important;
+    color: #1565c0 !important;
+}
+
+
+/* --- Tương thích DARK MODE --- */
+/* Trạng thái ĐƯỢC CHỌN (active) trong Dark Mode */
+body.dark-mode .project-filters .btn.btn-primary.active {
+    background-color: transparent !important; /* Nền trong suốt */
+    color: #64b5f6 !important;           /* Chữ màu xanh sáng */
+    border-color: #64b5f6 !important;     /* Viền màu xanh sáng */
+}
+
+/* Ngăn nút 'active' đổi màu khi hover trong Dark Mode */
+body.dark-mode .project-filters .btn.btn-primary.active:hover {
+    background-color: transparent !important;
+    color: #64b5f6 !important;
+}
+
+
