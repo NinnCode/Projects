@@ -83,9 +83,9 @@
 
                     <!-- Language-switcher -->
                     <div id="language-switcher" class="nav-item d-flex align-items-center">
-                        <button id="lang-vi" class="lang-btn active">VIE</button>
+                        <button id="lang-vi" class="lang-btn ">VIE</button>
                         <span class="text-white mx-1">|</span>
-                        <button id="lang-en" class="lang-btn">ENG</button>
+                        <button id="lang-en" class="lang-btn active">ENG</button>
                     </div>
 
                     <!-- Icons on the right -->
@@ -154,8 +154,8 @@
                                     data-vi="Kiến thức & Kỹ năng">Knowledge & skill</h3>
                                 <div class="article-style">
                                     <ul class="ul-interests fa-ul mb-0">
-                                        <li data-en='<i class="fa-li fa-solid fa-code"></i><strong>Software:</strong> C, C#, Python, HTML, CSS, JavaScript, Bash, Shell scripting'
-                                            data-vi='<i class="fa-li fa-solid fa-code"></i><strong>Phần mềm:</strong> C, C#, Python, HTML, CSS, JavaScript, Bash, Shell scripting'>
+                                        <li data-en='<i class="fa-li fa-solid fa-code"></i><strong>Software:</strong> C, C#, Python, HTML, CSS, JavaScript, Bash, Shell scripting, UVM'
+                                            data-vi='<i class="fa-li fa-solid fa-code"></i><strong>Phần mềm:</strong> C, C#, Python, HTML, CSS, JavaScript, Bash, Shell scripting, UVM'>
                                             <i class="fa-li fa-solid fa-code"></i><strong>Software:</strong> C, C#,
                                             Python,
                                             HTML, CSS, JavaScript, Bash, Shell scripting
@@ -171,8 +171,8 @@
                                             Arduino,
                                             STM32, ESP32, DE10 Standard, Sipeed Tang Nano 9k,...
                                         </li>
-                                        <li data-en='<i class="fa-li fa-solid fa-tools"></i><strong>Tools:</strong> MATLAB, Proteus, VSCode, Vivado, QuestaSim, Synopsys ICC2,...'
-                                            data-vi='<i class="fa-li fa-solid fa-tools"></i><strong>Công cụ:</strong> MATLAB, Proteus, VSCode, Vivado, QuestaSim, Synopsys ICC2,...'>
+                                        <li data-en='<i class="fa-li fa-solid fa-tools"></i><strong>Tools:</strong> VCS, MATLAB, Proteus, VSCode, Vivado, QuestaSim, Synopsys ICC2,...'
+                                            data-vi='<i class="fa-li fa-solid fa-tools"></i><strong>Công cụ:</strong> VCS,MATLAB, Proteus, VSCode, Vivado, QuestaSim, Synopsys ICC2,...'>
                                             <i class="fa-li fa-solid fa-tools"></i><strong>Tools:</strong> MATLAB,
                                             Proteus, VSCode,
                                             Vivado, QuestaSim, Synopsys ICC2,...
@@ -296,13 +296,13 @@
                                     <div class="btn-group flex-wrap">
                                         <a href="#" data-filter="*" class="btn btn-primary btn-lg" data-en="All"
                                             data-vi="Tất cả">All</a>
-                                        <a href="#" data-filter=".js-id-VLSI" class="btn btn-primary btn-lg active"
+                                        <a href="#" data-filter=".js-id-VLSI" class="btn btn-primary btn-lg "
                                             data-en="Digital Design" data-vi="Digital Design">Digital Design</a>
-                                        <a href="#" data-filter=".js-id-DV" class="btn btn-primary btn-lg"
+                                        <a href="#" data-filter=".js-id-DV" class="btn btn-primary btn-lg active"
                                             data-en="Design Verification" data-vi="Design Verification">Design
                                             Verification</a>
                                         <a href="#" data-filter=".js-id-lecture" class="btn btn-primary btn-lg"
-                                            data-en="IC Lectures" data-vi="Bài giảng vi mạch">IC Lectures</a>
+                                            data-en="IC Learning Video" data-vi="video vi mạch">IC Lectures</a>
 
                                         <a href="#" data-filter=".js-id-ai" class="btn btn-primary btn-lg"
                                             data-en="Python" data-vi="Python">Computer vision</a>
@@ -500,6 +500,317 @@
                                 </div>
                             </div>
 
+<!-- ================================ ======================================-->
+
+              <!-- Project: UVM Testbench for UART -->
+                            <div class="col-12 isotope-item js-id-DV">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <!-- Phần chữ bên trái -->
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="https://github.com/NinNichiCode/UVM_UART"
+                                                    data-en="Building a UVM Testbench and Verification for a UART Protocol"
+                                                    data-vi="Xây dựng Môi trường Kiểm thử UVM cho giao thức UART">
+                                                </a>
+                                            </div>
+                                            <div class="article-style" data-en="<p>A personal project focused on building a complete, reusable UVM testbench to verify a UART Protocol. The project includes a full UVM architecture, automated workflow with Makefile and checked coverage.</p>
+                     " data-vi="<p>Một dự án cá nhân tập trung vào việc xây dựng một môi trường kiểm thử UVM hoàn chỉnh, tái sử dụng để xác minh giao thức UART. Dự án bao gồm xây dựng UVM đầy đủ, quy trình tự động hóa với Makefile và kiểm tra coverage.</p>">
+                                            </div>
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="https://github.com/NinNichiCode/UVM_UART" data-en="View Details →"
+                                                    data-vi="Xem chi tiết →">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Phần ảnh bên phải -->
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="https://github.com/NinNichiCode/UVM_UART">
+                                                <img src="./img/uvm_uart.png" alt="UVM Testbench Architecture"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+               <!-- Project: UVM Testbench for APB Slave RAM -->
+                            <div class="col-12 isotope-item js-id-DV">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <!-- Phần chữ bên trái -->
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="https://github.com/NinNichiCode/UVM_APB_Slave_RAM"
+                                                    data-en="Building a UVM Testbench and Verification for a APB Slave RAM"
+                                                    data-vi="Xây dựng Môi trường Kiểm thử UVM cho APB Slave RAM">
+                                                </a>
+                                            </div>
+                                            <div class="article-style" data-en="<p>A personal project focused on building a complete, reusable UVM testbench to verify a APB Slave RAM. The project includes a full UVM architecture, automated workflow with Makefile and checked coverage.</p>
+                     " data-vi="<p>Một dự án cá nhân tập trung vào việc xây dựng một môi trường kiểm thử UVM hoàn chỉnh, tái sử dụng để xác minh APB Slave RAM. Dự án bao gồm xây dựng UVM đầy đủ, quy trình tự động hóa với Makefile và kiểm tra coverage.</p>">
+                                            </div>
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="https://github.com/NinNichiCode/UVM_APB_Slave_RAM" data-en="View Details →"
+                                                    data-vi="Xem chi tiết →">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Phần ảnh bên phải -->
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="https://github.com/NinNichiCode/UVM_APB_Slave_RAM">
+                                                <img src="./img/uvm_apb_slave_ram.png" alt="UVM Testbench Architecture"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+               <!-- Project: UVM Testbench for I2C -->
+                            <div class="col-12 isotope-item js-id-DV">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <!-- Phần chữ bên trái -->
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="https://github.com/NinNichiCode/UVM_I2C"
+                                                    data-en="Building a UVM Testbench and Verification for I2C Protocol"
+                                                    data-vi="Xây dựng Môi trường Kiểm thử UVM cho giao thức I2C">
+                                                </a>
+                                            </div>
+                                            <div class="article-style" data-en="<p>A personal project focused on building a complete, reusable UVM testbench to verify a I2C Protocol. The project includes a full UVM architecture, automated workflow with Makefile and checked coverage.</p>
+                     " data-vi="<p>Một dự án cá nhân tập trung vào việc xây dựng một môi trường kiểm thử UVM hoàn chỉnh, tái sử dụng để xác minh giao thức I2C. Dự án bao gồm xây dựng UVM đầy đủ, quy trình tự động hóa với Makefile và kiểm tra coverage.</p>">
+                                            </div>
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="https://github.com/NinNichiCode/UVM_I2C" data-en="View Details →"
+                                                    data-vi="Xem chi tiết →">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Phần ảnh bên phải -->
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="https://github.com/NinNichiCode/UVM_I2C">
+                                                <img src="./img/uvm_i2c.png" alt="UVM Testbench Architecture"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                     <!-- Project: UVM Testbench for SPI -->
+                            <div class="col-12 isotope-item js-id-DV">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <!-- Phần chữ bên trái -->
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="https://github.com/NinNichiCode/UVM_SPI_MEM"
+                                                    data-en="Building a UVM Testbench and Verification for a SPI Memory"
+                                                    data-vi="Xây dựng Môi trường Kiểm thử UVM cho giao thức SPI">
+                                                </a>
+                                            </div>
+                                            <div class="article-style" data-en="<p>A personal project focused on building a complete, reusable UVM testbench to verify a SPI Memory. The project includes a full UVM architecture, automated workflow with Makefile and checked coverage.</p>
+                     " data-vi="<p>Một dự án cá nhân tập trung vào việc xây dựng một môi trường kiểm thử UVM hoàn chỉnh, tái sử dụng để xác minh giao thức SPI. Dự án bao gồm xây dựng UVM đầy đủ, quy trình tự động hóa với Makefile và kiểm tra coverage.</p>">
+                                            </div>
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="https://github.com/NinNichiCode/UVM_SPI_MEM" data-en="View Details →"
+                                                    data-vi="Xem chi tiết →">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Phần ảnh bên phải -->
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="https://github.com/NinNichiCode/UVM_SPI_MEM">
+                                                <img src="./img/uvm_spi.png" alt="UVM Testbench Architecture"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                     <!-- Project: UVM Testbench for RAM 8 bit -->
+                            <div class="col-12 isotope-item js-id-DV">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <!-- Phần chữ bên trái -->
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="https://github.com/NinNichiCode/UVM_RAM"
+                                                    data-en="Building a UVM Testbench and Verification for a RAM 8 bit"
+                                                    data-vi="Xây dựng Môi trường Kiểm thử UVM cho mạch RAM 8 bit">
+                                                </a>
+                                            </div>
+                                            <div class="article-style" data-en="<p>A personal project focused on building a complete, reusable UVM testbench to verify a RAM 8 bit. The project includes a full UVM architecture, automated workflow with Makefile and checked coverage.</p>
+                     " data-vi="<p>Một dự án cá nhân tập trung vào việc xây dựng một môi trường kiểm thử UVM hoàn chỉnh, tái sử dụng để xác minh mạch RAM 8 bit. Dự án bao gồm xây dựng UVM đầy đủ, quy trình tự động hóa với Makefile và kiểm tra coverage.</p>">
+                                            </div>
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="https://github.com/NinNichiCode/UVM_RAM" data-en="View Details →"
+                                                    data-vi="Xem chi tiết →">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Phần ảnh bên phải -->
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="https://github.com/NinNichiCode/UVM_RAM">
+                                                <img src="./img/uvm_ram.png" alt="UVM Testbench Architecture"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                     <!-- Project: UVM Testbench for MUX -->
+                            <div class="col-12 isotope-item js-id-DV">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <!-- Phần chữ bên trái -->
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="https://github.com/NinNichiCode/UVM_MUX"
+                                                    data-en="Building a UVM Testbench and Verification for a MUX"
+                                                    data-vi="Xây dựng Môi trường Kiểm thử UVM cho mạch Ghép kênh (MUX)">
+                                                </a>
+                                            </div>
+                                            <div class="article-style" data-en="<p>A personal project focused on building a complete, reusable UVM testbench to verify a Multiplexer. The project includes a full UVM architecture, automated workflow with Makefile and checked coverage.</p>
+                     " data-vi="<p>Một dự án cá nhân tập trung vào việc xây dựng một môi trường kiểm thử UVM hoàn chỉnh, tái sử dụng để xác minh mạch MUX. Dự án bao gồm xây dựng UVM đầy đủ, quy trình tự động hóa với Makefile và kiểm tra coverage.</p>">
+                                            </div>
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="https://github.com/NinNichiCode/UVM_MUX" data-en="View Details →"
+                                                    data-vi="Xem chi tiết →">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Phần ảnh bên phải -->
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="https://github.com/NinNichiCode/UVM_MUX">
+                                                <img src="./img/uvm_mux.png" alt="UVM Testbench Architecture"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                      <!-- Project: UVM Testbench for Multiplier -->
+                            <div class="col-12 isotope-item js-id-DV">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <!-- Phần chữ bên trái -->
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="https://github.com/NinNichiCode/UVM_multiplier"
+                                                    data-en="Building a UVM Testbench and Verification for a Multiplier"
+                                                    data-vi="Xây dựng Môi trường Kiểm thử UVM cho mạch Multiplier">
+                                                </a>
+                                            </div>
+                                            <div class="article-style" data-en="<p>A personal project focused on building a complete, reusable UVM testbench to verify a Multiplier. The project includes a full UVM architecture, automated workflow with Makefile and checked coverage.</p>
+                     " data-vi="<p>Một dự án cá nhân tập trung vào việc xây dựng một môi trường kiểm thử UVM hoàn chỉnh, tái sử dụng để xác minh một mạch Multiplier. Dự án bao gồm xây dựng UVM đầy đủ, quy trình tự động hóa với Makefile và kiểm tra coverage.</p>">
+                                            </div>
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="https://github.com/NinNichiCode/UVM_multiplier" data-en="View Details →"
+                                                    data-vi="Xem chi tiết →">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Phần ảnh bên phải -->
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="https://github.com/NinNichiCode/UVM_multiplier">
+                                                <img src="./img/uvm_multiplier.png" alt="UVM Testbench Architecture"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                           <!-- Project: UVM Testbench for D flip flop -->
+                            <div class="col-12 isotope-item js-id-DV">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <!-- Phần chữ bên trái -->
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="https://github.com/NinNichiCode/UVM_DFlipFlop"
+                                                    data-en="Building a UVM Testbench and Verification for a D-FlipFlop"
+                                                    data-vi="Xây dựng Môi trường Kiểm thử UVM cho mạch D Flip-Flop">
+                                                </a>
+                                            </div>
+                                            <div class="article-style" data-en="<p>A personal project focused on building a complete, reusable UVM testbench to verify a D Flip-Flop. The project includes a full UVM architecture, automated workflow with Makefile and checked coverage.</p>
+                     " data-vi="<p>Một dự án cá nhân tập trung vào việc xây dựng một môi trường kiểm thử UVM hoàn chỉnh, tái sử dụng để xác minh một mạch D Flip-Flop. Dự án bao gồm xây dựng UVM đầy đủ, quy trình tự động hóa với Makefile và kiểm tra coverage.</p>">
+                                            </div>
+                                           
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="https://github.com/NinNichiCode/UVM_DFlipFlop" data-en="View Details →"
+                                                    data-vi="Xem chi tiết →">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Phần ảnh bên phải -->
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="https://github.com/NinNichiCode/UVM_DFlipFlop">
+                                                <img src="./img/uvm_dflipflop.png" alt="UVM Testbench Architecture"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                           <!-- Project: UVM Testbench for Adder -->
+                            <div class="col-12 isotope-item js-id-DV">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <!-- Phần chữ bên trái -->
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="https://github.com/NinNichiCode/UVM_Adder"
+                                                    data-en="Building a UVM Testbench and Verification for a Adder"
+                                                    data-vi="Xây dựng Môi trường Kiểm thử UVM cho mạch Adder">
+                                                </a>
+                                            </div>
+                                            <div class="article-style" data-en="<p>A personal project focused on building a complete, reusable UVM testbench to verify a Adder. The project includes a full UVM architecture and automated workflow with Makefile</p>
+                     " data-vi="<p>Một dự án cá nhân tập trung vào việc xây dựng một môi trường kiểm thử UVM hoàn chỉnh, tái sử dụng để xác minh một mạch Adder. Dự án bao gồm xây dựng UVM đầy đủ, quy trình tự động hóa với Makefile</p>">
+                                            </div>
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="https://github.com/NinNichiCode/UVM_Adder" data-en="View Details →"
+                                                    data-vi="Xem chi tiết →">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Phần ảnh bên phải -->
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="https://github.com/NinNichiCode/UVM_Adder">
+                                                <img src="./img/uvm_adder.png" alt="UVM Testbench Architecture"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <!-- Project: UART Verification System (Updated Card) -->
                             <div class="col-12 isotope-item js-id-DV">
                                 <div class="col-lg-12 mb-5 view-showcase">
@@ -513,8 +824,7 @@
                                                 </a>
                                             </div>
                                             <div class="article-style" data-en="<p>A personal project focused on building a comprehensive, Python-based automated verification environment to validate a UART IP core with integrated Trivium encryption using a Vector & Golden Model methodology.</p>
-                     <p><i>[3/2025 - 7/2025]</i></p>" data-vi="<p>Một dự án cá nhân tập trung xây dựng một môi trường kiểm tra tự động toàn diện dựa trên Python để xác thực một lõi IP UART tích hợp mã hóa Trivium bằng phương pháp Vector & Golden Model.</p>
-                     <p><i>[3/2025 - 7/2025]</i></p>">
+                     " data-vi="<p>Một dự án cá nhân tập trung xây dựng một môi trường kiểm tra tự động toàn diện dựa trên Python để xác thực một lõi IP UART tích hợp mã hóa Trivium bằng phương pháp Vector & Golden Model.</p>">
                                             </div>
                                             <div class="btn-links mt-2">
                                                 <a class="btn btn-outline-primary btn-page-header"
@@ -546,8 +856,7 @@
                                                 </a>
                                             </div>
                                             <div class="article-style" data-en="<p>A personal project focused on building a complete, reusable UVM testbench to verify a synchronous FIFO. The project includes a full UVM architecture, automated workflow with Makefile, and detailed functional coverage analysis.</p>
-                     <p><i>[10/2024 - 11/2024]</i></p>" data-vi="<p>Một dự án cá nhân tập trung vào việc xây dựng một môi trường kiểm thử UVM hoàn chỉnh, tái sử dụng để xác minh một FIFO đồng bộ. Dự án bao gồm kiến trúc UVM đầy đủ, quy trình tự động hóa với Makefile và phân tích độ phủ chức năng chi tiết.</p>
-                     <p><i>[10/2024 - 11/2024]</i></p>">
+                     " data-vi="<p>Một dự án cá nhân tập trung vào việc xây dựng một môi trường kiểm thử UVM hoàn chỉnh, tái sử dụng để xác minh một FIFO đồng bộ. Dự án bao gồm kiến trúc UVM đầy đủ, quy trình tự động hóa với Makefile và phân tích độ phủ chức năng chi tiết.</p>">
                                             </div>
                                             <div class="btn-links mt-2">
                                                 <a class="btn btn-outline-primary btn-page-header"
@@ -581,8 +890,7 @@
                                                 </a>
                                             </div>
                                             <div class="article-style" data-en="<p>A practical personal project to develop a command-line tool using Bash script and Verilator to automate the process of linting and statically analyzing Verilog source code, significantly improving workflow efficiency and code quality.</p>
-                     <p><i>[3/2025 - 4/2025]</i></p>" data-vi="<p>Một dự án cá nhân thực tế phát triển một công cụ dòng lệnh bằng Bash script và Verilator để tự động hóa quá trình kiểm tra và phân tích tĩnh mã nguồn Verilog, giúp cải thiện đáng kể hiệu suất làm việc và chất lượng code.</p>
-                     <p><i>[3/2025 - 4/2025]</i></p>">
+                 " data-vi="<p>Một dự án cá nhân thực tế phát triển một công cụ dòng lệnh bằng Bash script và Verilator để tự động hóa quá trình kiểm tra và phân tích tĩnh mã nguồn Verilog, giúp cải thiện đáng kể hiệu suất làm việc và chất lượng code.</p>">
                                             </div>
                                             <div class="btn-links mt-2">
                                                 <a class="btn btn-outline-primary btn-page-header"
@@ -615,9 +923,8 @@
                                                     data-vi="Kiểm tra ALU với Testbench Tự kiểm tra và Golden Model">
                                                 </a>
                                             </div>
-                                            <div class="article-style" data-en="<p>A project demonstrating the fundamental VLSI verification concept of using a self-checking testbench with a Golden Model to automate the testing of an 8-bit ALU, complete with a detailed video lecture.</p>
-                     <p><i>[1/2025 - 2/2025]</i></p>" data-vi="<p>Một dự án minh họa khái niệm cơ bản trong kiểm tra VLSI về việc sử dụng testbench tự kiểm tra với Golden Model để tự động hóa việc kiểm thử một ALU 8-bit, đi kèm với một bài giảng video chi tiết.</p>
-                     <p><i>[1/2025 - 2/2025]</i></p>">
+                                            <div class="article-style" data-en="<p>A project demonstrating the fundamental VLSI verification concept of using a self-checking testbench with a Golden Model to automate the testing of an 8-bit ALU, complete with a detailed video.</p>
+                     " data-vi="<p>Một dự án minh họa khái niệm cơ bản trong kiểm tra VLSI về việc sử dụng testbench tự kiểm tra với Golden Model để tự động hóa việc kiểm thử một ALU 8-bit, đi kèm với một video chi tiết.</p>">
                                             </div>
                                             <div class="btn-links mt-2">
                                                 <a class="btn btn-outline-primary btn-page-header"
@@ -647,13 +954,13 @@
                                             <div class="section-subheading article-title mb-0 mt-0">
                                                 <a href="https://www.youtube.com/watch?v=IoltYzZ7yxg&list=PLvArCQMgeyHmB_IszE6G3Lqn4K89rJBNG"
                                                     target="_blank" rel="noopener noreferrer"
-                                                    data-en="Basic System Verilog Lecture Series"
-                                                    data-vi="Chuỗi bài giảng System Verilog cơ bản">
+                                                    data-en="Basic System Verilog Video Series"
+                                                    data-vi="Chuỗi video về System Verilog cơ bản">
                                                 </a>
                                             </div>
                                             <div class="article-style"
                                                 data-en="<p>This is a series of lectures on basic system verilog, teaching about blocks, codes, basic concepts of system Verilog. Besides, there are also exercises for practice and practice. And still continue to update.</p>"
-                                                data-vi="<p>Đây là chuỗi bài giảng về system verilog cơ bản, dạy về các khối, code, khái niệm cơ bản của system Verilog. Bên cạnh đó cũng có kèm các bài tập để thực hành và luyện tập. Và vẫn còn tiếp tục cập nhật.</p>">
+                                                data-vi="<p>Đây là chuỗi video chia sẻ kiến thức về system verilog cơ bản, nói về các block, code, khái niệm cơ bản của system Verilog. Bên cạnh đó cũng có kèm các bài tập để thực hành và luyện tập. Và vẫn còn tiếp tục cập nhật.</p>">
                                             </div>
                                             <div class="btn-links mt-2">
                                                 <a class="btn btn-outline-primary btn-page-header" target="_blank"
@@ -684,13 +991,13 @@
                                             <div class="section-subheading article-title mb-0 mt-0">
                                                 <a href="https://www.youtube.com/playlist?list=PLvArCQMgeyHmb1LhAOIbjA_ifFaZIb0nH"
                                                     target="_blank" rel="noopener noreferrer"
-                                                    data-en="RTL Design Lecture Series"
-                                                    data-vi="Chuỗi bài giảng thiết kế RTL">
+                                                    data-en="RTL Design Video Series"
+                                                    data-vi="Chuỗi video chia sẻ kiến thức về thiết kế RTL">
                                                 </a>
                                             </div>
                                             <div class="article-style"
-                                                data-en="<p>This is a series of lectures on basic RTL design, teaching about blocks, basic concepts, how to design circuits. Besides, there are also exercises for practice and practice. And still continue to update.</p>"
-                                                data-vi="<p>Đây là chuỗi bài giảng về RTL design cơ bản, dạy về các khối, khái niệm cơ bản, cách thiết kế mạch. Bên cạnh đó cũng có kèm các bài tập để thực hành và luyện tập. Và vẫn còn tiếp tục cập nhật.</p>">
+                                                data-en="<p>This is a series of videos on basic RTL design, teaching about blocks, basic concepts, how to design circuits. Besides, there are also exercises for practice and practice. And still continue to update.</p>"
+                                                data-vi="<p>Đây là chuỗi video chia sẻ kiến thức về RTL design cơ bản, nói về các khối, khái niệm cơ bản, cách thiết kế mạch. Bên cạnh đó cũng có kèm các bài tập để thực hành và luyện tập. Và vẫn còn tiếp tục cập nhật.</p>">
                                             </div>
                                             <div class="btn-links mt-2">
                                                 <a class="btn btn-outline-primary btn-page-header" target="_blank"
@@ -721,13 +1028,13 @@
                                             <div class="section-subheading article-title mb-0 mt-0">
                                                 <a href="https://www.youtube.com/@Nchip2511/videos" target="_blank"
                                                     rel="noopener noreferrer"
-                                                    data-en="Other Lecture Series Related to Microchips"
-                                                    data-vi="Chuỗi bài giảng khác liên quan đến vi mạch">
+                                                    data-en="Other Video Series Related to Microchips"
+                                                    data-vi="Chuỗi video khác liên quan đến vi mạch">
                                                 </a>
                                             </div>
                                             <div class="article-style"
                                                 data-en="<p>There are also some other videos related to microchips. These lectures include projects, basic concepts, and knowledge in microchip documents.</p>"
-                                                data-vi="<p>Ngoài ra còn 1 số video khác liên quan đến vi mạch. Các bài giảng này gồm các dự án, các khái niệm cơ bản, và các kiến thức trong các tài liệu vi mạch.</p>">
+                                                data-vi="<p>Ngoài ra còn 1 số video khác liên quan đến vi mạch. Các video này gồm các dự án, các khái niệm cơ bản, và các kiến thức trong các tài liệu vi mạch.</p>">
                                             </div>
                                             <div class="btn-links mt-2">
                                                 <a class="btn btn-outline-primary btn-page-header" target="_blank"
@@ -762,8 +1069,8 @@
                                                 </a>
                                             </div>
                                             <div class="article-style"
-                                                data-en="<p>A Computer Vision project to process noisy, distorted QR codes and automatically grade multiple-choice answer sheets using Python.</p><p><i>[November, 2024 - January, 2025]</i></p><p>Team size: 3 | My role: Team Leader</p>"
-                                                data-vi="<p>Một dự án Thị giác Máy tính xử lý mã QR bị nhiễu, biến dạng và tự động chấm điểm phiếu trả lời trắc nghiệm bằng Python.</p><p><i>[Tháng 11, 2024 - Tháng 1, 2025]</i></p><p>Số thành viên: 3 | Vai trò của tôi: Trưởng nhóm</p>">
+                                                data-en="<p>A Computer Vision project to process noisy, distorted QR codes and automatically grade multiple-choice answer sheets using Python.<p>Team size: 3 | My role: Team Leader</p>"
+                                                data-vi="<>Một dự án Thị giác Máy tính xử lý mã QR bị nhiễu, biến dạng và tự động chấm điểm phiếu trả lời trắc nghiệm bằng Python.<p>Số thành viên: 3 | Vai trò của tôi: Trưởng nhóm</p>">
 
                                             </div>
                                             <div class="btn-links mt-2">
@@ -797,8 +1104,8 @@
                                                 </a>
                                             </div>
                                             <div class="article-style"
-                                                data-en="<p>Designed and developed a simple QR code-based attendance application to support lecturers in recording student attendance efficiently. This personal project provides an alternative to traditional roll-calling or using additional hardware like student ID scanners.</p><p><i>[December, 2024 - January, 2025]</i></p>"
-                                                data-vi="<p>Thiết kế và phát triển một ứng dụng điểm danh đơn giản dựa trên mã QR để hỗ trợ giảng viên ghi nhận sự có mặt của sinh viên một cách hiệu quả. Dự án cá nhân này cung cấp một giải pháp thay thế cho việc điểm danh truyền thống hoặc sử dụng phần cứng bổ sung như máy quét thẻ sinh viên.</p><p><i>[Tháng 12, 2024 - Tháng 1, 2025]</i></p>">
+                                                data-en="<p>Designed and developed a simple QR code-based attendance application to support lecturers in recording student attendance efficiently. This personal project provides an alternative to traditional roll-calling or using additional hardware like student ID scanners."
+                                                data-vi="<p>Thiết kế và phát triển một ứng dụng điểm danh đơn giản dựa trên mã QR để hỗ trợ giảng viên ghi nhận sự có mặt của sinh viên một cách hiệu quả. Dự án cá nhân này cung cấp một giải pháp thay thế cho việc điểm danh truyền thống hoặc sử dụng phần cứng bổ sung như máy quét thẻ sinh viên.">
 
                                             </div>
                                             <div class="btn-links mt-2">
@@ -831,8 +1138,8 @@
                                                 </a>
                                             </div>
                                             <div class="article-style"
-                                                data-en="<p>A Python-based personal project that instantly translates English text from the clipboard and saves vocabulary for later review, using global keyboard shortcuts.</p><p><i>[April, 2025 - May, 2025]</i></p>"
-                                                data-vi="<p>Một dự án cá nhân dựa trên Python giúp dịch ngay lập tức văn bản tiếng Anh từ clipboard và lưu từ vựng để ôn tập sau, sử dụng phím tắt toàn cục.</p><p><i>[Tháng 4, 2025 - Tháng 5, 2025]</i></p>">
+                                                data-en="<p>A Python-based personal project that instantly translates English text from the clipboard and saves vocabulary for later review, using global keyboard shortcuts."
+                                                data-vi="<p>Một dự án cá nhân dựa trên Python giúp dịch ngay lập tức văn bản tiếng Anh từ clipboard và lưu từ vựng để ôn tập sau, sử dụng phím tắt toàn cục.">
 
                                             </div>
                                             <div class="btn-links mt-2">
@@ -1010,8 +1317,8 @@
                                                 </a>
                                             </div>
                                             <div class="article-style"
-                                                data-en="<p>A final-year biomedical electronics project focused on designing an analog circuit that can measure both muscle (EMG) and heart (ECG) signals on a breadboard.</p><p><i>[November, 2024 - January, 2025]</i></p><p>Team size: 5 | My role: Team Leader</p>"
-                                                data-vi="<p>Một dự án điện tử y sinh cuối khóa tập trung vào việc thiết kế một mạch analog có thể đo cả tín hiệu cơ (EMG) và tim (ECG) trên breadboard.</p><p><i>[Tháng 11, 2024 - Tháng 1, 2025]</i></p><p>Số thành viên: 5 | Vai trò của tôi: Trưởng nhóm</p>">
+                                                data-en="<p>A final-year biomedical electronics project focused on designing an analog circuit that can measure both muscle (EMG) and heart (ECG) signals on a breadboard.i></p><p>Team size: 5 | My role: Team Leader</p>"
+                                                data-vi="<p>Một dự án điện tử y sinh cuối khóa tập trung vào việc thiết kế một mạch analog có thể đo cả tín hiệu cơ (EMG) và tim (ECG) trên breadboard.</p><p>Số thành viên: 5 | Vai trò của tôi: Trưởng nhóm</p>">
 
                                             </div>
                                             <div class="btn-links mt-2">
@@ -1045,8 +1352,8 @@
                                                 </a>
                                             </div>
                                             <div class="article-style"
-                                                data-en="<p>A comprehensive electronics design project involving the simulation, PCB layout, and implementation of a MOSFET-based audio amplifier and a dual power supply circuit.</p><p><i>[March, 2024 - April, 2024]</i></p><p>Team size: 2 | My role: Partner</p>"
-                                                data-vi="<p>Một dự án thiết kế điện tử toàn diện bao gồm mô phỏng, layout PCB, và triển khai một bộ khuếch đại âm thanh dựa trên MOSFET và một mạch nguồn đôi.</p><p><i>[Tháng 3, 2024 - Tháng 4, 2024]</i></p><p>Số thành viên: 2 | Vai trò của tôi: Trưởng nhóm</p>">
+                                                data-en="<p>A comprehensive electronics design project involving the simulation, PCB layout, and implementation of a MOSFET-based audio amplifier and a dual power supply circuit./p><p>Team size: 2 | My role: Partner</p>"
+                                                data-vi="<p>Một dự án thiết kế điện tử toàn diện bao gồm mô phỏng, layout PCB, và triển khai một bộ khuếch đại âm thanh dựa trên MOSFET và một mạch nguồn đôi.<p>Số thành viên: 2 | Vai trò của tôi: Trưởng nhóm</p>">
 
                                             </div>
                                             <div class="btn-links mt-2">
@@ -1155,7 +1462,7 @@
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="js/script.js"></script>
-
+    
 </body>
 
 </html>

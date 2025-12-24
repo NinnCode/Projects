@@ -15,7 +15,7 @@ $(document).ready(function () {
             $projectsContainer.isotope({
                 itemSelector: '.isotope-item',
                 layoutMode: 'masonry',
-                filter: '.js-id-VLSI',
+                filter: '.js-id-DV',
                 percentPosition: true,
                 masonry: {
                     columnWidth: '.isotope-item'
@@ -144,14 +144,14 @@ document.addEventListener('DOMContentLoaded', function() {
             langVI.classList.remove('active');
         }
         // Lưu lựa chọn ngôn ngữ vào localStorage
-        localStorage.setItem('portfolioLanguage', lang);
+        // localStorage.setItem('portfolioLanguage', lang);
     }
 
     // Gán sự kiện click cho các nút
     langVI.addEventListener('click', () => switchLanguage('vi'));
     langEN.addEventListener('click', () => switchLanguage('en'));
 
-    // Kiểm tra ngôn ngữ đã lưu hoặc đặt mặc định là Tiếng Việt
-    const savedLang = localStorage.getItem('portfolioLanguage') || 'vi';
+    // Kiểm tra ngôn ngữ đã lưu hoặc đặt mặc định là Tiếng Anh
+    const savedLang = localStorage.getItem('portfolioLanguage') || 'en';
     switchLanguage(savedLang);
 });
